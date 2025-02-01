@@ -7,7 +7,10 @@ function Header(){
             <span className={styles.title}>Movie Search</span>
             <nav>
                 <ul className={styles.navList}>
-
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Tendencia</a></li>
+                    <li><a href="">Favoritos</a></li>
+                    <li><a href="">Contacto</a></li>
                 </ul>
 
             </nav>
