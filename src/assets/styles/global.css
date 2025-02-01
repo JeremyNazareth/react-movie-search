@@ -1,0 +1,14 @@
+.app-body{
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+.app-content{
+    background-color: black;
+    color: white;
+    width: 80%;
+    text-align: center;    
+    height: 1000px;
+}
