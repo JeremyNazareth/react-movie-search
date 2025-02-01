@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #E0E0E0;
+    color: #2E8B57;
+    height: 100px;
+}
+
+.title {
+    color: #2E8B57;
+    font-size: 35px;
+    height: 100%;
+    width: 30%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navList{
+    
+}
