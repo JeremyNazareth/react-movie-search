@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import Header from "../components/Header"
 import '../App.css'
 import '../assets/styles/global.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { useState } from 'react'
+import Header from "../components/Header"
+import {Router, Routes, Route } from 'react-router-dom'
 import  Inicio from "./Inicio"
 import  Tendencias from "./Tendencias"
 import  Favoritos from "./Favoritos"
@@ -13,8 +13,7 @@ function App() {
 
   return (
     <>
-      <div>
-        <Router>
+      <div>        
           <Header></Header>
           <div className="app-body">
             <div className='app-content'>
@@ -25,11 +24,7 @@ function App() {
                 <Route path='/contacto' element={<Contacto />}/>
               </Routes>  
             </div>
-            
-          </div>
-          
-        </Router>
-    
+          </div>    
       </div>
     </>
   )
