@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from "../components/Header"
 import '../App.css'
+import '../assets/styles/global.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import  Inicio from "./Inicio"
 import  Tendencias from "./Tendencias"

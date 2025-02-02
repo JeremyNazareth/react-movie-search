@@ -1,14 +1,21 @@
+* {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;   
+    color: #2E8B57;
+}
+
 .app-body{
     width: 100%;
-    background-color: aqua;
     display: flex;
     justify-content: center;
+    padding-top: 25px;
 }
 
 .app-content{
-    background-color: black;
-    color: white;
     width: 80%;
     text-align: center;    
     height: 1000px;
+}
+
+h4 {
+    color: gray;
 }
