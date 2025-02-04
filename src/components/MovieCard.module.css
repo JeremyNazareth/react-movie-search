@@ -1,0 +1,17 @@
+.movieCard{
+    display: flex;
+    flex-direction: column;
+}
+
+.poster{
+    width: 125px;
+    height: 187.5px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+.movieData{    
+    width: 125px;
+    
+    
+}
