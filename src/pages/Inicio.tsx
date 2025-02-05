@@ -3,6 +3,7 @@ import MovieCard from '../components/MovieCard';
 import styles from '../components/Inicio.module.css'
 
 
+
 function Inicio(){
     return(
         <div>
