@@ -1,0 +1,14 @@
+
+.PopularMovies{
+    margin-top: 40px;
+}
+
+
+.Movies{
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    overflow: auto;
+    width: 1000px;
+    
+}

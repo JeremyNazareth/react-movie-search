@@ -8,12 +8,16 @@
     display: flex;
     justify-content: center;
     padding-top: 25px;
+
 }
 
 .app-content{
+    display: flex;
+    text-align: center;
+    justify-content: center;
     width: 80%;
-    text-align: center;    
     height: 1000px;
+    
 }
 
 h4 {
