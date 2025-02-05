@@ -1,4 +1,4 @@
-import moviesData from '../assets/data/movies.json';
+import moviesData from '../assets/data/movie.json';
 import MovieCard from '../components/MovieCard';
 import styles from '../components/Inicio.module.css'
 
@@ -14,8 +14,8 @@ function Inicio(){
             <div className={styles.PopularMovies}>
                 <h2>Las peliculas mas populares:</h2>
                 <div className={styles.Movies}>                
-                    {moviesData.map((movieData) => (
-                        <MovieCard key={movieData.id} movie={movieData} />
+                    {moviesData.map((moviesData) => (
+                        <MovieCard key={moviesData.id} movie={moviesData} />
                     ))}
                 </div>
             </div>
