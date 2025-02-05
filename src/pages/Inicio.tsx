@@ -8,6 +8,7 @@ function Inicio(){
     return(
         <div>
             {/*}Sección del inicio{*/}
+            {/*}Sección del inicio{*/}
             <h1 style={{color: "#2E8B57"}}>Movie Search</h1>
             <h4>¡Bienvenido!, aquí podras encontrar la calificación de tus peliculas preferidas.</h4>
 
