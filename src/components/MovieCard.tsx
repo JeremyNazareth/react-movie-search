@@ -21,7 +21,6 @@ function MovieCard ({ movie } : MovieProps) {
                 <h3>{movie.title}</h3>
                 <h4>{movie.vote_average}</h4>
             </div>
-                
         </div>      
     );
 }
