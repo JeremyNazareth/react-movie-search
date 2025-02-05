@@ -1,4 +1,4 @@
-import moviesData from '../assets/data/movie.json';
+import moviesData from '../assets/data/movies.json';
 import MovieCard from '../components/MovieCard';
 import styles from '../components/Inicio.module.css'
 
