@@ -8,25 +8,33 @@
 }
 
 .SliderBorder{
-    width: 100%;
+    width: 500px;
     display: flex;
     justify-content: center;    
+    align-items: center;
+    background-color: cadetblue;
     overflow: hidden;
-    border: 1px solid black;
+
 }
 
 .SliderContent{
-    width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     text-align: center;
     align-items: center;
-    flex-direction: column;
-    transition: 5s ease;
+    width: 100%;
+    height: 100%;
+    gap: 400px;
+    padding-left: 200px;
+    background-color: cyan;
+    transition: transform 1s ease-in-out;
 }
 
 .SliderImg{
     width: 300px;
     height: 500px;
+}
+
+.SliderItem{
+    
 }
