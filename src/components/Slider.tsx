@@ -22,17 +22,16 @@ const Slider = ({movies}) => {
                         <div className={styles.SliderItem} >
                             <img className={styles.ItemImg} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" />
                             <div className={styles.ItemText}>
-                                <p className={styles.ItemTitle}>{movie.title}</p>
-                                <hr className={styles.ItemHr} />
-                                <p className={styles.ItemOverview}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam molestiae similique unde deserunt vel ut ipsum voluptatum id. Esse ex commodi officia ipsa, odit nulla facilis veniam atque perferendis corrupti.</p>
+                                <h3>{movie.title}</h3>
+                                <p className={styles.ItemOverview}>{movie.overview}</p>
                                 <hr className={styles.ItemHr} />
                                 <div className={styles.ItemDescription}>
-                                    <p>Descripcion1: descripcion 1</p>
-                                    <p>Descripcion2: descripcion 2</p>
-                                    <p>Descripcion3: descripcion 3</p>
+                                    <p>Ranking: {movie.vote_average}</p>
+                                    <p>Original language: {movie.original_language}</p>
+                                    <p>Release Date: {movie.release_date}</p>
                                 </div>
                                 <hr className={styles.ItemHr} />
-                                <p>Generos</p>
+                                <h3 style={{textAlign: "center"}}>Generos</h3>
                                 <div className={styles.ItemGenres}>
                                     <p>Genero1</p>
                                     <p>Genero2</p>

@@ -10,7 +10,7 @@
 
 .SliderBorder{
     height: 700px;
-    width: 850px;
+    width: 800px;
     display: flex;
     justify-content: center;    
     align-items: center;
@@ -24,8 +24,7 @@
     align-items: center;
     width: 800px;
     height: 100%;
-    gap: 400px;
-    padding-left: 100px;
+    gap: 15px;
     transition: transform 1s ease-in-out;
 }
 
@@ -45,21 +44,21 @@
 
 .SliderItem{
     display: flex;
-    width: 100%;
+    width: 800px;
     height: 80%;
-    margin: 0px;
-    padding: 0px;
+    margin-left: 15px;
     align-items: center;
-    gap: 5px;
 }
 
 .ItemText{
     display: block;
     justify-content: center;
     align-items: start;
-    text-align: center;
-    width: 300px;
+    text-align: start;
+    width:  400px;
     height: 100%;
+    margin-left: 20px;
+    margin-top: 15px;
 }
 
 .ItemImg{
@@ -76,7 +75,7 @@
 
 .ItemHr{
     background-color: #2E8B57;
-    width: 90%;
+    width: 98%;
     height: 2px;
     text-align: center;
     margin: 15px auto;
@@ -87,11 +86,19 @@
 .ItemOverview{
     margin-top: 10px;
     font-size: 17px;
+    font-weight: 500;
+    color: gray;
 }
 
 .ItemDescription{
-    margin-left: 15px;
     text-align: start;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.ItemDescription p{
+    color: gray;
+    font-weight: 600;
 }
 
 .ItemGenres{
