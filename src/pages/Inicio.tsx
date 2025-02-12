@@ -1,4 +1,5 @@
-import moviesData from '../assets/data/movies.json';
+import popularMovies from '../assets/data/movies.json';
+import topMovies from '../assets/data/topRated.json'
 import MovieCard from '../components/MovieCard';
 import styles from '../components/Inicio.module.css'
 import Slider from '../components/Slider'
@@ -17,8 +18,8 @@ function Inicio(){
             <div className={styles.PopularMovies}>
                 <h2>Las peliculas mas populares:</h2>
                 <div className={styles.Movies}>                
-                    {moviesData.map((moviesData) => (
-                        <MovieCard key={moviesData.id} movie={moviesData} />
+                    {popularMovies.map((movieData) => (
+                        <MovieCard key={movieData.id} movie={movieData} />
                     ))}
                 </div>
             </div>
@@ -26,7 +27,7 @@ function Inicio(){
             {/*}Sección de peliculas mejores puntuadas{*/}                    
             <div className={styles.RatingMovies}>
                 <h2>Las peliculas mejores valoradas:</h2>
-                <Slider movies={moviesData}></Slider>                
+                <Slider movies={topMovies}></Slider>                
             </div>
             
         </div>
