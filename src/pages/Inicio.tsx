@@ -1,6 +1,7 @@
 import popularMovies from '../assets/data/movies.json';
 import topMovies from '../assets/data/topRated.json'
 import MovieCard from '../components/MovieCard';
+import genresData from '../assets/data/genres.json'
 import styles from '../components/Inicio.module.css'
 import Slider from '../components/Slider'
 
@@ -27,7 +28,7 @@ function Inicio(){
             {/*}Sección de peliculas mejores puntuadas{*/}                    
             <div className={styles.RatingMovies}>
                 <h2>Las peliculas mejores valoradas:</h2>
-                <Slider movies={topMovies}></Slider>                
+                <Slider movies={topMovies} genres={genresData.genres}></Slider>                
             </div>
             
         </div>

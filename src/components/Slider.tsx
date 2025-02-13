@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import styles from "./Slider.module.css";
 import {MoveRight, MoveLeft} from 'lucide-react';
 
-const Slider = ({movies}) => {
+
+const Slider = ({movies, genres}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () =>{
@@ -19,6 +20,7 @@ const Slider = ({movies}) => {
             <div className={styles.SliderBorder}>
                 <div className={styles.SliderContent} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     {movies.map((movie) =>(
+                        
                         <div className={styles.SliderItem} >
                             <img className={styles.ItemImg} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" />
                             <div className={styles.ItemText}>
@@ -33,11 +35,13 @@ const Slider = ({movies}) => {
                                 <hr className={styles.ItemHr} />
                                 <h3 style={{textAlign: "center"}}>Generos</h3>
                                 <div className={styles.ItemGenres}>
-                                    <p>Genero1</p>
-                                    <p>Genero2</p>
-                                    <p>Genero3</p>
-                                    <p>Genero4</p>
-                                    
+                                    {movie.genre_ids.map((movieId) => {
+                                        const genre = genres.find(genre => genre.id === movieId );
+                                        return <p>{genre ? genre.name : "Desconocido"}</p>;
+
+                                        
+                                        
+                                    })}   
                                 </div>
                             </div>
                         </div>
