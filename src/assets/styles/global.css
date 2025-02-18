@@ -23,3 +23,20 @@
 h4 {
     color: gray;
 }
+
+.search-input {
+    width: 300px !important;
+    
+}
+
+.search-btn{
+    transition: 0.5s ease;
+}
+
+.search-btn:hover {
+    background-color: gray;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}

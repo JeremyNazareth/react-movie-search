@@ -1,15 +1,13 @@
 import styles from '../components/SearchBar.module.css'
+import movies from '../assets/data/movies.json'
+import SearchBar from '../components/SearchBar'
 import '../assets/styles/global.css'
+
 function Contacto(){
     return (        
         <div className='app-content'>
-            
-            <div className='app-content'>
-                <input className={styles.input} type="text" />
-            </div>
+            <SearchBar movies={movies}></SearchBar>
         </div>
-        
-
     )
 }
 
