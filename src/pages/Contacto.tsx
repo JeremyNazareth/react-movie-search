@@ -1,14 +1,12 @@
-import Slider from "../components/Slider"
-import moviesData from "../assets/data/topRated.json"
+import styles from '../components/SearchBar.module.css'
 import '../assets/styles/global.css'
-import genresData from "../assets/data/genres.json"
-import ShowGenres from "../components/ShowGenres"
-
 function Contacto(){
     return (        
-        <div className="app-body">
-            <Slider movies={moviesData}></Slider>
-            <ShowGenres genres={genresData}></ShowGenres>
+        <div className='app-content'>
+            
+            <div className='app-content'>
+                <input className={styles.input} type="text" />
+            </div>
         </div>
         
 
