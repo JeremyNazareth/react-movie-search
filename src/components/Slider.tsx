@@ -37,7 +37,7 @@ const Slider = ({movies, genres}) => {
                                 <div className={styles.ItemGenres}>
                                     {movie.genre_ids.map((movieId) => {
                                         const genre = genres.find(genre => genre.id === movieId );
-                                        return <p>{genre ? genre.name : "Desconocido"}</p>;
+                                        return <p className={styles.Genre} >{genre ? genre.name : "Desconocido"}</p>;
 
                                         
                                         
