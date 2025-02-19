@@ -1,3 +1,7 @@
+html{
+    font-size: 13px;
+}
+
 * {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;   
     color: #2E8B57;
@@ -26,7 +30,7 @@ h4 {
 
 .search-input {
     width: 300px !important;
-    
+    font-size: 15px !important;
 }
 
 .search-btn{
@@ -39,4 +43,34 @@ h4 {
 
 .dropdown-toggle::after {
     display: none !important;
+}
+
+.dropdown-menu{
+    width: 100%;
+}
+
+.dropdown-menu li{
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.dropdown-menu li:hover{
+    width: 100%;
+    background-color: #2E8B57;
+    
+}
+
+.dropdown-menu a{
+    width: 100%;
+}
+
+.dropdown-menu a:hover{
+    background-color: gray;
+}
+.searcher {
+    width: 500px;
 }

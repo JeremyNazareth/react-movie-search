@@ -4,10 +4,12 @@
 }
 .header {
     background-color: #E9ECEF;
-    color: #2E8B57;
     justify-content: space-between ;
+    align-items: center;
     display: flex;
+    color: #2E8B57;
     border-bottom: 2px solid #ccc;
+    padding: 0px 250px;
     width: 100%;
     height: 100px;
 }
@@ -19,7 +21,7 @@
     align-items: center;
     justify-content: center;
     font-size: 35px;
-    width: 30%;
+    width: 25%;
     text-decoration: none;
 
 }
