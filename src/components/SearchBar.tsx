@@ -1,18 +1,27 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { Search } from "lucide-react"
 import { useNavigate } from "react-router-dom";
 
-export function SearchBar({movies}){
+interface Movie {
+    id: number,
+    title: string
+}
+
+interface MovieProps{
+    movies: Movie[]
+}
+
+export function SearchBar({movies}:MovieProps){
     
     const [ search, setSearch] = useState("");
     let moviesSearch = []
     let navigate = useNavigate()
 
-    const navigating = (id) => {
+    const navigating = (id: number) => {
         navigate(`/movie/${id}`);
     }
 
-    const searcher = (e) => {
+    const searcher = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSearch(e.target.value)
     }
 
@@ -32,7 +41,7 @@ export function SearchBar({movies}){
             </div>
             <ul className="dropdown-menu">
                 {moviesSearch.map((movie) =>(
-                    <li onClick={() => navigating(movie.id)}>{movie.title}</li>
+                    <li key={movie.id} onClick={() => navigating(movie.id)}>{movie.title}</li>
                 ))}
             </ul>
             

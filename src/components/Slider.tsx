@@ -3,7 +3,30 @@ import styles from "./Slider.module.css";
 import {MoveRight, MoveLeft} from 'lucide-react';
 
 
-const Slider = ({movies, genres}) => {
+interface Genre {
+    id: number,
+    name: string
+}
+
+interface Movie {
+    id: number,
+    title: string,
+    poster_path: string,
+    overview: string,
+    vote_average: string, 
+    original_language: string,
+    release_date: string,
+    genre_ids: []
+}
+
+interface MoviesProps {
+    movies: Movie[]
+}
+interface GenresProps {
+    genres: Genre[]
+}
+
+const Slider = ({movies, genres}:GenresProps & MoviesProps) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () =>{
@@ -20,8 +43,7 @@ const Slider = ({movies, genres}) => {
             <div className={styles.SliderBorder}>
                 <div className={styles.SliderContent} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     {movies.map((movie) =>(
-                        
-                        <div className={styles.SliderItem} >
+                        <div key={movie.id} className={styles.SliderItem} >
                             <img className={styles.ItemImg} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" />
                             <div className={styles.ItemText}>
                                 <h3>{movie.title}</h3>
@@ -37,7 +59,7 @@ const Slider = ({movies, genres}) => {
                                 <div className={styles.ItemGenres}>
                                     {movie.genre_ids.map((movieId) => {
                                         const genre = genres.find(genre => genre.id === movieId );
-                                        return <p className={styles.Genre} >{genre ? genre.name : "Desconocido"}</p>;
+                                        return <p key={movieId} className={styles.Genre} >{genre ? genre.name : "Desconocido"}</p>;
 
                                         
                                         
