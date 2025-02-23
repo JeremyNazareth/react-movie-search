@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./Slider.module.css";
 import {MoveRight, MoveLeft} from 'lucide-react';
 
