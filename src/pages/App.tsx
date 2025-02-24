@@ -7,6 +7,7 @@ import Descubrir from './Descubrir'
 import Favoritos from "./Favoritos"
 import Contacto from "./Contacto"
 import MovieDetails from './MovieDetails'
+import Search from './Search'
 
 function App() {
 
@@ -17,10 +18,11 @@ function App() {
           <div className="app-body">
             <Routes>
               <Route path='/inicio' element={<Inicio />}/>
-              <Route path='/Descubrir' element={<Descubrir />}/>
+              <Route path='/descubrir' element={<Descubrir />}/>
               <Route path='/favoritos' element={<Favoritos />}/>
               <Route path='/contacto' element={<Contacto />}/>
               <Route path='/movie/:id' element={<MovieDetails />}/>
+              <Route path='/search/:search' element={<Search />}/>
             </Routes>  
           </div>    
       </div>

@@ -17,12 +17,25 @@ export function SearchBar({movies}:MovieProps){
     let moviesSearch = []
     let navigate = useNavigate()
 
+
+    const searcher = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setSearch(e.target.value.toLowerCase())
+    }
+
     const navigating = (id: number) => {
         navigate(`/movie/${id}`);
     }
 
-    const searcher = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setSearch(e.target.value)
+    const searchNavigate = () => {
+    
+        navigate(`/search/${search}`)
+    }
+    
+    const enter = (event) => {
+        if (event.key === 'Enter'){
+            searchNavigate(search)
+        }
+        
     }
 
     if(search){
@@ -36,8 +49,8 @@ export function SearchBar({movies}:MovieProps){
     return(
         <div className='dropdown searcher'>
             <div className="input-group mb3 dropdown-toggle" data-bs-toggle="dropdown">
-                <input className="form-control search-input" onChange={searcher} type="text" value={search}/>
-                <button className="input-group-text search-btn"> <Search></Search></button>
+                <input className="form-control search-input" onChange={searcher} onKeyDown={enter} type="text" value={search}/>
+                <button className="input-group-text search-btn" onClick={searchNavigate}> <Search></Search> </button>
             </div>
             <ul className="dropdown-menu">
                 {moviesSearch.map((movie) =>(

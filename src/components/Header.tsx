@@ -10,7 +10,7 @@ function Header(){
             <SearchBar movies={movies}></SearchBar>
             <nav className={styles.navList}>
                 <li>
-                    <Link to="/Inicio">Inicio</Link>
+                    <Link to="/inicio">Inicio</Link>
                 </li>
                 <li>
                     <Link to="/descubrir">Descubrir</Link>

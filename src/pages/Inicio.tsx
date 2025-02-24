@@ -31,9 +31,6 @@ function Inicio(){
                 <Slider movies={topMovies} genres={genresData.genres}></Slider>                
             </div>
             
-            <div style={{height:1000}}>
-
-            </div>
         </div>
         
     )
