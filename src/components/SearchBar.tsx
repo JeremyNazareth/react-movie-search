@@ -33,7 +33,7 @@ export function SearchBar({movies}:MovieProps){
     
     const enter = (event) => {
         if (event.key === 'Enter'){
-            searchNavigate(search)
+            searchNavigate()
         }
         
     }
@@ -42,6 +42,9 @@ export function SearchBar({movies}:MovieProps){
         moviesSearch = movies.filter((movie) =>
             movie.title.toLowerCase().includes(search.toLocaleLowerCase())
         )
+        if(!moviesSearch){
+
+        }
     } else{
         moviesSearch = movies
     }
@@ -53,9 +56,12 @@ export function SearchBar({movies}:MovieProps){
                 <button className="input-group-text search-btn" onClick={searchNavigate}> <Search></Search> </button>
             </div>
             <ul className="dropdown-menu">
-                {moviesSearch.map((movie) =>(
-                    <li key={movie.id} onClick={() => navigating(movie.id)}>{movie.title}</li>
-                ))}
+                { moviesSearch.length === 0 ?(
+                    <p style={{paddingLeft:10, fontSize:16, color:"black", fontWeight:600}}>Sin resultados</p>
+                ) : (
+                    moviesSearch.map((movie) =>(
+                        <li key={movie.id} onClick={() => navigating(movie.id)}>{movie.title}</li>
+                    )))}
             </ul>
             
         </div>
