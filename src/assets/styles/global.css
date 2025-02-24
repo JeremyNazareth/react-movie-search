@@ -1,10 +1,12 @@
 html{
-    font-size: 13px;
+    font-size: 12px;
+    overflow-y: scroll
 }
 
 * {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;   
     color: #2E8B57;
+    scrollbar-gutter: auto;
 }
 
 .app-body{
@@ -21,7 +23,6 @@ html{
     justify-content: center;
     width: 80%;
     height: 1000px;
-    
 }
 
 h4 {
@@ -71,6 +72,7 @@ h4 {
 .dropdown-menu a:hover{
     background-color: gray;
 }
+
 .searcher {
     width: 500px;
 }
