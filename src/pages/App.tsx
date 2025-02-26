@@ -17,12 +17,13 @@ function App() {
           <Header></Header>
           <div className="app-body">
             <Routes>
+            <Route path='/' element={<Inicio />}/>
               <Route path='/inicio' element={<Inicio />}/>
               <Route path='/descubrir' element={<Descubrir />}/>
               <Route path='/favoritos' element={<Favoritos />}/>
               <Route path='/contacto' element={<Contacto />}/>
               <Route path='/movie/:id' element={<MovieDetails />}/>
-              <Route path='/search/:search' element={<Search />}/>
+              <Route path='/search/:search?' element={<Search />}/>
             </Routes>  
           </div>    
       </div>

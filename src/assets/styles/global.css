@@ -20,9 +20,8 @@ html{
 .app-content{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
+    align-items: center;
+    width: 80%;
     height: 1000px;
 }
 

@@ -1,0 +1,43 @@
+.temporaryContainer{
+    width: 70%;
+}
+
+.title{
+    align-items: start;
+    color: black;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 75px;
+}
+
+.content{
+    display: flex;
+    gap: 20px;
+}
+
+.genresFilter{
+    background-color: black;
+    height: 300px;
+    width: 250px;
+}
+
+.searchedMovies{
+    padding: 0 20px;
+    height: 800px;
+    width: 700px;
+}
+
+.movie{
+    display: flex;
+    gap: 15px;
+}
+
+.poster{
+    width: 175px;
+    height: 225px;
+    border-radius: 10px;
+}
+
+.movieText{
+        
+}
