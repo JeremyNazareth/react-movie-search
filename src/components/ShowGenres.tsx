@@ -1,4 +1,4 @@
-import styles from "./ShowGenres.module.css"
+import styles from "./modules/ShowGenres.module.css"
 
 const ShowGenres = ({genres}) => {
     console.log("Genres recibidos:", genres);

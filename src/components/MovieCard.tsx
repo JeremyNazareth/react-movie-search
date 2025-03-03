@@ -1,4 +1,4 @@
-import styles from './MovieCard.module.css'
+import styles from './modules/MovieCard.module.css'
 
 interface Movie {
     id: number;

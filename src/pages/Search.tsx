@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import styles from "../components/Search.module.css"
+import styles from "../components/modules/Search.module.css"
 
 
 const Search = () => {

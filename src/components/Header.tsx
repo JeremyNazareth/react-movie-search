@@ -1,4 +1,4 @@
-import styles from "./header.module.css";
+import styles from "./modules/Header.module.css";
 import { Link } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import movies from '../assets/data/movies.json'
