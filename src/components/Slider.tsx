@@ -13,7 +13,7 @@ interface Movie {
     title: string,
     poster_path: string,
     overview: string,
-    vote_average: string, 
+    vote_average: number, 
     original_language: string,
     release_date: string,
     genre_ids: []
@@ -50,7 +50,7 @@ const Slider = ({movies, genres}:GenresProps & MoviesProps) => {
                                 <p className={styles.ItemOverview}>{movie.overview}</p>
                                 <hr className={styles.ItemHr} />
                                 <div className={styles.ItemDescription}>
-                                    <p>Ranking: {movie.vote_average}</p>
+                                    <p>Ranking: {movie.vote_average.toFixed(1)}</p>
                                     <p>Original language: {movie.original_language}</p>
                                     <p>Release Date: {movie.release_date}</p>
                                 </div>

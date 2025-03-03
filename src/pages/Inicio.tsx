@@ -2,7 +2,7 @@ import popularMovies from '../assets/data/movies.json';
 import topMovies from '../assets/data/topRated.json'
 import MovieCard from '../components/MovieCard';
 import genresData from '../assets/data/genres.json'
-import styles from '../components/Inicio.module.css'
+import styles from '../components/modules/Inicio.module.css'
 import Slider from '../components/Slider'
 
 

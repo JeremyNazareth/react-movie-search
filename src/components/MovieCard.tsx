@@ -19,7 +19,7 @@ function MovieCard ({ movie } : MovieProps) {
             <img className={styles.poster} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}/>
             <div className={styles.movieData}>
                 <h3>{movie.title}</h3>
-                <h4>{movie.vote_average}</h4>
+                <h4>{movie.vote_average.toFixed(1)}</h4>
             </div>
         </div>      
     );

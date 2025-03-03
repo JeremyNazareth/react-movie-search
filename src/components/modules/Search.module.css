@@ -16,29 +16,52 @@
 }
 
 .genresFilter{
-    background-color: black;
+    
     height: 300px;
     width: 250px;
+    border: 2px solid rgb(107, 138, 111, 0.5);
+    border-radius: 5px;
 }
 
 .searchedMovies{
+    display: flex;
+    flex-direction: column;
     padding: 0 20px;
     height: 800px;
     width: 700px;
-    border-radius: 1px solid cyan;
+    gap: 16px;
 }
 
 .movie{
     display: flex;
     gap: 15px;
+    border-bottom: 2.6px solid rgb(54, 129, 83, 0.6);
+    border-radius: 1px;
 }
+
 
 .poster{
     width: 175px;
     height: 225px;
-    border-radius: 10px;
+    border-radius: 3px;
+    margin-bottom: 17px;
+    
 }
 
-.movieText{
-        
+.movieText h3{
+    margin-top: 10px;
+}
+
+.movieText h5{
+    color: gray;
+}
+
+.movieText p{
+    color: black;
+    margin-top: 15px;
+}
+
+.rating{
+    font-size: 18px;
+    font-weight: 500;
 }
