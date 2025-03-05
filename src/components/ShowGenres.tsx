@@ -1,9 +1,8 @@
 import styles from "./modules/ShowGenres.module.css"
 
 const ShowGenres = ({genres}) => {
-    console.log("Genres recibidos:", genres);
-    if (!Array.isArray(genres)) {
-        console.error("ShowGenres: 'genres' no es un array", genres);
+
+    if (!Array.isArray(genres)) {\
         return <p>No hay géneros disponibles</p>;
     }
 

@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "./modules/Slider.module.css";
 import {MoveRight, MoveLeft} from 'lucide-react';
 
-
 interface Genre {
     id: number,
     name: string

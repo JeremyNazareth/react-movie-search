@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 import styles from "../components/modules/Search.module.css"
 import movies from "../assets/data/movies.json"
 import genres from "../assets/data/genres.json"
+import ShowGenres from '../components/ShowGenres'
 import { useState, useEffect } from "react"
 const Search = () => {
 
@@ -18,36 +19,42 @@ const Search = () => {
 
     const {search} = useParams();
     const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
-    const [filteredMovies, setFilteredMovies] = useState<Movie[]>([]);
-
+    const [currentMovies, setCurrentMovies] = useState<Movie[]>([]);
+    const [searchedMovies, setSearchedMovies] = useState<Movie[]>([]);
     
     
     const test =  (event: React.ChangeEvent<HTMLInputElement>) => {
         
         const { id , checked } = event.target;
         setSelectedFilters((prev) => 
-        checked ? [...prev, id] : prev.filter((g) => g !== id) 
+            checked ? [...prev, id] : prev.filter((g) => g !== id) 
         )        
         
     }
 
-    console.log(selectedFilters)
     useEffect(() =>{
-        setFilteredMovies(movies.filter((movie) =>
-            movie.title.toLowerCase().includes(search ? search  : "Desconocido")))        
+
+        const filteredMovies =movies.filter((movie) =>
+            movie.title.toLowerCase().includes(search ? search  : "Desconocido"))
+
+        setSearchedMovies(filteredMovies)
+        setCurrentMovies(filteredMovies)
+        
     }, [search]);
 
     useEffect(() =>{
+
         if (selectedFilters.length > 0){
-            console.log("hola")
-            setFilteredMovies(filteredMovies.filter((movie) =>
-                movie.genre_ids.some((genre) => selectedFilters.includes(genre.toString()))
-                
+            setCurrentMovies(searchedMovies.filter((movie) =>{
+                const isMatch = movie.genre_ids.every((filter) => selectedFilters.includes(filter.toString()))
+                console.log(isMatch)
+                return isMatch
+            }
             ))
         } else{
-            setFilteredMovies(movies)
+            setCurrentMovies(searchedMovies)
         }
-    }, [selectedFilters, movies])
+    }, [selectedFilters, searchedMovies])
     
     {/*
         setFilteredMovies(currentMovies.filter((movie) =>{
@@ -73,7 +80,7 @@ const Search = () => {
                         </ul>
                     </div>
                     <div className={styles.searchedMovies}>
-                        {filteredMovies.map((movie) =>(
+                        {currentMovies.map((movie) =>(
                             <div className={styles.movie}>
                                 <img className={styles.poster} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" />
                                 <div className={styles.movieText}>
@@ -81,6 +88,9 @@ const Search = () => {
                                     <h5>{movie.release_date}</h5>
                                     <p>{movie.overview}</p>
                                     <p className={styles.rating}>{movie.vote_average.toFixed(1)}</p>
+                                    {/* <p>{<ShowGenres genres={genres.genres}></ShowGenres>}</p> */}
+                                    
+                                        
                                     
                                 </div>
                             </div>
