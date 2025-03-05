@@ -16,7 +16,7 @@ interface Movie {
     vote_average: number, 
     original_language: string,
     release_date: string,
-    genre_ids: []
+    genre_ids: number[]
 }
 
 interface MoviesProps {
