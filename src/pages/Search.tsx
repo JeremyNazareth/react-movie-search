@@ -46,9 +46,47 @@ const Search = () => {
 
         if (selectedFilters.length > 0){
             setCurrentMovies(searchedMovies.filter((movie) =>{
+
+                const movieGenres = Object(movie.genre_ids)
+                
+                const oneIsMatch = selectedFilters.some((filter) => movieGenres.includes(Number(filter)))
+                
+                function oneIsUnmatched (): boolean {
+                    
+                    let match = true
+
+                    for(let a in selectedFilters){
+                        let point = 0
+                        
+                        if(movieGenres.includes(Number(selectedFilters[a]))){
+                            console.log("Point + 1")
+                            point = 1 
+                        }
+
+                        if (point == 0 ){
+                            match = false
+                            console.log("Es un filtro unmatch:" + selectedFilters[a] + "point: " + point)
+                            break
+                        }
+                        if (point == 1){
+                            console.log("Es un filtro match:" + selectedFilters[a] + "point: " + point)
+                            match = true
+                            
+                        }
+                            
+                        
+                    }
+                    return match
+                } 
+                console.log(oneIsMatch)
+                console.log(oneIsUnmatched())
+                return (oneIsMatch && oneIsUnmatched())
+                
+                
+                /* 
                 const isMatch = movie.genre_ids.every((filter) => selectedFilters.includes(filter.toString()))
-                console.log(isMatch)
-                return isMatch
+                */
+
             }
             ))
         } else{
