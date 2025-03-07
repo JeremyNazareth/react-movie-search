@@ -52,13 +52,14 @@
 .movie{
     display: flex;
     gap: 15px;
+    height: 250px;
     border-bottom: 2.6px solid rgb(54, 129, 83, 0.6);
     border-radius: 1px;
 }
 
 
 .poster{
-    width: 175px;
+    width: 150px;
     height: 225px;
     border-radius: 3px;
     margin-bottom: 17px;
@@ -66,7 +67,7 @@
 }
 
 .movieText h3{
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .movieText h5{
@@ -79,6 +80,7 @@
 }
 
 .rating{
+    margin: 0;
     font-size: 18px;
     font-weight: 500;
 }
