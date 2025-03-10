@@ -49,7 +49,6 @@ const Search = () => {
             setCurrentMovies(searchedMovies.filter((movie) =>{
 
                 const movieGenres = Object(movie.genre_ids)
-                
                 const oneIsMatch = selectedFilters.some((filter) => movieGenres.includes(Number(filter)))
                 
                 function oneIsUnmatched (): boolean {

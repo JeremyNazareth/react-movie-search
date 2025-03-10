@@ -22,8 +22,9 @@ export function SearchBar({movies}:MovieProps){
         setSearch(e.target.value.toLowerCase())
     }
 
-    const navigating = (id: number) => {
+    const navigating = (id: string) => {
         navigate(`/movie/${id}`);
+        console.log(typeof(id) + ":" +id)
     }
 
     const searchNavigate = () => {
@@ -60,7 +61,7 @@ export function SearchBar({movies}:MovieProps){
                     <p style={{paddingLeft:10, fontSize:16, color:"black", fontWeight:600}}>Sin resultados</p>
                 ) : (
                     moviesSearch.map((movie) =>(
-                        <li key={movie.id} onClick={() => navigating(movie.id)}>{movie.title}</li>
+                        <li key={movie.id} onClick={() => navigating(movie.id.toString())}>{movie.title}</li>
                     )))}
             </ul>
             

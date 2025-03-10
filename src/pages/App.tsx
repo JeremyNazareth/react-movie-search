@@ -22,7 +22,7 @@ function App() {
               <Route path='/descubrir' element={<Descubrir />}/>
               <Route path='/favoritos' element={<Favoritos />}/>
               <Route path='/contacto' element={<Contacto />}/>
-              <Route path='/movie/:id' element={<MovieDetails />}/>
+              <Route path='/movie/:id?' element={<MovieDetails />}/>
               <Route path='/search/:search?' element={<Search />}/>
             </Routes>  
           </div>    
