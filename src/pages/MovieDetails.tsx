@@ -11,15 +11,15 @@ const MovieDetails = () => {
     
 
     useEffect (() =>{
-        const mainDetails = document.getElementById('mainDetails');
-        mainDetails.style.background =
+        const details = document.getElementById('details');
+        details.style.background =
         `linear-gradient(to right,rgb(40, 94, 49) 30%,rgba(0,0,0,0.1) 70%),
         
         linear-gradient(to left,rgba(40, 94, 49),rgba(0,0,0,0)),
         url(https://image.tmdb.org/t/p/w1280${movie.backdrop_path})`;
-        mainDetails.style.backgroundRepeat = 'no-repeat';
-        mainDetails.style.backgroundPosition = '180% 0%';
-        mainDetails.style.backgroundColor = 'black';
+        details.style.backgroundRepeat = 'no-repeat';
+        details.style.backgroundPosition = '180% 0%';
+        details.style.backgroundColor = 'black';
         console.log(`https://image.tmdb.org/t/p/w1280${movie.backdrop_path}`)
     },[movie]);
     
@@ -27,8 +27,29 @@ const MovieDetails = () => {
     return(
         <div className='app-content'>
             <div className={style.test}>
-                <div id='mainDetails' className={style.mainDetails}>
-                
+                <div id='details' className={style.details}>
+                    <div className={style.mainDetails}>
+                        <img src={`https://image.tmdb.org/t/p/w500${movie?.poster_path}`} alt="" />
+                    </div>
+                    <div className={style.subDetails}>
+                        <h1>{movie?.title}: {movie?.tagline}</h1>
+                        <h3>{movie?.release_date}</h3>
+                        <h2>{movie?.vote_average.toFixed(1)}</h2>
+                        <h4>Overview</h4>
+                        <h5> {movie?.runtime}mins</h5>
+                        <div className={style.overview}>
+                            <h5>{movie?.overview}</h5>
+                        </div>
+                        <h4>Original Language</h4>
+                        <div>
+                            <h5>{movie?.original_language}</h5>
+                        </div>
+                        <h4>Production company</h4>
+                        <div>
+                            <h5>{movie?.production_companies[0].name}</h5>
+                        </div>
+                        
+                    </div>
                 </div>
                 
                 
