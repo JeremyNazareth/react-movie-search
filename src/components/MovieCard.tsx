@@ -1,4 +1,6 @@
 import styles from './modules/MovieCard.module.css'
+import { useNavigate } from "react-router-dom";
+
 
 interface Movie {
     id: number;
@@ -13,9 +15,19 @@ interface Movie {
 interface MovieProps {    
     movie: Movie;
 }
+
+
 function MovieCard ({ movie } : MovieProps) {
+
+    let navigate = useNavigate()
+
+    const navigating = (id: string) => {
+        navigate(`/movie/${id}`);
+        console.log(typeof(id) + ":" +id)
+    }
+
     return(
-        <div className={styles.movieCard}>
+        <div className={styles.movieCard} onClick={() => navigating(movie.id.toString())}>
             <img className={styles.poster} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}/>
             <div className={styles.movieData}>
                 <h3>{movie.title}</h3>
