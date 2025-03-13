@@ -13,6 +13,7 @@ Este proyecto está licenciado bajo la Creative Commons Attribution-NonCommercia
 ✅ Permisos:
 Compartir: Puedes copiar y redistribuir el material en cualquier medio o formato.
 Adaptar: Puedes remixar, transformar y construir sobre el material.
+
 🚫 Restricciones:
 No se permite el uso comercial: No puedes utilizar este proyecto con fines comerciales sin una autorización expresa del autor.
 Debe otorgarse crédito: Si utilizas o modificas este proyecto, debes mencionar al creador original.
