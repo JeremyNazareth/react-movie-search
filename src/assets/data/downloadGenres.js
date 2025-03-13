@@ -1,7 +1,7 @@
 import fs from 'fs';
 import fetch from 'node-fetch';
 
-const API_KEY = '93561c86d4e411400015148457559807';
+const API_KEY = '';
 const url = 'https://api.themoviedb.org/3/genre/movie/list?api_key=';
 
 

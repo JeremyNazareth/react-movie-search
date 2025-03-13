@@ -1,7 +1,7 @@
 import style from '../components/modules/MovieDetails.module.css'
 import { useParams } from 'react-router-dom'
 import movieDetails from '../assets/data/movieDetails.json'
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 
 const MovieDetails = () => {
@@ -48,11 +48,14 @@ const MovieDetails = () => {
                         <div>
                             <h5>{movie?.production_companies[0].name}</h5>
                         </div>
-                        
                     </div>
                 </div>
-                
-                
+                <div className={style.distribution}>
+                    <h2>Distribution</h2>
+                    <div className={style.cast}>
+
+                    </div>
+                </div>
             </div>
         </div>
         
