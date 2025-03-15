@@ -1,11 +1,21 @@
-import fs from 'fs';
-import fetch from 'node-fetch';
+import {API_KEY, BASE_URL} from './updateData.js'
 
-const API_KEY = '';
-const url = 'https://api.themoviedb.org/3/genre/movie/list?api_key=';
+export async function fetchGenres() {
+  try{
+    let response = fetch(`${BASE_URL}/genre/movie/list?api_key=${API_KEY}`)
+    response.json()
+    let data = response.json
+    return data;
+
+    }
+
+    catch (error){
+
+    }
+  
+}
 
 
-fetch(`${url}${API_KEY}`)
   .then(res => res.json())
   .then(data => {
     fs.writeFileSync('genres.json', JSON.stringify(data, null, 2));
