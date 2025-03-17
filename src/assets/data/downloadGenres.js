@@ -1,23 +1,13 @@
 import {API_KEY, BASE_URL} from './updateData.js'
 
 export async function fetchGenres() {
-  try{
-    let response = fetch(`${BASE_URL}/genre/movie/list?api_key=${API_KEY}`)
-    response.json()
-    let data = response.json
-    return data;
-
+  try{    
+    let response = await fetch(`${BASE_URL}/genre/movie/list?api_key=${API_KEY}`)
+    let data = await response.json()
+    return await data;
     }
-
     catch (error){
-
+      console.log(`Error con descargar la lista de genero: ` + error)
     }
   
 }
-
-
-  .then(res => res.json())
-  .then(data => {
-    fs.writeFileSync('genres.json', JSON.stringify(data, null, 2));
-  })
-  .catch(err => console.error(err));

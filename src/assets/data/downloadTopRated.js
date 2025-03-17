@@ -1,16 +1,10 @@
-import fs from 'fs';
-import fetch from 'node-fetch';
+import { API_KEY, BASE_URL } from "./updateData.js";
 
-const BASE_URL = 'https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1';
-const API_KEY = '';
-const JSNAME = 'topRated.json'
 
-fetch(`${BASE_URL}${API_KEY}`)
-    .then(response => response.json())
-    .then(data => {        
-        fs.writeFileSync(JSNAME, JSON.stringify(data.results, null, 2));
-        
-    })
-    .catch(error => {
-        console.error('ERROR');
-    });
+export async function fetchTopRatedMovies (){
+    let response = await fetch(`${BASE_URL}/movie/top_rated?language=en-US&page=1&api_key=${API_KEY}`)
+    let data = await response.json()
+    return await data.results;
+}
+
+    
