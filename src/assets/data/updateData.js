@@ -24,7 +24,7 @@ let topRated = []
 let distribution = []
 
 async function catchIds  (movies) {
-    let moviesId = await movies.map((movie)=> movie.id )
+    let moviesId = movies.map((movie)=> movie.id )
     return moviesId;
 }
 
@@ -33,9 +33,10 @@ const updateData = async () =>{
     let moviesId = await catchIds(movies);
 
     movieDetails = await fetchMovieDetails(moviesId);
+    distribution = await fetchDistribution(moviesId);
+
     genres = await fetchGenres();
     topRated = await fetchTopRatedMovies();
-    distribution = await fetchDistribution(moviesId);
 }
  
 await updateData();

@@ -1,5 +1,60 @@
 [
   {
+    "adult": true,
+    "backdrop_path": null,
+    "belongs_to_collection": null,
+    "budget": 0,
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "homepage": "",
+    "id": 1149912,
+    "imdb_id": null,
+    "origin_country": [],
+    "original_language": "id",
+    "original_title": "Kelas Bintang - Hot Moms",
+    "overview": "",
+    "popularity": 664.117,
+    "poster_path": "/7dBqZmErtrxN9ghOJoW6SimgDo1.jpg",
+    "production_companies": [
+      {
+        "id": 198702,
+        "logo_path": null,
+        "name": "Kelas Bintang",
+        "origin_country": ""
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "ID",
+        "name": "Indonesia"
+      }
+    ],
+    "release_date": "2023-02-09",
+    "revenue": 0,
+    "runtime": 0,
+    "spoken_languages": [
+      {
+        "english_name": "Indonesian",
+        "iso_639_1": "id",
+        "name": "Bahasa indonesia"
+      }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "Kelas Bintang - Hot Moms",
+    "video": false,
+    "vote_average": 5.786,
+    "vote_count": 7
+  },
+  {
     "adult": false,
     "backdrop_path": "/qUc0Hol3eP74dbW4YyqT6oRLYgT.jpg",
     "belongs_to_collection": null,
@@ -28,7 +83,7 @@
     "original_language": "en",
     "original_title": "Mickey 17",
     "overview": "Unlikely hero Mickey Barnes finds himself in the extraordinary circumstance of working for an employer who demands the ultimate commitment to the job… to die, for a living.",
-    "popularity": 26.297,
+    "popularity": 25.061,
     "poster_path": "/edKpE9B5qN3e559OuMCLZdW1iBZ.jpg",
     "production_companies": [
       {
@@ -86,12 +141,12 @@
     "tagline": "He's dying to save mankind.",
     "title": "Mickey 17",
     "video": false,
-    "vote_average": 7.047,
-    "vote_count": 658
+    "vote_average": 7.015,
+    "vote_count": 715
   },
   {
     "adult": false,
-    "backdrop_path": "/nhjXe1Gb3Hq8Q5COjsY7ehZyJl4.jpg",
+    "backdrop_path": null,
     "belongs_to_collection": null,
     "budget": 0,
     "genres": [
@@ -100,452 +155,165 @@
         "name": "Drama"
       },
       {
-        "id": 35,
-        "name": "Comedy"
-      },
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "homepage": "",
+    "id": 1149913,
+    "imdb_id": null,
+    "origin_country": [
+      "ID"
+    ],
+    "original_language": "id",
+    "original_title": "TOGEFILM - Mei Mei",
+    "overview": "",
+    "popularity": 24.942,
+    "poster_path": "/mCJ6shuScPnCh2CS68sPMxGH4UP.jpg",
+    "production_companies": [
       {
-        "id": 53,
-        "name": "Thriller"
+        "id": 198702,
+        "logo_path": null,
+        "name": "Kelas Bintang",
+        "origin_country": ""
+      }
+    ],
+    "production_countries": [],
+    "release_date": "2023-04-06",
+    "revenue": 0,
+    "runtime": 0,
+    "spoken_languages": [
+      {
+        "english_name": "Indonesian",
+        "iso_639_1": "id",
+        "name": "Bahasa indonesia"
+      }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "TOGEFILM - Mei Mei",
+    "video": false,
+    "vote_average": 10,
+    "vote_count": 2
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/AuSip6e3uvQgPnnFQjzdTrOVPx7.jpg",
+    "belongs_to_collection": {
+      "id": 1313822,
+      "name": "Batman Ninja Collection",
+      "poster_path": null,
+      "backdrop_path": "/5uwoP4ZXaKW4P8mREkzFFC7X2c2.jpg"
+    },
+    "budget": 0,
+    "genres": [
+      {
+        "id": 16,
+        "name": "Animation"
       },
       {
         "id": 28,
         "name": "Action"
       }
     ],
-    "homepage": "",
-    "id": 1438267,
-    "imdb_id": null,
-    "origin_country": [
-      "IL"
-    ],
-    "original_language": "he",
-    "original_title": "גמד מחמד 4",
-    "overview": "Four years have passed since Kfar and Gamadi's last fight, which ended in Gamadi's defeat. As time passes, the neverending threat of Gamadi seems to haunt Kfar, and leads him into a life revolving around the constant seek of revenge, violence and hate. And now with Piggy, his best friend, leaving to join the army. Kfar is left to deal with Gamadi on his own.",
-    "popularity": 22.308,
-    "poster_path": "/9jw0tNgP3pRCq3WioDDbjwOI1n4.jpg",
-    "production_companies": [
-      {
-        "id": 254274,
-        "logo_path": null,
-        "name": "פיגי הפקות בעמ",
-        "origin_country": ""
-      }
-    ],
-    "production_countries": [
-      {
-        "iso_3166_1": "IL",
-        "name": "Israel"
-      }
-    ],
-    "release_date": "2025-03-16",
-    "revenue": 0,
-    "runtime": 22,
-    "spoken_languages": [
-      {
-        "english_name": "Hebrew",
-        "iso_639_1": "he",
-        "name": "עִבְרִית"
-      }
-    ],
-    "status": "Released",
-    "tagline": "Psychological, Drama, Comedy, Thriller, Complex",
-    "title": "Gamad Machmad 4",
-    "video": false,
-    "vote_average": 5,
-    "vote_count": 1
-  },
-  {
-    "adult": false,
-    "backdrop_path": null,
-    "belongs_to_collection": null,
-    "budget": 0,
-    "genres": [],
-    "homepage": "",
-    "id": 1439526,
-    "imdb_id": null,
+    "homepage": "https://www.warnerbros.com/movies/batman-ninja-vs-yakuza-league",
+    "id": 1297763,
+    "imdb_id": "tt32508210",
     "origin_country": [
       "US"
     ],
-    "original_language": "en",
-    "original_title": "Full Out",
-    "overview": "In 19th-century Paris at the Salpêtrière Hospital, patients were hypnotized onstage to reproduce the symptoms of hysteria for public audiences. Over a century later, high school cheerleaders are fainting en masse.",
-    "popularity": 22.305,
-    "poster_path": "/eXvVjE5RyNKbxHCmmj1DLu55GKe.jpg",
-    "production_companies": [],
-    "production_countries": [],
-    "release_date": "2025-03-16",
-    "revenue": 0,
-    "runtime": 14,
-    "spoken_languages": [],
-    "status": "Released",
-    "tagline": "",
-    "title": "Full Out",
-    "video": false,
-    "vote_average": 6,
-    "vote_count": 1
-  },
-  {
-    "adult": false,
-    "backdrop_path": null,
-    "belongs_to_collection": null,
-    "budget": 0,
-    "genres": [],
-    "homepage": "",
-    "id": 1439514,
-    "imdb_id": null,
-    "origin_country": [
-      "US"
-    ],
-    "original_language": "en",
-    "original_title": "The Phalanx",
-    "overview": "Letters from the Ceresco community trace the fragility of harmony, the dream of life in association. Members of the phalanx drift apart, lingering in private corners, suspended in speculative time.",
-    "popularity": 22.305,
-    "poster_path": "/4wgiJBrpvLh9kOe8feXd5MxLbzW.jpg",
-    "production_companies": [],
-    "production_countries": [],
-    "release_date": "2025-03-16",
-    "revenue": 0,
-    "runtime": 13,
-    "spoken_languages": [],
-    "status": "Released",
-    "tagline": "",
-    "title": "The Phalanx",
-    "video": false,
-    "vote_average": 0,
-    "vote_count": 0
-  },
-  {
-    "adult": false,
-    "backdrop_path": null,
-    "belongs_to_collection": null,
-    "budget": 0,
-    "genres": [],
-    "homepage": "",
-    "id": 1439509,
-    "imdb_id": null,
-    "origin_country": [
-      "US"
-    ],
-    "original_language": "en",
-    "original_title": "Songs Overheard in the Shadows",
-    "overview": "Balanced on the edge of what is visible, everything comes from nothingness and returns to nothingness. Strands of consciousness trying to convene with each other. Forms of personal significance in a time of crisis, set free into random motion through chance operations. Recurring details point towards a center.",
-    "popularity": 22.305,
-    "poster_path": "/3Cgx8CMlZ8BL4ayG9fzZYuK5fYZ.jpg",
-    "production_companies": [],
-    "production_countries": [],
-    "release_date": "2025-03-16",
-    "revenue": 0,
-    "runtime": 22,
-    "spoken_languages": [],
-    "status": "Released",
-    "tagline": "",
-    "title": "Songs Overheard in the Shadows",
-    "video": false,
-    "vote_average": 4,
-    "vote_count": 1
-  },
-  {
-    "adult": false,
-    "backdrop_path": "/3IcE36HHehBWHDRXSoEQ6hl5ei8.jpg",
-    "belongs_to_collection": null,
-    "budget": 0,
-    "genres": [
-      {
-        "id": 18,
-        "name": "Drama"
-      }
-    ],
-    "homepage": "",
-    "id": 1440083,
-    "imdb_id": "tt35920664",
-    "origin_country": [
-      "ES"
-    ],
-    "original_language": "es",
-    "original_title": "Marciano García",
-    "overview": "",
-    "popularity": 22.303,
-    "poster_path": "/sdGwrjlFO9NII5mPKf57kCjX9VD.jpg",
+    "original_language": "ja",
+    "original_title": "ニンジャバットマン対ヤクザリーグ",
+    "overview": "The Batman family has returned to the present to discover that Japan has disappeared, and a giant island - Hinomoto - is now in the sky over Gotham City.  At the top sit the Yakuza, a group of superpowered individuals who reign without honor or humanity and look suspiciously like the Justice League. Now, it’s up to Batman and his allies to save Gotham!",
+    "popularity": 23.049,
+    "poster_path": "/3onmLeu48mY87UclP3fk2x7YPqw.jpg",
     "production_companies": [
       {
-        "id": 48089,
-        "logo_path": "/vJjQD0IIdGukQft4uK73wlJLby.png",
-        "name": "Escac Films",
-        "origin_country": "ES"
-      }
-    ],
-    "production_countries": [],
-    "release_date": "2025-03-16",
-    "revenue": 0,
-    "runtime": 0,
-    "spoken_languages": [
-      {
-        "english_name": "Spanish",
-        "iso_639_1": "es",
-        "name": "Español"
-      }
-    ],
-    "status": "Released",
-    "tagline": "",
-    "title": "Marciano García",
-    "video": false,
-    "vote_average": 7,
-    "vote_count": 1
-  },
-  {
-    "adult": false,
-    "backdrop_path": "/cShaLua5ZlSGlP5esqsJ1dTBrWi.jpg",
-    "belongs_to_collection": null,
-    "budget": 0,
-    "genres": [
-      {
-        "id": 18,
-        "name": "Drama"
+        "id": 93154,
+        "logo_path": "/vTNoVe4tBhY1hshuVVF7fA2RbSD.png",
+        "name": "Kamikaze Douga",
+        "origin_country": "JP"
       },
       {
-        "id": 36,
-        "name": "History"
-      }
-    ],
-    "homepage": "",
-    "id": 1442915,
-    "imdb_id": null,
-    "origin_country": [
-      "BG",
-      "RO"
-    ],
-    "original_language": "bg",
-    "original_title": "Залог",
-    "overview": "Before the Liberation, during the years of the exiled Bulgarian revolutionaries in Romania, the Major and the Prime Minister once shared the same ideals, the same home, and even the same woman. Today, the Major orchestrates a conspiracy to overthrow the government led by his former friend, the Prime Minister. The head of state must be assassinated, and the Prince – dethroned. The woman is part of the plot, but she will try to prevent the fratricide.",
-    "popularity": 22.293,
-    "poster_path": "/aqsDDMTnmTZwbbZmDepqLFPdoiZ.jpg",
-    "production_companies": [
-      {
-        "id": 49345,
-        "logo_path": null,
-        "name": "Omega Films",
-        "origin_country": "BG"
-      }
-    ],
-    "production_countries": [
-      {
-        "iso_3166_1": "BG",
-        "name": "Bulgaria"
+        "id": 3627,
+        "logo_path": "/pBfPYpzg5o3EoBPfrFKzTRi8MGr.png",
+        "name": "Warner Bros. Japan",
+        "origin_country": "JP"
       },
       {
-        "iso_3166_1": "RO",
-        "name": "Romania"
-      }
-    ],
-    "release_date": "2025-03-16",
-    "revenue": 0,
-    "runtime": 100,
-    "spoken_languages": [
-      {
-        "english_name": "Bulgarian",
-        "iso_639_1": "bg",
-        "name": "български език"
+        "id": 429,
+        "logo_path": "/4Y00XuSMuP1gimd0jP6JT57QbCI.png",
+        "name": "DC",
+        "origin_country": "US"
       },
       {
-        "english_name": "English",
-        "iso_639_1": "en",
-        "name": "English"
-      },
-      {
-        "english_name": "French",
-        "iso_639_1": "fr",
-        "name": "Français"
-      },
-      {
-        "english_name": "Romanian",
-        "iso_639_1": "ro",
-        "name": "Română"
-      },
-      {
-        "english_name": "Turkish",
-        "iso_639_1": "tr",
-        "name": "Türkçe"
-      }
-    ],
-    "status": "Released",
-    "tagline": "At stake in this plot is the lives of the two men and the future of Bulgaria.",
-    "title": "Bet",
-    "video": false,
-    "vote_average": 0,
-    "vote_count": 0
-  },
-  {
-    "adult": false,
-    "backdrop_path": null,
-    "belongs_to_collection": null,
-    "budget": 0,
-    "genres": [
-      {
-        "id": 35,
-        "name": "Comedy"
-      }
-    ],
-    "homepage": "",
-    "id": 1443480,
-    "imdb_id": "tt35304037",
-    "origin_country": [
-      "DE"
-    ],
-    "original_language": "de",
-    "original_title": "Der geräderte Mensch",
-    "overview": "",
-    "popularity": 22.291,
-    "poster_path": "/4gQ2ZnfZ6u6WB9iWmWm9sLCLqm1.jpg",
-    "production_companies": [
-      {
-        "id": 255358,
-        "logo_path": null,
-        "name": "Guinea Pictures",
-        "origin_country": ""
-      }
-    ],
-    "production_countries": [],
-    "release_date": "2025-03-16",
-    "revenue": 0,
-    "runtime": 0,
-    "spoken_languages": [
-      {
-        "english_name": "German",
-        "iso_639_1": "de",
-        "name": "Deutsch"
-      }
-    ],
-    "status": "Released",
-    "tagline": "",
-    "title": "Der geräderte Mensch",
-    "video": false,
-    "vote_average": 0,
-    "vote_count": 0
-  },
-  {
-    "adult": false,
-    "backdrop_path": null,
-    "belongs_to_collection": null,
-    "budget": 0,
-    "genres": [],
-    "homepage": "",
-    "id": 1444331,
-    "imdb_id": null,
-    "origin_country": [
-      "ES",
-      "VE"
-    ],
-    "original_language": "es",
-    "original_title": "Final",
-    "overview": "One room, two girls. They would be the perfect elements for a new sapphic love story, except for Alex and Pau, which is the end of it all. Both try to “do it right”, but this was never synonymous with easy.",
-    "popularity": 22.215,
-    "poster_path": "/nSNOzbstoR0dW960oT1c33qGiYz.jpg",
-    "production_companies": [],
-    "production_countries": [],
-    "release_date": "2025-03-16",
-    "revenue": 0,
-    "runtime": 10,
-    "spoken_languages": [
-      {
-        "english_name": "Spanish",
-        "iso_639_1": "es",
-        "name": "Español"
-      }
-    ],
-    "status": "Released",
-    "tagline": "",
-    "title": "Final",
-    "video": false,
-    "vote_average": 5,
-    "vote_count": 1
-  },
-  {
-    "adult": false,
-    "backdrop_path": "/nf6ldbdXgPd49c07MpVqvdzahcC.jpg",
-    "belongs_to_collection": null,
-    "budget": 0,
-    "genres": [
-      {
-        "id": 18,
-        "name": "Drama"
-      }
-    ],
-    "homepage": "",
-    "id": 1104024,
-    "imdb_id": "tt17041792",
-    "origin_country": [
-      "GB"
-    ],
-    "original_language": "en",
-    "original_title": "The Bitter Tears of Zahra Zand",
-    "overview": "An 80s-set Iranian reimagining Of Fassbinder's 'Petra Von Kant'. A legendary Iranian fashion designer clings to the ghosts of her past - fighting for relevance, identity, and survival in a country that isn’t her own.",
-    "popularity": 21.144,
-    "poster_path": "/3kh2YcUy0yGob7qG02Gi0VT8KBo.jpg",
-    "production_companies": [
-      {
-        "id": 245493,
-        "logo_path": "/ewXqJOS50xDZ5OU3on4erBO6mf8.png",
-        "name": "Liaison Pictures",
+        "id": 2785,
+        "logo_path": "/l5zW8jjmQOCx2dFmvnmbYmqoBmL.png",
+        "name": "Warner Bros. Animation",
         "origin_country": "US"
       }
     ],
     "production_countries": [
       {
-        "iso_3166_1": "GB",
-        "name": "United Kingdom"
+        "iso_3166_1": "JP",
+        "name": "Japan"
+      },
+      {
+        "iso_3166_1": "US",
+        "name": "United States of America"
       }
     ],
     "release_date": "2025-03-17",
     "revenue": 0,
-    "runtime": 100,
+    "runtime": 90,
     "spoken_languages": [
       {
-        "english_name": "English",
-        "iso_639_1": "en",
-        "name": "English"
+        "english_name": "Japanese",
+        "iso_639_1": "ja",
+        "name": "日本語"
       }
     ],
     "status": "Released",
     "tagline": "",
-    "title": "The Bitter Tears of Zahra Zand",
+    "title": "Batman Ninja vs. Yakuza League",
     "video": false,
-    "vote_average": 0,
-    "vote_count": 0
+    "vote_average": 4.9,
+    "vote_count": 15
   },
   {
     "adult": false,
-    "backdrop_path": null,
+    "backdrop_path": "/jmsEEwHT7GtVaYFiciKSDI4i8C1.jpg",
     "belongs_to_collection": null,
     "budget": 0,
     "genres": [
       {
-        "id": 99,
-        "name": "Documentary"
+        "id": 18,
+        "name": "Drama"
       }
     ],
     "homepage": "",
-    "id": 1443695,
-    "imdb_id": "tt33265852",
+    "id": 1359893,
+    "imdb_id": null,
     "origin_country": [
       "IT"
     ],
     "original_language": "it",
-    "original_title": "Eyes Everywhere",
-    "overview": "Jodie, a police inspector, is tasked with finding out who sabotaged the technological system that governs every aspect of daily life: from transport to global security, from health care to management of essential services. Without a quick solution, hospitals will collapse, casualties will increase and the country could be plunged into an apocalyptic scenario. To carry out the investigation, Jodie must rely on her father Mark and an unlikely ally: Matt, a hacker with a criminal past. The clues seem to lead to a single culprit, Doctor Borghese, a respected psychologist who lost his job because of artificial intelligence. But is he really responsible, or is someone trying to frame him?\r The film explores, through interviews with experts and fictional scenarios, how technology is transforming cities, mobility, healthcare, sustainability and even space exploration.",
-    "popularity": 21.143,
-    "poster_path": "/inJjkPchqjXe3vLajI7MFVldUSb.jpg",
+    "original_title": "100 di questi anni",
+    "overview": " ",
+    "popularity": 22.899,
+    "poster_path": "/57v4gE3Dx6TViwIe1BiC2rgghhs.jpg",
     "production_companies": [
       {
-        "id": 255394,
-        "logo_path": null,
-        "name": "Nymeria Films",
-        "origin_country": ""
+        "id": 317,
+        "logo_path": "/HJj0J9Tk6AGcLpL4O7mI3bsccM.png",
+        "name": "Istituto Luce Cinecittà",
+        "origin_country": "IT"
       },
       {
-        "id": 7063,
-        "logo_path": null,
-        "name": "BIP",
-        "origin_country": ""
+        "id": 86177,
+        "logo_path": "/3AKkfIbKVXiMUBx5RRaU4T7Y9d8.png",
+        "name": "Groenlandia",
+        "origin_country": "IT"
       }
     ],
     "production_countries": [
@@ -556,55 +324,20 @@
     ],
     "release_date": "2025-03-17",
     "revenue": 0,
-    "runtime": 0,
-    "spoken_languages": [],
-    "status": "Released",
-    "tagline": "",
-    "title": "Eyes Everywhere",
-    "video": false,
-    "vote_average": 0,
-    "vote_count": 0
-  },
-  {
-    "adult": false,
-    "backdrop_path": null,
-    "belongs_to_collection": null,
-    "budget": 0,
-    "genres": [
-      {
-        "id": 35,
-        "name": "Comedy"
-      }
-    ],
-    "homepage": "https://www.netflix.com/title/81713944",
-    "id": 1439890,
-    "imdb_id": "tt35924806",
-    "origin_country": [
-      "US"
-    ],
-    "original_language": "en",
-    "original_title": "Bert Kreischer: Lucky",
-    "overview": "Losing 45 pounds. Getting parenting advice from Snoop Dogg. Bert Kreischer knows he's the luckiest guy around — and he's recounting his blessings.",
-    "popularity": 21.14,
-    "poster_path": "/Tuln36rarqdrSnXemkb7oBRmCM.jpg",
-    "production_companies": [],
-    "production_countries": [],
-    "release_date": "2025-03-17",
-    "revenue": 0,
-    "runtime": 67,
+    "runtime": 80,
     "spoken_languages": [
       {
-        "english_name": "English",
-        "iso_639_1": "en",
-        "name": "English"
+        "english_name": "Italian",
+        "iso_639_1": "it",
+        "name": "Italiano"
       }
     ],
     "status": "Released",
     "tagline": "",
-    "title": "Bert Kreischer: Lucky",
+    "title": "100 di questi anni",
     "video": false,
-    "vote_average": 0,
-    "vote_count": 0
+    "vote_average": 9,
+    "vote_count": 1
   },
   {
     "adult": false,
@@ -626,7 +359,7 @@
     "original_language": "en",
     "original_title": "The Last Goodbye",
     "overview": "Two estranged siblings attempt to reconcile after the death of their younger brother.",
-    "popularity": 21.14,
+    "popularity": 22.698,
     "poster_path": "/zYDFxnKgWBTahFItkGo5Uyn8bLz.jpg",
     "production_companies": [
       {
@@ -645,176 +378,8 @@
     "tagline": "",
     "title": "The Last Goodbye",
     "video": false,
-    "vote_average": 0,
-    "vote_count": 0
-  },
-  {
-    "adult": false,
-    "backdrop_path": null,
-    "belongs_to_collection": null,
-    "budget": 0,
-    "genres": [
-      {
-        "id": 99,
-        "name": "Documentary"
-      }
-    ],
-    "homepage": "",
-    "id": 1435057,
-    "imdb_id": "tt35888883",
-    "origin_country": [
-      "LV",
-      "LT"
-    ],
-    "original_language": "lt",
-    "original_title": "Sacrum ir Profanum Pievėnuose",
-    "overview": "Once a year, a quiet and secluded village in the north-western part of Lithuania comes alive to celebrate Catholic Easter, doing its best to preserve the vanishing ancient tradition of the Guardians of the Cross. With gentle humor observing the preparations of the local community for the vigil and immersing the audience in Easter night, the filmmakers raise questions about the relationship between the sacred and profane in the modern world.",
-    "popularity": 21.134,
-    "poster_path": "/u1I49qAgXCSGiwq8ixMULl9SwJg.jpg",
-    "production_companies": [
-      {
-        "id": 74950,
-        "logo_path": null,
-        "name": "Monoklis",
-        "origin_country": ""
-      }
-    ],
-    "production_countries": [
-      {
-        "iso_3166_1": "LT",
-        "name": "Lithuania"
-      }
-    ],
-    "release_date": "2025-03-17",
-    "revenue": 0,
-    "runtime": 80,
-    "spoken_languages": [
-      {
-        "english_name": "Lithuanian",
-        "iso_639_1": "lt",
-        "name": "Lietuvių"
-      }
-    ],
-    "status": "Released",
-    "tagline": "",
-    "title": "Sacrum and Profanum in Pievenai",
-    "video": false,
-    "vote_average": 0,
-    "vote_count": 0
-  },
-  {
-    "adult": false,
-    "backdrop_path": "/i7qlKvC5se9mzHNc1LLJiGvI9so.jpg",
-    "belongs_to_collection": null,
-    "budget": 0,
-    "genres": [
-      {
-        "id": 53,
-        "name": "Thriller"
-      },
-      {
-        "id": 80,
-        "name": "Crime"
-      },
-      {
-        "id": 28,
-        "name": "Action"
-      }
-    ],
-    "homepage": "",
-    "id": 1433719,
-    "imdb_id": "tt35669717",
-    "origin_country": [
-      "US"
-    ],
-    "original_language": "en",
-    "original_title": "High Ground",
-    "overview": "When a mysterious prisoner lands in his jail, a border town sheriff faces the wrath of a brutal cartel.",
-    "popularity": 21.134,
-    "poster_path": "/p18YjffOB3RzQ4fpZMrQkHUaJNU.jpg",
-    "production_companies": [
-      {
-        "id": 177095,
-        "logo_path": "/nfwWCvMNaK687bjyM7un8p7ilz0.png",
-        "name": "SP Media Group",
-        "origin_country": "US"
-      }
-    ],
-    "production_countries": [
-      {
-        "iso_3166_1": "US",
-        "name": "United States of America"
-      }
-    ],
-    "release_date": "2025-03-17",
-    "revenue": 0,
-    "runtime": 92,
-    "spoken_languages": [
-      {
-        "english_name": "English",
-        "iso_639_1": "en",
-        "name": "English"
-      }
-    ],
-    "status": "Released",
-    "tagline": "",
-    "title": "High Ground",
-    "video": false,
-    "vote_average": 0,
-    "vote_count": 0
-  },
-  {
-    "adult": false,
-    "backdrop_path": "/xMJB53yUT01yNtu198tg4rnY8b.jpg",
-    "belongs_to_collection": null,
-    "budget": 0,
-    "genres": [
-      {
-        "id": 28,
-        "name": "Action"
-      }
-    ],
-    "homepage": "",
-    "id": 1392821,
-    "imdb_id": "tt34722478",
-    "origin_country": [
-      "US"
-    ],
-    "original_language": "en",
-    "original_title": "Gladiators",
-    "overview": "When a once great gladiator's betrothed is murdered, he vows to hunt down the killer. But when he discovers the murderer is no stranger, the gladiator must enter the Colosseum once more to avenge his bride.",
-    "popularity": 21.09,
-    "poster_path": "/3ecBMVWe2xRhHKcTcRkuqLk85jq.jpg",
-    "production_companies": [
-      {
-        "id": 1311,
-        "logo_path": "/ic2bTizdzRLDVzAvN7MXdUg3WQV.png",
-        "name": "The Asylum",
-        "origin_country": "US"
-      }
-    ],
-    "production_countries": [
-      {
-        "iso_3166_1": "US",
-        "name": "United States of America"
-      }
-    ],
-    "release_date": "2024-11-14",
-    "revenue": 0,
-    "runtime": 95,
-    "spoken_languages": [
-      {
-        "english_name": "English",
-        "iso_639_1": "en",
-        "name": "English"
-      }
-    ],
-    "status": "Released",
-    "tagline": "Again in the arena.",
-    "title": "Gladiators",
-    "video": false,
-    "vote_average": 10,
-    "vote_count": 1
+    "vote_average": 7,
+    "vote_count": 2
   },
   {
     "adult": false,
@@ -840,7 +405,7 @@
     "original_language": "ca",
     "original_title": "La terra negra",
     "overview": "Miquel moves to a town in the Spanish countryside. He is there to work in an industrial mill, ran by siblings María and Ángel. María, who dislikes her work and the neighbours she has to do business with, finds in Miquel a person similar to her.",
-    "popularity": 21.059,
+    "popularity": 22.617,
     "poster_path": "/3iRxZlTSkXUON99zEq1iZQV2VH2.jpg",
     "production_companies": [
       {
@@ -892,12 +457,12 @@
     "tagline": "",
     "title": "La terra negra",
     "video": false,
-    "vote_average": 0,
-    "vote_count": 0
+    "vote_average": 4,
+    "vote_count": 1
   },
   {
     "adult": false,
-    "backdrop_path": "/jmsEEwHT7GtVaYFiciKSDI4i8C1.jpg",
+    "backdrop_path": "/nf6ldbdXgPd49c07MpVqvdzahcC.jpg",
     "belongs_to_collection": null,
     "budget": 0,
     "genres": [
@@ -907,28 +472,237 @@
       }
     ],
     "homepage": "",
-    "id": 1359893,
-    "imdb_id": null,
+    "id": 1104024,
+    "imdb_id": "tt17041792",
+    "origin_country": [
+      "GB"
+    ],
+    "original_language": "en",
+    "original_title": "The Bitter Tears of Zahra Zand",
+    "overview": "An 80s-set Iranian reimagining Of Fassbinder's 'Petra Von Kant'. A legendary Iranian fashion designer clings to the ghosts of her past - fighting for relevance, identity, and survival in a country that isn’t her own.",
+    "popularity": 22.449,
+    "poster_path": "/3kh2YcUy0yGob7qG02Gi0VT8KBo.jpg",
+    "production_companies": [
+      {
+        "id": 245493,
+        "logo_path": "/ewXqJOS50xDZ5OU3on4erBO6mf8.png",
+        "name": "Liaison Pictures",
+        "origin_country": "US"
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "GB",
+        "name": "United Kingdom"
+      }
+    ],
+    "release_date": "2025-03-17",
+    "revenue": 0,
+    "runtime": 100,
+    "spoken_languages": [
+      {
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
+      }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "The Bitter Tears of Zahra Zand",
+    "video": false,
+    "vote_average": 8,
+    "vote_count": 1
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/i7qlKvC5se9mzHNc1LLJiGvI9so.jpg",
+    "belongs_to_collection": null,
+    "budget": 0,
+    "genres": [
+      {
+        "id": 53,
+        "name": "Thriller"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      },
+      {
+        "id": 28,
+        "name": "Action"
+      }
+    ],
+    "homepage": "",
+    "id": 1433719,
+    "imdb_id": "tt35669717",
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_title": "High Ground",
+    "overview": "When a mysterious prisoner lands in his jail, a border town sheriff faces the wrath of a brutal cartel.",
+    "popularity": 22.433,
+    "poster_path": "/p18YjffOB3RzQ4fpZMrQkHUaJNU.jpg",
+    "production_companies": [
+      {
+        "id": 177095,
+        "logo_path": "/nfwWCvMNaK687bjyM7un8p7ilz0.png",
+        "name": "SP Media Group",
+        "origin_country": "US"
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "US",
+        "name": "United States of America"
+      }
+    ],
+    "release_date": "2025-03-17",
+    "revenue": 0,
+    "runtime": 92,
+    "spoken_languages": [
+      {
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
+      }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "High Ground",
+    "video": false,
+    "vote_average": 3.8,
+    "vote_count": 6
+  },
+  {
+    "adult": false,
+    "backdrop_path": null,
+    "belongs_to_collection": null,
+    "budget": 0,
+    "genres": [
+      {
+        "id": 99,
+        "name": "Documentary"
+      }
+    ],
+    "homepage": "",
+    "id": 1435057,
+    "imdb_id": "tt35888883",
+    "origin_country": [
+      "LV",
+      "LT"
+    ],
+    "original_language": "lt",
+    "original_title": "Sacrum ir Profanum Pievėnuose",
+    "overview": "Once a year, a quiet and secluded village in the north-western part of Lithuania comes alive to celebrate Catholic Easter, doing its best to preserve the vanishing ancient tradition of the Guardians of the Cross. With gentle humor observing the preparations of the local community for the vigil and immersing the audience in Easter night, the filmmakers raise questions about the relationship between the sacred and profane in the modern world.",
+    "popularity": 22.429,
+    "poster_path": "/u1I49qAgXCSGiwq8ixMULl9SwJg.jpg",
+    "production_companies": [
+      {
+        "id": 74950,
+        "logo_path": null,
+        "name": "Monoklis",
+        "origin_country": ""
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "LT",
+        "name": "Lithuania"
+      }
+    ],
+    "release_date": "2025-03-17",
+    "revenue": 0,
+    "runtime": 80,
+    "spoken_languages": [
+      {
+        "english_name": "Lithuanian",
+        "iso_639_1": "lt",
+        "name": "Lietuvių"
+      }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "Sacrum and Profanum in Pievenai",
+    "video": false,
+    "vote_average": 3.5,
+    "vote_count": 2
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/52hXjbdOEjiOdW5hlonjA1QcrD8.jpg",
+    "belongs_to_collection": null,
+    "budget": 0,
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "homepage": "https://www.netflix.com/title/81713944",
+    "id": 1439890,
+    "imdb_id": "tt35924806",
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_title": "Bert Kreischer: Lucky",
+    "overview": "Losing 45 pounds. Getting parenting advice from Snoop Dogg. Bert Kreischer knows he's the luckiest guy around — and he's recounting his blessings.",
+    "popularity": 22.418,
+    "poster_path": "/Tuln36rarqdrSnXemkb7oBRmCM.jpg",
+    "production_companies": [],
+    "production_countries": [],
+    "release_date": "2025-03-17",
+    "revenue": 0,
+    "runtime": 67,
+    "spoken_languages": [
+      {
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
+      }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "Bert Kreischer: Lucky",
+    "video": false,
+    "vote_average": 0,
+    "vote_count": 0
+  },
+  {
+    "adult": false,
+    "backdrop_path": null,
+    "belongs_to_collection": null,
+    "budget": 0,
+    "genres": [
+      {
+        "id": 99,
+        "name": "Documentary"
+      }
+    ],
+    "homepage": "",
+    "id": 1443695,
+    "imdb_id": "tt33265852",
     "origin_country": [
       "IT"
     ],
     "original_language": "it",
-    "original_title": "100 di questi anni",
-    "overview": " ",
-    "popularity": 21.049,
-    "poster_path": "/57v4gE3Dx6TViwIe1BiC2rgghhs.jpg",
+    "original_title": "Eyes Everywhere",
+    "overview": "Jodie, a police inspector, is tasked with finding out who sabotaged the technological system that governs every aspect of daily life: from transport to global security, from health care to management of essential services. Without a quick solution, hospitals will collapse, casualties will increase and the country could be plunged into an apocalyptic scenario. To carry out the investigation, Jodie must rely on her father Mark and an unlikely ally: Matt, a hacker with a criminal past. The clues seem to lead to a single culprit, Doctor Borghese, a respected psychologist who lost his job because of artificial intelligence. But is he really responsible, or is someone trying to frame him?\r The film explores, through interviews with experts and fictional scenarios, how technology is transforming cities, mobility, healthcare, sustainability and even space exploration.",
+    "popularity": 22.408,
+    "poster_path": "/inJjkPchqjXe3vLajI7MFVldUSb.jpg",
     "production_companies": [
       {
-        "id": 317,
-        "logo_path": "/HJj0J9Tk6AGcLpL4O7mI3bsccM.png",
-        "name": "Istituto Luce Cinecittà",
-        "origin_country": "IT"
+        "id": 255394,
+        "logo_path": null,
+        "name": "Nymeria Films",
+        "origin_country": ""
       },
       {
-        "id": 86177,
-        "logo_path": "/3AKkfIbKVXiMUBx5RRaU4T7Y9d8.png",
-        "name": "Groenlandia",
-        "origin_country": "IT"
+        "id": 7063,
+        "logo_path": null,
+        "name": "BIP",
+        "origin_country": ""
       }
     ],
     "production_countries": [
@@ -939,127 +713,445 @@
     ],
     "release_date": "2025-03-17",
     "revenue": 0,
-    "runtime": 80,
-    "spoken_languages": [
-      {
-        "english_name": "Italian",
-        "iso_639_1": "it",
-        "name": "Italiano"
-      }
-    ],
+    "runtime": 0,
+    "spoken_languages": [],
     "status": "Released",
     "tagline": "",
-    "title": "100 di questi anni",
+    "title": "Eyes Everywhere",
     "video": false,
     "vote_average": 0,
     "vote_count": 0
   },
   {
     "adult": false,
-    "backdrop_path": "/AuSip6e3uvQgPnnFQjzdTrOVPx7.jpg",
-    "belongs_to_collection": {
-      "id": 1313822,
-      "name": "Batman Ninja Collection",
-      "poster_path": null,
-      "backdrop_path": null
-    },
+    "backdrop_path": null,
+    "belongs_to_collection": null,
     "budget": 0,
     "genres": [
       {
-        "id": 16,
-        "name": "Animation"
+        "id": 99,
+        "name": "Documentary"
       },
       {
-        "id": 28,
-        "name": "Action"
+        "id": 10770,
+        "name": "TV Movie"
       }
     ],
-    "homepage": "https://www.warnerbros.com/movies/batman-ninja-vs-yakuza-league",
-    "id": 1297763,
-    "imdb_id": "tt32508210",
+    "homepage": "",
+    "id": 1442200,
+    "imdb_id": null,
     "origin_country": [
-      "US"
+      "ES"
     ],
-    "original_language": "ja",
-    "original_title": "ニンジャバットマン対ヤクザリーグ",
-    "overview": "The Batman family has returned to the present to discover that Japan has disappeared, and a giant island - Hinomoto - is now in the sky over Gotham City.  At the top sit the Yakuza, a group of superpowered individuals who reign without honor or humanity and look suspiciously like the Justice League. Now, it’s up to Batman and his allies to save Gotham!",
-    "popularity": 20.997,
-    "poster_path": "/3onmLeu48mY87UclP3fk2x7YPqw.jpg",
+    "original_language": "ca",
+    "original_title": "Revolució 304",
+    "overview": "",
+    "popularity": 21.168,
+    "poster_path": null,
     "production_companies": [
       {
-        "id": 93154,
-        "logo_path": "/vTNoVe4tBhY1hshuVVF7fA2RbSD.png",
-        "name": "Kamikaze Douga",
-        "origin_country": "JP"
-      },
-      {
-        "id": 9993,
-        "logo_path": "/2Tc1P3Ac8M479naPp1kYT3izLS5.png",
-        "name": "DC Entertainment",
-        "origin_country": "US"
-      },
-      {
-        "id": 3627,
-        "logo_path": "/pBfPYpzg5o3EoBPfrFKzTRi8MGr.png",
-        "name": "Warner Bros. Japan",
-        "origin_country": "JP"
+        "id": 5085,
+        "logo_path": "/mPuVc7m1Ki7OQQvAYwYfIlEI3vu.png",
+        "name": "TV3",
+        "origin_country": "ES"
       }
     ],
     "production_countries": [
       {
-        "iso_3166_1": "JP",
-        "name": "Japan"
+        "iso_3166_1": "ES",
+        "name": "Spain"
+      }
+    ],
+    "release_date": "2025-03-18",
+    "revenue": 0,
+    "runtime": 0,
+    "spoken_languages": [
+      {
+        "english_name": "Catalan",
+        "iso_639_1": "ca",
+        "name": "Català"
+      }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "Revolució 304",
+    "video": false,
+    "vote_average": 0,
+    "vote_count": 0
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/axTt8unBOfjEZaxrx2xzklAqo7r.jpg",
+    "belongs_to_collection": null,
+    "budget": 5000,
+    "genres": [
+      {
+        "id": 27,
+        "name": "Horror"
       },
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "homepage": "http://areajb.com",
+    "id": 1439804,
+    "imdb_id": null,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_title": "Spider in the Cupboard",
+    "overview": "SMILE, YOU'RE ON CAMERA...\r Jen is a crisis hotline volunteer, using the service to cope with losing her sister at a young age. Little does she know, a former caller has beensecretly living in her apartment, recording her every move with a home video camera. Jen is sent into a spiral by thecombination ofJohn Doe's subtle\r maniuplations and the apathy of Jen's loved ones, namely Harry.",
+    "popularity": 21.164,
+    "poster_path": "/9lKBcNmWdSbODDuF6TBO6UZvAyL.jpg",
+    "production_companies": [
+      {
+        "id": 254583,
+        "logo_path": null,
+        "name": "Area JB Entertainment",
+        "origin_country": ""
+      }
+    ],
+    "production_countries": [],
+    "release_date": "2025-03-18",
+    "revenue": 0,
+    "runtime": 20,
+    "spoken_languages": [],
+    "status": "Released",
+    "tagline": "",
+    "title": "Spider in the Cupboard",
+    "video": false,
+    "vote_average": 4,
+    "vote_count": 1
+  },
+  {
+    "adult": false,
+    "backdrop_path": null,
+    "belongs_to_collection": null,
+    "budget": 0,
+    "genres": [
+      {
+        "id": 99,
+        "name": "Documentary"
+      }
+    ],
+    "homepage": "https://www.centeredfilm.com/",
+    "id": 1437920,
+    "imdb_id": "tt27551528",
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_title": "Centered: Joe Lieberman",
+    "overview": "In a time of deep political division, Centered: Joe Lieberman chronicles the remarkable career of Joe Lieberman, a principled and bipartisan politician who navigated the tumultuous world of American politics with unwavering integrity, offering timely lessons on the power of collaboration and leadership beyond party lines.",
+    "popularity": 21.164,
+    "poster_path": "/pGeRaZEmOo46DhgRePw4uAUSnkJ.jpg",
+    "production_companies": [
+      {
+        "id": 254203,
+        "logo_path": null,
+        "name": "Hidden Light Institute",
+        "origin_country": ""
+      },
+      {
+        "id": 143734,
+        "logo_path": null,
+        "name": "Black Eye Productions",
+        "origin_country": ""
+      }
+    ],
+    "production_countries": [
       {
         "iso_3166_1": "US",
         "name": "United States of America"
       }
     ],
-    "release_date": "2025-03-17",
+    "release_date": "2025-03-18",
     "revenue": 0,
-    "runtime": 89,
+    "runtime": 77,
     "spoken_languages": [
       {
-        "english_name": "Japanese",
-        "iso_639_1": "ja",
-        "name": "日本語"
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
       }
     ],
     "status": "Released",
     "tagline": "",
-    "title": "Batman Ninja vs. Yakuza League",
+    "title": "Centered: Joe Lieberman",
+    "video": false,
+    "vote_average": 8.5,
+    "vote_count": 2
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/ApBJ1YzoJsDBe8HjZaDTgqTCzMv.jpg",
+    "belongs_to_collection": null,
+    "budget": 0,
+    "genres": [
+      {
+        "id": 99,
+        "name": "Documentary"
+      }
+    ],
+    "homepage": "https://www.sphere-abacus.com/programme/4347/leaving-neverland-ii-surviving-michael-jackson",
+    "id": 1437701,
+    "imdb_id": "tt35856123",
+    "origin_country": [
+      "GB"
+    ],
+    "original_language": "en",
+    "original_title": "Leaving Neverland 2: Surviving Michael Jackson",
+    "overview": "Explores the personal toll on James Safechuck and Wade Robson after they went public with accusations against pop icon Michael Jackson. The two men continue to seek justice as they face backlash from his global army of fans. With exclusive access to court hearings, the film shows the extent to which the Jackson estate has fought to prevent Robson and Safechuck from having their day in court.",
+    "popularity": 21.162,
+    "poster_path": "/wPmKY6KaLj3PEPoDuy0tAX4MKYs.jpg",
+    "production_companies": [
+      {
+        "id": 63246,
+        "logo_path": "/eqHEYpEbLdFHB0hsdsGAaaP3lbn.png",
+        "name": "Amos Pictures",
+        "origin_country": "GB"
+      },
+      {
+        "id": 249527,
+        "logo_path": null,
+        "name": "Sphere Abacus (GB)",
+        "origin_country": ""
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "GB",
+        "name": "United Kingdom"
+      }
+    ],
+    "release_date": "2025-03-18",
+    "revenue": 0,
+    "runtime": 49,
+    "spoken_languages": [
+      {
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
+      }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "Leaving Neverland 2: Surviving Michael Jackson",
+    "video": false,
+    "vote_average": 7,
+    "vote_count": 2
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/m4FEubjmtytpMDchQfDmbJKHOG6.jpg",
+    "belongs_to_collection": null,
+    "budget": 0,
+    "genres": [
+      {
+        "id": 99,
+        "name": "Documentary"
+      }
+    ],
+    "homepage": "https://www.netflix.com/title/81715724",
+    "id": 1437446,
+    "imdb_id": "tt35882698",
+    "origin_country": [
+      "GB"
+    ],
+    "original_language": "en",
+    "original_title": "The Twister: Caught in the Storm",
+    "overview": "In May 2011, a massive tornado ripped through Joplin, Missouri. With pulse-pounding firsthand footage, this documentary goes inside a deadly twister.",
+    "popularity": 21.162,
+    "poster_path": "/ggXb37lX9gW4SR7kpMaraXDFeFR.jpg",
+    "production_companies": [
+      {
+        "id": 23949,
+        "logo_path": "/3QFwomSxcZZgMQGBkdUPuJEnSFB.png",
+        "name": "RAW",
+        "origin_country": "GB"
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "GB",
+        "name": "United Kingdom"
+      }
+    ],
+    "release_date": "2025-03-18",
+    "revenue": 0,
+    "runtime": 89,
+    "spoken_languages": [
+      {
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
+      }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "The Twister: Caught in the Storm",
+    "video": false,
+    "vote_average": 7,
+    "vote_count": 1
+  },
+  {
+    "adult": false,
+    "backdrop_path": null,
+    "belongs_to_collection": null,
+    "budget": 0,
+    "genres": [
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "homepage": "",
+    "id": 1436099,
+    "imdb_id": null,
+    "origin_country": [
+      "CA"
+    ],
+    "original_language": "en",
+    "original_title": "Act of Kindness",
+    "overview": "A young woman living in her car has her life turned upside down after a friendly encounter in the woods goes south.",
+    "popularity": 21.162,
+    "poster_path": "/jC9eJYTxvREpBeaR3KJFv3SUq4o.jpg",
+    "production_companies": [
+      {
+        "id": 193020,
+        "logo_path": null,
+        "name": "deadtime media",
+        "origin_country": ""
+      }
+    ],
+    "production_countries": [],
+    "release_date": "2025-03-18",
+    "revenue": 0,
+    "runtime": 15,
+    "spoken_languages": [
+      {
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
+      }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "Act of Kindness",
     "video": false,
     "vote_average": 0,
     "vote_count": 0
   },
   {
     "adult": false,
-    "backdrop_path": "/vuQVJYSkrm5lApNtQxOcOtQwxy6.jpg",
-    "belongs_to_collection": null,
+    "backdrop_path": "/sBtuuQ2MPliv76mjckkfwB3mNNO.jpg",
+    "belongs_to_collection": {
+      "id": 1035073,
+      "name": "Exhibition on Screen Collection",
+      "poster_path": "/eXHVT6aubcscvIG6ORlLxtbKDfy.jpg",
+      "backdrop_path": "/vGcm44yWUMFdAya1k1w6QSiABBX.jpg"
+    },
     "budget": 0,
-    "genres": [],
-    "homepage": "",
-    "id": 1445302,
-    "imdb_id": null,
+    "genres": [
+      {
+        "id": 99,
+        "name": "Documentary"
+      }
+    ],
+    "homepage": "https://seventh-art.com/product/dawn-of-impressionism/",
+    "id": 1417181,
+    "imdb_id": "tt35397631",
     "origin_country": [
       "GB"
     ],
     "original_language": "en",
-    "original_title": "Carabao Cup Final 2025",
-    "overview": "The 2025 Carabao Cup final is the upcoming final match of the 2024–25 EFL Cup. It is to be played between Liverpool and Newcastle United at Wembley Stadium in London, England, on 16 March 2025.",
-    "popularity": 20.664,
-    "poster_path": "/idI77qU1yZ8kbUfoHgndsgCJbYg.jpg",
-    "production_companies": [],
-    "production_countries": [],
-    "release_date": "2025-03-16",
+    "original_title": "Dawn of Impressionism: Paris 1874",
+    "overview": "The Impressionists are the most popular group in art history – millions flock every year to marvel at their masterpieces. But, to begin with, they were scorned, penniless outsiders. 1874 was the year that changed everything; the first Impressionists, “hungry for independence”, broke the mould by holding their own exhibition outside official channels. Impressionism was born and the art world was changed forever.  What led to that first groundbreaking show 150 years ago? Who were the maverick personalities that wielded their brushes in such a radical and provocative way? The spectacular Musée d’Orsay exhibition brings fresh eyes to this extraordinary tale of passion and rebellion. The story is told not by historians and curators but in the words of those who witnessed the dawn of Impressionism: the artists, press and people of Paris, 1874.",
+    "popularity": 21.143,
+    "poster_path": "/lSU85MrxOtlrvtiRlI9GTPBGiwK.jpg",
+    "production_companies": [
+      {
+        "id": 45654,
+        "logo_path": null,
+        "name": "Seventh Art Productions",
+        "origin_country": "GB"
+      },
+      {
+        "id": 209856,
+        "logo_path": null,
+        "name": "Exhibition on Screen (GB)",
+        "origin_country": ""
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "GB",
+        "name": "United Kingdom"
+      }
+    ],
+    "release_date": "2025-03-18",
     "revenue": 0,
-    "runtime": 120,
-    "spoken_languages": [],
+    "runtime": 92,
+    "spoken_languages": [
+      {
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
+      },
+      {
+        "english_name": "French",
+        "iso_639_1": "fr",
+        "name": "Français"
+      }
+    ],
     "status": "Released",
     "tagline": "",
-    "title": "Carabao Cup Final 2025",
+    "title": "Dawn of Impressionism: Paris 1874",
     "video": false,
-    "vote_average": 6,
-    "vote_count": 1
+    "vote_average": 0,
+    "vote_count": 0
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/vnNLcHsXQ5N9dDLsNJW2Bm8UNmG.jpg",
+    "belongs_to_collection": null,
+    "budget": 0,
+    "genres": [
+      {
+        "id": 99,
+        "name": "Documentary"
+      }
+    ],
+    "homepage": "",
+    "id": 1204967,
+    "imdb_id": "tt29574920",
+    "origin_country": [
+      "IT"
+    ],
+    "original_language": "en",
+    "original_title": "USAH: Uncommon Stories of American Horror",
+    "overview": "27 real-life stories of American horror are told by a mysterious narrator, who draws inspiration from some famous paintings of American art displayed in an ancient abbey.",
+    "popularity": 21.088,
+    "poster_path": "/FDGnXfWwRJETNa0TP4xq2Sjt5k.jpg",
+    "production_companies": [],
+    "production_countries": [],
+    "release_date": "2025-03-18",
+    "revenue": 0,
+    "runtime": 0,
+    "spoken_languages": [
+      {
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
+      }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "USAH: Uncommon Stories of American Horror",
+    "video": false,
+    "vote_average": 0,
+    "vote_count": 0
   }
 ]

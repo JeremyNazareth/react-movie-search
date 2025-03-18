@@ -1,6 +1,8 @@
 import style from '../components/modules/MovieDetails.module.css'
 import { useParams } from 'react-router-dom'
 import movieDetails from '../assets/data/movieDetails.json'
+import distribution from '../assets/data/distribution.json'
+import ActorCard from '../components/ActorCard'
 import { useEffect } from 'react';
 
 
@@ -8,7 +10,8 @@ const MovieDetails = () => {
 
     const {id} = useParams();
     const movie = movieDetails.find((movieData) => movieData.id.toString() === id)
-    console.log(movie)
+    const cast = distribution.find((castData) => castData.id?.toString() === id)
+    console.log(distribution.find((castData) => castData.id?.toString() === id))
 
     useEffect (() =>{
         const details = document.getElementById('details');
@@ -53,7 +56,9 @@ const MovieDetails = () => {
                 <div className={style.distribution}>
                     <h2>Distribution</h2>
                     <div className={style.cast}>
-
+                        {cast?.cast?.map((actor) => (
+                            <p>{actor.name}</p>
+                        ))}
                     </div>
                 </div>
             </div>
