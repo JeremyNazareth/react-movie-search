@@ -9,9 +9,10 @@ import { useEffect } from 'react';
 const MovieDetails = () => {
 
     const {id} = useParams();
-    const movie = movieDetails.find((movieData) => movieData.id.toString() === id)
-    const cast = distribution.find((castData) => castData.id?.toString() === id)
-    console.log(distribution.find((castData) => castData.id?.toString() === id))
+    const movie = movieDetails.find((movieData) => movieData.id.toString() === id);
+    const cast = distribution.find((castData) => castData.id.toString() === id)?.cast;
+    
+
 
     useEffect (() =>{
         const details = document.getElementById('details');
@@ -22,7 +23,6 @@ const MovieDetails = () => {
         details.style.backgroundRepeat = 'no-repeat';
         details.style.backgroundPosition = '180% 0%';
         details.style.backgroundColor = 'black';
-        {console.log(`https://image.tmdb.org/t/p/w500${movie?.poster_path}`)}
     },[movie]);
     
     
@@ -56,10 +56,14 @@ const MovieDetails = () => {
                 <div className={style.distribution}>
                     <h2>Distribution</h2>
                     <div className={style.cast}>
-                        {cast?.cast?.map((actor) => (
-                            <p>{actor.name}</p>
-                        ))}
+                        {cast?.map((actor) => { 
+                            
+                            return <ActorCard actor={actor}></ActorCard>
+                        })}
                     </div>
+                </div>
+                <div>
+                    <h2>Recomendaciones</h2>
                 </div>
             </div>
         </div>

@@ -1,0 +1,52 @@
+.GenresContainer{
+    display: flex;
+    gap: 15px;
+    height: 30px;
+    align-items: center;
+}
+
+.searchedMovies{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 800px;
+    width: 700px;
+    gap: 16px;
+}
+
+.movie{
+    display: flex;
+    gap: 15px;
+    height: 250px;
+    border-bottom: 2.6px solid rgb(54, 129, 83, 0.6);
+    border-radius: 1px;
+}
+
+
+.poster{
+    width: 150px;
+    height: 225px;
+    border-radius: 3px;
+    margin-bottom: 17px;
+    
+}
+
+.movieText h3{
+    margin-top: 8px;
+}
+
+.movieText h5{
+    color: gray;
+}
+
+.movieText p{
+    color: black;
+    margin-top: 15px;
+}
+
+.rating{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+

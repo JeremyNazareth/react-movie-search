@@ -60,5 +60,13 @@
 
 .distribution{
     margin-top: 30px;
+    position: relative;
 }
 
+.cast{
+    text-align: center;
+    display: flex;
+    overflow-x: auto;
+    width: 1500px;
+    gap: 15px;
+}

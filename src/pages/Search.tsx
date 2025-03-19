@@ -107,10 +107,7 @@ const Search = () => {
                                     <h5>{movie.release_date}</h5>
                                     <p>{movie.overview}</p>
                                     <p className={styles.rating}>{movie.vote_average.toFixed(1)}</p>
-                                    {<ShowGenres movieGenres={movie.genre_ids}></ShowGenres>}
-                                    
-                                        
-                                    
+                                    {<ShowGenres movieGenres={movie.genre_ids}></ShowGenres>} 
                                 </div>
                             </div>
                         )
