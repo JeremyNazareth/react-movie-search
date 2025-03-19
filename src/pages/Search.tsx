@@ -1,8 +1,9 @@
 import { useParams } from "react-router-dom"
 import styles from "../components/modules/Search.module.css"
 import movies from "../assets/data/movies.json"
-import genres from "../assets/data/genres.json"
+import {genres} from "../assets/data/genres.json"
 import ShowGenres from "../components/ShowGenres"
+import VerticalMovieList from "../components/VerticalMovieList"
 
 import { useState, useEffect } from "react"
 const Search = () => {
@@ -93,25 +94,13 @@ const Search = () => {
                             <p className={styles.filterTitle}>Filtros</p>
                         </div>
                         <ul className="list-group list-group-flush">
-                            {genres.genres.map((genre, index) =>
+                            {genres.map((genre, index) =>
                                 <li key={index} className={`list-group-item ${styles.liFilter}`}><input key={genre.id} id={`${genre.id}`} onChange={filterMark} type="checkbox" className="form-check-input" /><label className={styles.checkboxLabel}>{genre.name}</label></li>
                             )}                       
                         </ul>
                     </div>
                     <div className={styles.searchedMovies}>
-                        {currentMovies.map((movie) =>(
-                            <div key={movie.id} className={styles.movie}>
-                                <img className={styles.poster} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" />
-                                <div className={styles.movieText}>
-                                    <h3>{movie.title}</h3>
-                                    <h5>{movie.release_date}</h5>
-                                    <p>{movie.overview}</p>
-                                    <p className={styles.rating}>{movie.vote_average.toFixed(1)}</p>
-                                    {<ShowGenres movieGenres={movie.genre_ids}></ShowGenres>} 
-                                </div>
-                            </div>
-                        )
-                        )}
+                    <VerticalMovieList movieList={currentMovies} genres={genres}></VerticalMovieList>
                         
                     </div>
                     
