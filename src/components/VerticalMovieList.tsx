@@ -1,13 +1,14 @@
-
+import  useNavigateToMovie  from "../components/NavigateToMovie"
 import styles from './modules/VerticalMovieList.module.css'
 
-
 const VerticalMovieList = ({movieList, genres}) => {
+    
+    let navigation = useNavigateToMovie();
     
     return(
         <div>
             {movieList.map((movie) =>(  
-                <div key={movie.id} className={styles.movie}>
+                <div key={movie.id} onClick={() => navigation(movie.id)} className={styles.movie}>
                     <img className={styles.poster} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" />
                     <div className={styles.movieText}>
                         <h3>{movie.title}</h3>
@@ -20,7 +21,7 @@ const VerticalMovieList = ({movieList, genres}) => {
                                 
                                 return <p>{genre ? genre.name : "No hay generos disponibles"}</p>
                             })}
-        </div>
+                        </div>
                     </div>
                 </div>
             )
