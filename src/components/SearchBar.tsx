@@ -17,7 +17,6 @@ export function SearchBar({movies}:MovieProps){
     let moviesSearch = []
     let navigate = useNavigate()
 
-
     const searcher = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSearch(e.target.value.toLowerCase())
     }

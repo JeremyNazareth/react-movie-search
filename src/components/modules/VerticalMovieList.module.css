@@ -16,6 +16,7 @@
 
 .movie{
     display: flex;
+    cursor: pointer;
     gap: 15px;
     height: 250px;
     border-bottom: 2.6px solid rgb(54, 129, 83, 0.6);
