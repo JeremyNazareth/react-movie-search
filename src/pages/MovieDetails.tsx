@@ -16,7 +16,6 @@ const MovieDetails = () => {
 
     
     console.log(moviesStorage)
-    console.log(initialFavoriteState);
     
     const [favoriteMovies, setFavoriteMovies] = useState([]);
     const [isOnFavorites, setOnFavorites] = useState(initialFavoriteState);
@@ -29,30 +28,29 @@ const MovieDetails = () => {
     //localStorage.removeItem('FavoriteMovies')
     //Seccion de favoritos    
     
-    
-    
-    
-    useEffect(() =>{
-        
-        if(isOnFavorites && !initialFavoriteState){
-            console.log("A")
-            moviesStorage.push(movie)
-            console.log("A")
-            console.log(moviesStorage)
-            localStorage.setItem('FavoriteMovies', JSON.stringify(moviesStorage))
-        } else{
-            console.log("B")
-            console.log(moviesStorage)
-            let index = moviesStorage.findIndex((storagedMovie) => storagedMovie.id === movie.id)
-            moviesStorage.splice(index, 1)
-        }
-    },[isOnFavorites])
-    const text = isOnFavorites ? 'Remove' : 'Add'
-    
-    const setState = (boolean) =>{
-        setOnFavorites(!boolean);
+    const addMovie = () =>{
+        moviesStorage.push(movie)
+        localStorage.setItem('FavoriteMovies', JSON.stringify(moviesStorage))
+        console.log("Pelicula agregada a favoritos: " + localStorage)
     }
     
+    const removeMovie = () =>{
+        let index = moviesStorage.findIndex((storagedMovie) => storagedMovie.id === movie.id)
+        moviesStorage.splice(index, 1)
+        localStorage.setItem('FavoriteMovies', JSON.stringify(moviesStorage))
+        console.log("Pelicula eliminada de favoritos: " + localStorage)
+    }
+    const HandleClick = () => {
+        
+        if(isOnFavorites){
+            removeMovie()
+        } else{
+            addMovie()
+        }
+        setOnFavorites(!isOnFavorites);
+    }
+    
+    const text = isOnFavorites ? 'Remove' : 'Add'
     
     useEffect (() =>{
         const details = document.getElementById('details');
@@ -78,7 +76,7 @@ const MovieDetails = () => {
                         <h1>{movie?.title}: {movie?.tagline}</h1>
                         <h3>{movie?.release_date}</h3>
                         <h2>{movie?.vote_average.toFixed(1)}</h2>
-                        <button onClick={() => {setState(isOnFavorites)}}>{text}</button>
+                        <button onClick={() => {HandleClick()}}>{text}</button>
                         <h4>Overview</h4>
                         <h5> {movie?.runtime}mins</h5>
                         <div className={style.overview}>

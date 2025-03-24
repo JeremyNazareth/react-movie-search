@@ -1,0 +1,11 @@
+.favoriteList{
+    display: grid;
+    width: 1200px;
+    
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2,1fr);
+
+    column-gap: 0px;
+    row-gap: 15px;
+}
+
