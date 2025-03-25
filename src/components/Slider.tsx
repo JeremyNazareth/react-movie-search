@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import styles from "./modules/Slider.module.css";
 import {MoveRight, MoveLeft} from 'lucide-react';
 
@@ -27,6 +27,10 @@ interface GenresProps {
 
 const Slider = ({movies, genres}:GenresProps & MoviesProps) => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [mouseState, setMouseState] = useState(false);
+    const sliderInterval = useRef<number | null>(null);
+    
+    console.log(mouseState)
 
     const nextSlide = () =>{
         setCurrentIndex((prevIndex)=> (prevIndex + 1) % movies.length)
@@ -35,9 +39,36 @@ const Slider = ({movies, genres}:GenresProps & MoviesProps) => {
     const prevSlide = () =>{
         setCurrentIndex((prevIndex) => (prevIndex - 1 + movies.length) % movies.length);
     }
+    
+    const interval = () =>{
+        
+        if(!sliderInterval.current && !mouseState){
+            
+            sliderInterval.current = setInterval(nextSlide, 5000)
+        }
+    }
+
+    const stopInterval = () =>{
+        if (sliderInterval.current){
+            clearInterval(sliderInterval.current)
+            sliderInterval.current = null
+            setMouseState(true)
+            
+        }
+        
+    }
+
+    const mouseLeave = () =>{
+        console.log("Leaving")
+        setMouseState(false)
+    }
+    useEffect(()=>{
+        interval()
+    })
+    
 
     return(
-        <div className={styles.Slider}>
+        <div className={styles.Slider} onMouseLeave={() => mouseLeave()}  onMouseEnter={() =>stopInterval()}>
             <button className={styles.MoveButton} onClick={prevSlide}><MoveLeft size={40} strokeWidth={3}></MoveLeft></button>
             <div className={styles.SliderBorder}>
                 <div className={styles.SliderContent} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>

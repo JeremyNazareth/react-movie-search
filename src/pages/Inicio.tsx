@@ -7,6 +7,7 @@ import Slider from '../components/Slider'
 
 
 function Inicio(){
+    
     return(
         <div className={styles.Content}>
             {/*}Sección del inicio{*/}
