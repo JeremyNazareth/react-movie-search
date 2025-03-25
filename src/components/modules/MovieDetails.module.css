@@ -70,3 +70,7 @@
     width: 1500px;
     gap: 15px;
 }
+
+.recomendationList{
+    display: flex;
+}

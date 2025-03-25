@@ -4,18 +4,21 @@ import style from '../components/modules/MovieDetails.module.css'
 import movieDetails from '../assets/data/movieDetails.json'
 import distribution from '../assets/data/distribution.json'
 import ActorCard from '../components/ActorCard'
-import favoriteMovies from '../assets/data/favoriteMovies.json'
 
 const MovieDetails = () => {
 
+    //se rescata el id para seleccionar la pelicula objetivo.
     const {id} = useParams();
     const movie = movieDetails.find((movieData) => movieData.id.toString() === id);
 
+    //se rescata la lista de favoritos guardada en storage para declarar el estado de initialFavoriteState para su uso en el hook del estado inicial del boton de favoritos
     let moviesStorage = JSON.parse(localStorage.getItem('FavoriteMovies')) || [];
     let initialFavoriteState = !!moviesStorage.find((movieStoraged) => movieStoraged.id === movie?.id)
 
-    
-    console.log(moviesStorage)
+    //se hace la lista de recomendados en base a que uno de los generos sean similares
+    //se usa some para buscar al menos 1 genero que coincida, se usan 2 some para comparar los ids
+    const recomendationList = movieDetails.filter((movieDetail) => movieDetail.genres.some((genre) => movie?.genres.some((movieGenre) => movieGenre.id === genre.id && movie.id != movieDetail.id)))
+    console.log(recomendationList)
     
     const [favoriteMovies, setFavoriteMovies] = useState([]);
     const [isOnFavorites, setOnFavorites] = useState(initialFavoriteState);
@@ -96,13 +99,17 @@ const MovieDetails = () => {
                     <h2>Distribution</h2>
                     <div className={style.cast}>
                         {cast?.map((actor) => { 
-                            
                             return <ActorCard actor={actor}></ActorCard>
                         })}
                     </div>
                 </div>
                 <div>
-                    <h2>Recomendaciones</h2>
+                    <h2>Similar Movies</h2>
+                    <div className={style.recomendationList}>
+                        {recomendationList.map((recomendedMovie) =>(
+                            <h3>{recomendedMovie.title}</h3>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
