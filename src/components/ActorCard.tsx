@@ -1,6 +1,10 @@
 import  styles  from '../components/modules/ActorCard.module.css'
+import {Actor} from '../types/Movie'
 
-const ActorCard = ({actor}) => {
+interface Props {
+    actor: Actor
+}
+const ActorCard = ({actor}:Props) => {
     
     return(
         <div>

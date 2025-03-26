@@ -6,7 +6,8 @@ const useNavigateToMovie = () =>{
 
     const navigating = (id:string) => {
         navigate(`/movie/${id}`);
-        console.log(typeof(id) + ":" +id)
+        console.log("Navegando a: " + id)
+
     }
 
     return navigating;

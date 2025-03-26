@@ -1,14 +1,22 @@
 import  useNavigateToMovie  from "../components/NavigateToMovie"
 import styles from './modules/VerticalMovieList.module.css'
+import { Movie, Genre } from '../types/Movie'
 
-const VerticalMovieList = ({movieList, genres}) => {
+interface MovieListProps{
+    movieList: Movie[]
+}
+
+interface GenresProps{
+    genres: Genre[]
+}
+const VerticalMovieList = ({movieList, genres}:MovieListProps & GenresProps) => {
     
     let navigation = useNavigateToMovie();
     
     return(
         <div>
-            {movieList.map((movie) =>(  
-                <div key={movie.id} onClick={() => navigation(movie.id)} className={styles.movie}>
+            {movieList.map((movie: Movie) =>(  
+                <div key={movie.id} onClick={() => navigation(movie.id.toString())} className={styles.movie}>
                     <img className={styles.poster} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" />
                     <div className={styles.movieText}>
                         <h3>{movie.title}</h3>

@@ -1,23 +1,12 @@
 import styles from './modules/MovieCard.module.css'
 import { useNavigate } from "react-router-dom";
+import { Movie } from '../types/Movie'
 
-
-interface Movie {
-    id: number;
-    title: string;
-    overview: string;
-    poster_path: string;
-    release_date: string;
-    vote_average: number;
-    genre_ids: number[];
+interface Props {
+    movie: Movie
 }
 
-interface MovieProps {    
-    movie: Movie;
-}
-
-
-function MovieCard ({ movie } : MovieProps) {
+function MovieCard ({movie}:Props)  {
 
     let navigate = useNavigate()
 

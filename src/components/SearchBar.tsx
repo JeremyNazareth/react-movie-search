@@ -1,11 +1,7 @@
 import { useState } from "react"
 import { Search } from "lucide-react"
 import { useNavigate } from "react-router-dom";
-
-interface Movie {
-    id: number,
-    title: string
-}
+import { Movie } from '../types/Movie'
 
 interface MovieProps{
     movies: Movie[]
@@ -31,7 +27,7 @@ export function SearchBar({movies}:MovieProps){
         navigate(`/search/${search}`)
     }
     
-    const enter = (event) => {
+    const enter = (event: React.KeyboardEvent<HTMLInputElement>) => {
         if (event.key === 'Enter'){
             searchNavigate()
         }
