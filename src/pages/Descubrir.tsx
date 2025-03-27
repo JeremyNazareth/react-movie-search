@@ -5,9 +5,9 @@ import { genres } from '../assets/data/genres.json'
 
 function Descubrir(){
     return (
-        <div className='app-content'>
+        <main className='app-content'>
             <VerticalMovieList movieList={movies} genres={genres} ></VerticalMovieList>
-        </div>  
+        </main>  
     );
 }
 

@@ -46,7 +46,7 @@ export function SearchBar({movies}:MovieProps){
     }
 
     return(
-        <div className='dropdown searcher'>
+        <section className='dropdown searcher'>
             <div className="input-group mb3 dropdown-toggle" data-bs-toggle="dropdown">
                 <input className="form-control search-input" onChange={searcher} onKeyDown={enter} type="text" value={search}/>
                 <button className="input-group-text search-btn" onClick={searchNavigate}> <Search></Search> </button>
@@ -59,8 +59,7 @@ export function SearchBar({movies}:MovieProps){
                         <li key={movie.id} onClick={() => navigating(movie.id.toString())}>{movie.title}</li>
                     )))}
             </ul>
-            
-        </div>
+        </section>
     )
 }
 

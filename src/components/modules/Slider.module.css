@@ -108,12 +108,14 @@
 }
 
 .Genre{
+    border: 2px solid #80808088;
+    background-color: whitesmoke;
+    list-style: none;
     height: 35px;
     padding-top: 5px;
     padding-left: 6px;
     padding-right: 6px;
     font-weight: 500;
-    background-color: whitesmoke;
     border-radius: 25px;
-    border: 2px solid #80808088;
+    
 }

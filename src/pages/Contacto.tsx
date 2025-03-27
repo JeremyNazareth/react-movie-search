@@ -10,10 +10,10 @@ function Contacto(){
     }
 
     return (        
-        <div className='app-content'>
+        <main className='app-content'>
             <h1>Contacto</h1>
             <button onClick={test}><Search></Search></button>
-        </div>
+        </main>
     )
 }
 

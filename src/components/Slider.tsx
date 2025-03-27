@@ -1,22 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 import styles from "./modules/Slider.module.css";
 import {MoveRight, MoveLeft} from 'lucide-react';
+import { Movie, Genre } from '../types/Movie'
 
-interface Genre {
-    id: number,
-    name: string
-}
-
-interface Movie {
-    id: number,
-    title: string,
-    poster_path: string,
-    overview: string,
-    vote_average: number, 
-    original_language: string,
-    release_date: string,
-    genre_ids: number[]
-}
 
 interface MoviesProps {
     movies: Movie[]
@@ -25,7 +11,7 @@ interface GenresProps {
     genres: Genre[]
 }
 
-const Slider = ({movies, genres}:GenresProps & MoviesProps) => {
+const Slider = ({movies, genres}:MoviesProps & GenresProps) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [mouseState, setMouseState] = useState(false);
     const sliderInterval = useRef<number | null>(null);
@@ -68,12 +54,12 @@ const Slider = ({movies, genres}:GenresProps & MoviesProps) => {
     
 
     return(
-        <div className={styles.Slider} onMouseLeave={() => mouseLeave()}  onMouseEnter={() =>stopInterval()}>
+        <section className={styles.Slider} onMouseLeave={() => mouseLeave()}  onMouseEnter={() =>stopInterval()}>
             <button className={styles.MoveButton} onClick={prevSlide}><MoveLeft size={40} strokeWidth={3}></MoveLeft></button>
             <div className={styles.SliderBorder}>
                 <div className={styles.SliderContent} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-                    {movies.map((movie) =>(
-                        <div key={movie.id} className={styles.SliderItem} >
+                    {movies.map((movie: Movie) =>(
+                        <article key={movie.id} className={styles.SliderItem} >
                             <img className={styles.ItemImg} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" />
                             <div className={styles.ItemText}>
                                 <h3>{movie.title}</h3>
@@ -86,22 +72,22 @@ const Slider = ({movies, genres}:GenresProps & MoviesProps) => {
                                 </div>
                                 <hr className={styles.ItemHr} />
                                 <h3 style={{textAlign: "center"}}>Generos</h3>
-                                <div className={styles.ItemGenres}>
+                                <ul className={styles.ItemGenres}>
                                     {movie.genre_ids.map((movieId) => {
                                         const genre = genres.find(genre => genre.id === movieId );
-                                        return <p key={movieId} className={styles.Genre} >{genre ? genre.name : "Desconocido"}</p>;
+                                        return <li key={movieId} className={styles.Genre} >{genre ? genre.name : "Desconocido"}</li>;
 
                                         
                                         
                                     })}   
-                                </div>
+                                </ul>
                             </div>
-                        </div>
+                        </article>
                     ))}
                 </div>
             </div>
             <button className={styles.MoveButton} onClick={nextSlide}><MoveRight size={40} strokeWidth={3}></MoveRight></button>
-        </div>
+        </section>
     )
     
 }

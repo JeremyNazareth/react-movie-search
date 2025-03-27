@@ -14,9 +14,9 @@ const VerticalMovieList = ({movieList, genres}:MovieListProps & GenresProps) => 
     let navigation = useNavigateToMovie();
     
     return(
-        <div>
+        <section>
             {movieList.map((movie: Movie) =>(  
-                <div key={movie.id} onClick={() => navigation(movie.id.toString())} className={styles.movie}>
+                <article key={movie.id} onClick={() => navigation(movie.id.toString())} className={styles.movie}>
                     <img className={styles.poster} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" />
                     <div className={styles.movieText}>
                         <h3>{movie.title}</h3>
@@ -31,10 +31,10 @@ const VerticalMovieList = ({movieList, genres}:MovieListProps & GenresProps) => 
                             })}
                         </div>
                     </div>
-                </div>
+                </article>
             )
             )}
-        </div>
+        </section>
     )
 }
 

@@ -82,8 +82,8 @@ const Search = () => {
     }, [selectedFilters, searchedMovies])
 
     return (
-        <div className="app-content">
-            <div className={styles.temporaryContainer}>
+        <main className="app-content">
+            <section className={styles.temporaryContainer}>
                 <p className={styles.title}>
                     Mostrando resultados para "{search}"
                 </p>
@@ -104,9 +104,9 @@ const Search = () => {
                     </div>
                     
                 </div>
-            </div>
+            </section>
             
-        </div>
+        </main>
     )
     
 }

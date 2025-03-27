@@ -7,7 +7,7 @@ const Favoritos = () =>{
 
     const favoriteList = JSON.parse(localStorage.getItem('FavoriteMovies') || '[]')
     return (
-        <div className="app-content">
+        <main className="app-content">
             <h1 style={{marginBottom: 30}}>Tus peliculas favoritas.</h1>
             <div className={styles.favoriteList}>
                 {favoriteList.map((movie: Movie)=>(
@@ -15,7 +15,7 @@ const Favoritos = () =>{
                 ))}
             </div>  
             
-        </div>
+        </main>
     )
 }
 

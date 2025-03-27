@@ -68,8 +68,8 @@ const MovieDetails = () => {
     
     
     return(
-        <div className='app-content'>
-            <div className={style.test}>
+        <main className='app-content'>
+            <section className={style.test}>
                 <div id='details' className={style.details}>
                     <div className={style.mainDetails}>
                         <img src={`https://image.tmdb.org/t/p/w500${movie?.poster_path}`} alt="" />
@@ -111,8 +111,8 @@ const MovieDetails = () => {
                         ))}
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
         
     )
 }

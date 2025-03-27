@@ -9,30 +9,29 @@ import Slider from '../components/Slider'
 function Inicio(){
     
     return(
-        <div className={styles.Content}>
+        <main className={styles.Content}>
             {/*}Sección del inicio{*/}
-            <div className={styles.Start}>
+            <section className={styles.Start}>
                 <h1 style={{color: "#2E8B57"}}>Movie Search</h1>
                 <h4>¡Bienvenido!, aquí podras encontrar la calificación de tus peliculas preferidas.</h4>
-            </div>
+            </section>
 
             {/*}Sección de peliculas populares{*/}
-            <div className={styles.PopularMovies}>
+            <section className={styles.PopularMovies}>
                 <h2>Las peliculas mas populares:</h2>
                 <div className={styles.Movies}>                
                     {popularMovies.map((movieData) => (
                         <MovieCard key={movieData.id} movie={movieData} />
                     ))}
                 </div>
-            </div>
+            </section>
 
             {/*}Sección de peliculas mejores puntuadas{*/}                    
-            <div className={styles.RatingMovies}>
+            <section className={styles.RatingMovies}>
                 <h2>Las peliculas mejores valoradas:</h2>
                 <Slider movies={topMovies} genres={genresData.genres}></Slider>                
-            </div>
-            
-        </div>
+            </section>
+        </main>
         
     )
 }
