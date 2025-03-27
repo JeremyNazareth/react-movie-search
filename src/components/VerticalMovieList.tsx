@@ -24,10 +24,9 @@ const VerticalMovieList = ({movieList, genres}:MovieListProps & GenresProps) => 
                         <p>{movie.overview}</p>
                         <p className={styles.rating}>{movie.vote_average.toFixed(1)}</p>
                         <div className={styles.GenresContainer}>
-                            {movie.genre_ids.map((moviegenreId) => {
+                            {movie.genre_ids.map((moviegenreId, index) => {
                                 let genre = genres.find(genre => genre.id === moviegenreId)
-                                
-                                return <p>{genre ? genre.name : "No hay generos disponibles"}</p>
+                                return <p key={index}>{genre ? genre.name : "No hay generos disponibles"}</p>
                             })}
                         </div>
                     </div>

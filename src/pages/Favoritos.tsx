@@ -11,7 +11,7 @@ const Favoritos = () =>{
             <h1 style={{marginBottom: 30}}>Tus peliculas favoritas.</h1>
             <div className={styles.favoriteList}>
                 {favoriteList.map((movie: Movie)=>(
-                    <FavoriteMovieCard movie={movie}></FavoriteMovieCard>
+                    <FavoriteMovieCard key={movie.id} movie={movie}></FavoriteMovieCard>
                 ))}
             </div>  
             

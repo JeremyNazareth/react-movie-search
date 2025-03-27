@@ -103,7 +103,7 @@ const MovieDetails = () => {
                     <h2>Distribution</h2>
                     <div className={style.cast}>
                         {cast?.map((actor: Actor) => { 
-                            return <ActorCard actor={actor}></ActorCard>
+                            return <ActorCard key={actor.id} actor={actor}></ActorCard>
                         })}
                     </div>
                 </div>
@@ -111,7 +111,7 @@ const MovieDetails = () => {
                     <h2>Similar Movies</h2>
                     <div className={style.recomendationList}>
                         {recomendationList.map((recomendedMovie) =>(
-                            <h3>{recomendedMovie.title}</h3>
+                            <h3 key={recomendedMovie.id}>{recomendedMovie.title}</h3>
                         ))}
                     </div>
                 </div>
