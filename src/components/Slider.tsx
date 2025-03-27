@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef } from "react";
-import styles from "./modules/Slider.module.css";
 import {MoveRight, MoveLeft} from 'lucide-react';
 import { Movie, Genre } from '../types/Movie'
-
+import styles from "./modules/Slider.module.css";
+import useNavigateToMovie from "./NavigateToMovie";
 
 interface MoviesProps {
     movies: Movie[]
@@ -15,6 +15,7 @@ const Slider = ({movies, genres}:MoviesProps & GenresProps) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [mouseState, setMouseState] = useState(false);
     const sliderInterval = useRef<number | null>(null);
+    const navigate = useNavigateToMovie();
     
     console.log(mouseState)
 
@@ -59,7 +60,7 @@ const Slider = ({movies, genres}:MoviesProps & GenresProps) => {
             <div className={styles.SliderBorder}>
                 <div className={styles.SliderContent} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     {movies.map((movie: Movie) =>(
-                        <article key={movie.id} className={styles.SliderItem} >
+                        <article key={movie.id} className={styles.SliderItem} onClick={() => navigate(movie.id.toString())}>
                             <img className={styles.ItemImg} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" />
                             <div className={styles.ItemText}>
                                 <h3>{movie.title}</h3>

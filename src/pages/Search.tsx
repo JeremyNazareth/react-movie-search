@@ -3,26 +3,15 @@ import styles from "../components/modules/Search.module.css"
 import movies from "../assets/data/movies.json"
 import {genres} from "../assets/data/genres.json"
 import VerticalMovieList from "../components/VerticalMovieList"
+import { Movie } from '../types/Movie'
 
 import { useState, useEffect } from "react"
 const Search = () => {
-
-    interface Movie {
-        id: number,
-        title: string,
-        poster_path: string,
-        overview: string,
-        vote_average: number, 
-        original_language: string,
-        release_date: string,
-        genre_ids: number[]
-    }
 
     const {search} = useParams();
     const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
     const [currentMovies, setCurrentMovies] = useState<Movie[]>([]);
     const [searchedMovies, setSearchedMovies] = useState<Movie[]>([]);
-    
     
     const filterMark =  (event: React.ChangeEvent<HTMLInputElement>) => {
         
@@ -100,9 +89,7 @@ const Search = () => {
                     </div>
                     <div className={styles.searchedMovies}>
                     <VerticalMovieList movieList={currentMovies} genres={genres}></VerticalMovieList>
-                        
                     </div>
-                    
                 </div>
             </section>
             

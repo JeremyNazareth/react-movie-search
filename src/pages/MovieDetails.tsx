@@ -4,23 +4,24 @@ import style from '../components/modules/MovieDetails.module.css'
 import movieDetails from '../assets/data/movieDetails.json'
 import distribution from '../assets/data/distribution.json'
 import ActorCard from '../components/ActorCard'
+import { Movie, Actor } from '../types/Movie'
 
 const MovieDetails = () => {
+
 
     //se rescata el id para seleccionar la pelicula objetivo.
     const {id} = useParams();
     const movie = movieDetails.find((movieData) => movieData.id.toString() === id);
 
     //se rescata la lista de favoritos guardada en storage para declarar el estado de initialFavoriteState para su uso en el hook del estado inicial del boton de favoritos
-    let moviesStorage = JSON.parse(localStorage.getItem('FavoriteMovies')) || [];
-    let initialFavoriteState = !!moviesStorage.find((movieStoraged) => movieStoraged.id === movie?.id)
+    let moviesStorage = JSON.parse(localStorage.getItem('FavoriteMovies') || '[]');
+    let initialFavoriteState = !!moviesStorage.find((movieStoraged: Movie) => movieStoraged.id === movie?.id)
 
     //se hace la lista de recomendados en base a que uno de los generos sean similares
     //se usa some para buscar al menos 1 genero que coincida, se usan 2 some para comparar los ids
     const recomendationList = movieDetails.filter((movieDetail) => movieDetail.genres.some((genre) => movie?.genres.some((movieGenre) => movieGenre.id === genre.id && movie.id != movieDetail.id)))
     console.log(recomendationList)
     
-    const [favoriteMovies, setFavoriteMovies] = useState([]);
     const [isOnFavorites, setOnFavorites] = useState(initialFavoriteState);
     
     useEffect(() =>{
@@ -38,7 +39,7 @@ const MovieDetails = () => {
     }
     
     const removeMovie = () =>{
-        let index = moviesStorage.findIndex((storagedMovie) => storagedMovie.id === movie.id)
+        let index = moviesStorage.findIndex((storagedMovie: Movie) => storagedMovie.id === movie?.id)
         moviesStorage.splice(index, 1)
         localStorage.setItem('FavoriteMovies', JSON.stringify(moviesStorage))
         console.log("Pelicula eliminada de favoritos: " + localStorage)
@@ -57,13 +58,16 @@ const MovieDetails = () => {
     
     useEffect (() =>{
         const details = document.getElementById('details');
-        details.style.background =
-        `linear-gradient(to right,rgb(40, 94, 49) 30%,rgba(0,0,0,0.1) 70%),
-        linear-gradient(to left,rgba(40, 94, 49),rgba(0,0,0,0)),
-        url(https://image.tmdb.org/t/p/w1280${movie?.backdrop_path})`;
-        details.style.backgroundRepeat = 'no-repeat';
-        details.style.backgroundPosition = '180% 0%';
-        details.style.backgroundColor = 'black';
+        if (details){
+            details.style.background =
+            `linear-gradient(to right,rgb(40, 94, 49) 30%,rgba(0,0,0,0.1) 70%),
+            linear-gradient(to left,rgba(40, 94, 49),rgba(0,0,0,0)),
+            url(https://image.tmdb.org/t/p/w1280${movie?.backdrop_path})`;
+            details.style.backgroundRepeat = 'no-repeat';
+            details.style.backgroundPosition = '180% 0%';
+            details.style.backgroundColor = 'black';
+        }
+        
     },[movie]);
     
     
@@ -98,7 +102,7 @@ const MovieDetails = () => {
                 <div className={style.distribution}>
                     <h2>Distribution</h2>
                     <div className={style.cast}>
-                        {cast?.map((actor) => { 
+                        {cast?.map((actor: Actor) => { 
                             return <ActorCard actor={actor}></ActorCard>
                         })}
                     </div>
