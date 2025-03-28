@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import style from '../components/modules/MovieDetails.module.css'
 import movieDetails from '../assets/data/movieDetails.json'
+import topRated from '../assets/data/topRated.json'
 import distribution from '../assets/data/distribution.json'
 import ActorCard from '../components/ActorCard'
 import { Movie, Actor } from '../types/Movie'
@@ -11,8 +12,8 @@ const MovieDetails = () => {
 
     //se rescata el id para seleccionar la pelicula objetivo.
     const {id} = useParams();
-    const movie = movieDetails.find((movieData) => movieData.id.toString() === id);
-
+    let movie = movieDetails.find((movieData) => movieData.id.toString() === id);
+    
     //se rescata la lista de favoritos guardada en storage para declarar el estado de initialFavoriteState para su uso en el hook del estado inicial del boton de favoritos
     let moviesStorage = JSON.parse(localStorage.getItem('FavoriteMovies') || '[]');
     let initialFavoriteState = !!moviesStorage.find((movieStoraged: Movie) => movieStoraged.id === movie?.id)

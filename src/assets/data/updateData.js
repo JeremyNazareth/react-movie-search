@@ -23,20 +23,23 @@ let movieDetails = []
 let topRated = []
 let distribution = []
 
-async function catchIds  (movies) {
+async function catchIds  (popularMovies, topRatedMovies) {
+    movies = [...popularMovies, ...topRatedMovies]
     let moviesId = movies.map((movie)=> movie.id )
     return moviesId;
 }
 
 const updateData = async () =>{
-    movies = await fetchMovie();
-    let moviesId = await catchIds(movies);
+    movies = [... await fetchMovie()];
+    topRated = await fetchTopRatedMovies();
+    console.log(movies.length)
+    let moviesId = await catchIds(movies,topRated);
 
     movieDetails = await fetchMovieDetails(moviesId);
     distribution = await fetchDistribution(moviesId);
 
     genres = await fetchGenres();
-    topRated = await fetchTopRatedMovies();
+    
 }
  
 await updateData();

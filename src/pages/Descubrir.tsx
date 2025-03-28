@@ -1,6 +1,6 @@
 import VerticalMovieList from '../components/VerticalMovieList'
 import movies from '../assets/data/movies.json'
-import { genres } from '../assets/data/genres.json'
+import genres from '../assets/data/genres.json'
 
 
 function Descubrir(){

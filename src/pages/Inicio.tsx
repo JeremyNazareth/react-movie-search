@@ -29,7 +29,7 @@ function Inicio(){
             {/*}Sección de peliculas mejores puntuadas{*/}                    
             <section className={styles.RatingMovies}>
                 <h2>Las peliculas mejores valoradas:</h2>
-                <Slider movies={topMovies} genres={genresData.genres}></Slider>                
+                <Slider movies={topMovies} genres={genresData}></Slider>                
             </section>
         </main>
         

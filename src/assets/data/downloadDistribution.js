@@ -2,7 +2,6 @@ import { API_KEY, BASE_URL} from "./updateData.js";
 
 export async function fetchDistribution (moviesId){
 
-    console.trace("📌 fetchDistribution llamado con:", moviesId);
     const distributionData = []
     try{
         for (let id of moviesId){
