@@ -6,6 +6,7 @@ import distribution from '../assets/data/distribution.json'
 import ActorCard from '../components/ActorCard'
 import { Movie, Actor } from '../types/Movie'
 
+
 const MovieDetails = () => {
 
     //se rescata el id para seleccionar la pelicula objetivo.

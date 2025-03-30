@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
 html{
     font-size: 12px;
     overflow-y: scroll
 }
 
 * {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;   
-    color: #2E8B57;
+    font-family: "Lexend", sans-serif;
+    color: black;
     scrollbar-gutter: auto;
 }
 
@@ -15,6 +18,8 @@ html{
     width: 100%;
     margin: 0;
     padding-top: 25px;
+    background-color: white;
+    color: white;
 }
 
 .app-content{

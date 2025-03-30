@@ -2,7 +2,7 @@ import popularMovies from '../assets/data/movies.json';
 import topMovies from '../assets/data/topRated.json'
 import MovieCard from '../components/MovieCard';
 import genresData from '../assets/data/genres.json'
-import styles from '../components/modules/Inicio.module.css'
+import styles from '../components/modules/Home.module.css'
 import Slider from '../components/Slider'
 
 
@@ -18,7 +18,7 @@ function Inicio(){
 
             {/*}Sección de peliculas populares{*/}
             <section className={styles.PopularMovies}>
-                <h2>Most popular movies:</h2>
+                <h2>Most popular movies</h2>
                 <div className={styles.Movies}>                
                     {popularMovies.map((movieData) => (
                         <MovieCard key={movieData.id} movie={movieData} />

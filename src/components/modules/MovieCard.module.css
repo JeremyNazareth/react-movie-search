@@ -2,7 +2,14 @@
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    background-color: #2B303A;
+    align-items: center;
+    gap: 5px;
+    width: 200px;
+    border-radius: 5px;
+    padding-top: 20px;
 }
+
 
 .poster{
     width: 125px;
@@ -13,6 +20,11 @@
 
 .movieData{    
     width: 125px;
+    color: white !important;
     
     
+}
+
+.movieData h3{
+    font-size: 16px !important;
 }
