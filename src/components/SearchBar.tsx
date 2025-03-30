@@ -53,11 +53,11 @@ export function SearchBar({movies}:MovieProps){
             </div>
             <ul className="dropdown-menu">
                 { moviesSearch.length === 0 ?(
-                    <p style={{paddingLeft:10, fontSize:16, color:"black", fontWeight:600}}>Sin resultados</p>
+                    <p style={{paddingLeft:10, fontSize:16, color:"black", fontWeight:600}}>No results</p>
                 ) : (
-                    moviesSearch.map((movie) =>(
-                        <li key={movie.id} onClick={() => navigating(movie.id.toString())}>{movie.title}</li>
-                    )))}
+                    moviesSearch.slice(0,8).map((movie, index) =>
+                        <li key={index} onClick={() => navigating(movie.id.toString())}>{movie.title}</li>
+                    ))}
             </ul>
         </section>
     )

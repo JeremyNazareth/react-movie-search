@@ -2,13 +2,11 @@ import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import style from '../components/modules/MovieDetails.module.css'
 import movieDetails from '../assets/data/movieDetails.json'
-import topRated from '../assets/data/topRated.json'
 import distribution from '../assets/data/distribution.json'
 import ActorCard from '../components/ActorCard'
 import { Movie, Actor } from '../types/Movie'
 
 const MovieDetails = () => {
-
 
     //se rescata el id para seleccionar la pelicula objetivo.
     const {id} = useParams();
@@ -21,7 +19,7 @@ const MovieDetails = () => {
     //se hace la lista de recomendados en base a que uno de los generos sean similares
     //se usa some para buscar al menos 1 genero que coincida, se usan 2 some para comparar los ids
     const recomendationList = movieDetails.filter((movieDetail) => movieDetail.genres.some((genre) => movie?.genres.some((movieGenre) => movieGenre.id === genre.id && movie.id != movieDetail.id)))
-    console.log(recomendationList)
+    
     
     const [isOnFavorites, setOnFavorites] = useState(initialFavoriteState);
     

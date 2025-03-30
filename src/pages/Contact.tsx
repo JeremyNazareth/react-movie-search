@@ -4,7 +4,7 @@ function Contacto(){
 
     return (        
         <main className='app-content'>
-            <h1>Contacto</h1>
+            <h1>Contact</h1>
         </main>
     )
 }

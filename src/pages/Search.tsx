@@ -74,12 +74,12 @@ const Search = () => {
         <main className="app-content">
             <section className={styles.temporaryContainer}>
                 <p className={styles.title}>
-                    Mostrando resultados para "{search}"
+                Showing results for "{search}"
                 </p>
                 <div className={styles.content}>
                     <div className={`card  ${styles.genresFilter}`}>
                         <div className={`card-header`}>
-                            <p className={styles.filterTitle}>Filtros</p>
+                            <p className={styles.filterTitle}>Filters</p>
                         </div>
                         <ul className="list-group list-group-flush">
                             {genres.map((genre, index) =>

@@ -6,20 +6,20 @@ import movies from '../assets/data/movies.json'
 function Header(){
     return(
         <header className={styles.header}>
-            <Link to="/Inicio" className={styles.title}>Movie Search</Link>
+            <Link to="/home" className={styles.title}>Movie Search</Link>
             <SearchBar movies={movies}></SearchBar>
             <nav className={styles.navList}>
                 <li>
-                    <Link to="/inicio">Inicio</Link>
+                    <Link to="/home">Home</Link>
                 </li>
                 <li>
-                    <Link to="/descubrir">Descubrir</Link>
+                    <Link to="/discover">Discover</Link>
                 </li>
                 <li>
-                    <Link to="/favoritos">Favoritos</Link>
+                    <Link to="/favorites">Favorites</Link>
                 </li>
                 <li>
-                    <Link to="/contacto">Contacto</Link>
+                    <Link to="/contact">Contact</Link>
                 </li>
             </nav>
         </header>
