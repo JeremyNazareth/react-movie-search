@@ -19,8 +19,9 @@ html{
     margin: 0;
     padding-top: 25px;
     background-color: white;
-    color: white;
+    color: black;
 }
+
 
 .app-content{
     display: flex;
@@ -80,4 +81,9 @@ h4 {
 
 .searcher {
     width: 500px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #2B303A !important;
 }
