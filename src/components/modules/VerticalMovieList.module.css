@@ -1,53 +1,90 @@
-.GenresContainer{
-    display: flex;
-    gap: 15px;
-    height: 30px;
-    align-items: center;
-}
-
-.searchedMovies{
+.verticalMovieList{
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
-    height: 800px;
-    width: 700px;
-    gap: 16px;
+    gap: 20px;
 }
 
 .movie{
     display: flex;
     cursor: pointer;
-    gap: 15px;
+    width: 700px;
     height: 250px;
-    border-bottom: 2.6px solid rgb(54, 129, 83, 0.6);
     border-radius: 1px;
 }
 
-
 .poster{
-    width: 150px;
-    height: 225px;
-    border-radius: 3px;
-    margin-bottom: 17px;
+    width: 165px;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px; 
+}
+
+.movieText {
+    background-color: #2B303A;
+    width: 535px;
+    height: 100%;
+    padding: 14px 16px;
+    border-radius: 0px 10px 10px 0px;
+    margin: 0;
+}
+
+header{
+    height: 50px;
     
 }
 
+.overview{
+    height: 84px;
+    margin: 0;
+}
+
+.textOverview{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+}
+
+.movieData{
+    height: 84px;
+}
+
 .movieText h3{
-    margin-top: 8px;
+    color: #48da87;
+    margin: 0;
 }
 
 .movieText h5{
     color: gray;
+    margin: 0;
 }
 
 .movieText p{
-    color: black;
-    margin-top: 15px;
+    color: white;
+}
+
+.GenresContainer{
+    display: flex;
+    gap: 15px;
+    height: 50%;
+    align-items: center;
 }
 
 .rating{
     margin: 0;
+    height: 50%;
     font-size: 18px;
     font-weight: 500;
 }
 
+.genre{
+    list-style: none;
+    color: #48da87 !important;
+    background-color: #2B303A;
+    align-content: center;
+    border: 1px solid #48da87;
+    border-radius: 15px;
+    padding: 0px 10px;
+    margin: 0;
+    height: 30px;
+}

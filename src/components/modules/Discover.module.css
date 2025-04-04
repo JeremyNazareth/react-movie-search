@@ -1,0 +1,31 @@
+.content{
+    display: flex;
+    gap: 20px;
+}
+
+.genresFilter{
+    height: fit-content !important;
+    width: 250px;
+}
+
+.movies{
+    width: 800px;
+}
+
+.filterHeader{
+    text-align: center;
+    justify-content: center;
+    background-color: #2B303A !important;
+    
+}
+
+.filterHeader p{
+    margin: 5px 0px;
+    color: #2E8B57;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.checkboxLabel{
+    margin-left: 10px;
+}

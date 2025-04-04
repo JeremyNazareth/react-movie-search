@@ -1,7 +1,7 @@
 import popularMovies from '../assets/data/movies.json';
 import topMovies from '../assets/data/topRated.json'
 import MovieCard from '../components/MovieCard';
-import TopMovieCard from '../components/topMovieCard'
+import TopMovieCard from '../components/TopMovieCard'
 import genresData from '../assets/data/genres.json'
 import styles from '../components/modules/Home.module.css'
 

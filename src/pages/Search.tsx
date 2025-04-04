@@ -35,36 +35,7 @@ const Search = () => {
     useEffect(() =>{
 
         if (selectedFilters.length > 0){
-            setCurrentMovies(searchedMovies.filter((movie) =>{
-
-                const movieGenres = Object(movie.genre_ids)
-                const oneIsMatch = selectedFilters.some((filter) => movieGenres.includes(Number(filter)))
-                
-                function oneIsUnmatched (): boolean {
-                    
-                    let match = true
-
-                    for(let a in selectedFilters){
-                        let point = 0
-                        
-                        if(movieGenres.includes(Number(selectedFilters[a]))){
-                            console.log("Point + 1")
-                            point = 1 
-                        } else{
-                            match = false
-                            console.log("Es un filtro unmatch:" + selectedFilters[a] + "point: " + point)
-                            break
-                        }
-                        
-                    }
-                    return match
-                } 
-                console.log(oneIsMatch)
-                console.log(oneIsUnmatched())
-                return (oneIsMatch && oneIsUnmatched())
-
-            }
-            ))
+            setCurrentMovies(searchedMovies.filter((movie) => selectedFilters.every((filter) => movie.genre_ids.includes(Number(filter)))))
         } else{
             setCurrentMovies(searchedMovies)
         }

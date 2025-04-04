@@ -1908,26 +1908,6 @@
   },
   {
     "adult": false,
-    "backdrop_path": "/8sNiAPPYU14PUepFNeSNGUTiHW.jpg",
-    "genre_ids": [
-      12,
-      18,
-      878
-    ],
-    "id": 157336,
-    "original_language": "en",
-    "original_title": "Interstellar",
-    "overview": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
-    "popularity": 41.6929,
-    "poster_path": "/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
-    "release_date": "2014-11-05",
-    "title": "Interstellar",
-    "video": false,
-    "vote_average": 8.453,
-    "vote_count": 36801
-  },
-  {
-    "adult": false,
     "backdrop_path": "/tDFvXn4tane9lUvFAFAUkMylwSr.jpg",
     "genre_ids": [
       16,
