@@ -42,9 +42,12 @@
 
 .SliderItem{
     display: flex;
-    width: 100%;
-    height: 750px;
     align-items: center;
+    height: 750;
+    width: 1000px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 20px 55px;
 }
 
 .ItemText{
@@ -52,14 +55,22 @@
     justify-content: center;
     align-items: start;
     text-align: start;
-    background-color: #2B303A;
     padding: 15px 30px;
-    width: 50%;
-    height: 100%;
+    width: 500px;
+    height: 750px;
     border-radius: 0px 10px 10px 0px;
-    color: #48da87;
 }
 
+.ItemText h3{
+    color: #2E8B57;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.ItemText h5{
+    color: gray;
+    margin-bottom: 0px;
+}
 .ItemImg{
     width: 500px;
     height: 100%;
@@ -76,14 +87,12 @@
     width: 98%;
     text-align: center;
     margin: 15px auto;
-    border: 1px solid #48da87;
+    border: 1px solid #2E8B57;
 }
 
 .ItemOverview{
-    margin-top: 10px;
     font-size: 17px;
     font-weight: 500;
-    color: white;
 }
 
 .ItemDescription{
@@ -93,7 +102,6 @@
 }
 
 .ItemDescription p{
-    color: white;
     font-weight: 600;
 }
 
@@ -105,7 +113,7 @@
 }
 
 .movieGenres h3{
-    color: #48da87;
+    color: #2E8B57;
 }
 .genresList{
     display: flex;
@@ -115,10 +123,10 @@
 
 .genreItem{
     list-style: none;
-    color: #48da87;
-    background-color: #2B303A;
+    color: white;
+    background-color: #2E8B57;
     align-content: center;
-    border: 1px solid #48da87;
+
     border-radius: 15px;
     padding: 0px 10px;
     height: 30px;

@@ -44,7 +44,7 @@ function Home(){
             {/*}Sección de peliculas populares{*/}
             <section className={styles.PopularMovies}>
                 <h2>Most popular movies</h2>
-                <div className={styles.Slider}>
+                <div className={styles.popularMoviesSlider}>
                     <Slider {...popularMoviesSettings}>
                         {popularMovies.map((popularMovie) => (
                             <MovieCard key={popularMovie.id} movie={popularMovie} />

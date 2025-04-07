@@ -9,7 +9,8 @@
     cursor: pointer;
     width: 700px;
     height: 250px;
-    border-radius: 1px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0,0.5);
 }
 
 .poster{
@@ -19,7 +20,6 @@
 }
 
 .movieText {
-    background-color: #2B303A;
     width: 535px;
     height: 100%;
     padding: 14px 16px;
@@ -50,7 +50,7 @@ header{
 }
 
 .movieText h3{
-    color: #48da87;
+    color: #2E8B57;
     margin: 0;
 }
 
@@ -59,9 +59,6 @@ header{
     margin: 0;
 }
 
-.movieText p{
-    color: white;
-}
 
 .GenresContainer{
     display: flex;
@@ -79,10 +76,9 @@ header{
 
 .genre{
     list-style: none;
-    color: #48da87 !important;
-    background-color: #2B303A;
+    color: white;
+    background-color: #2E8B57;
     align-content: center;
-    border: 1px solid #48da87;
     border-radius: 15px;
     padding: 0px 10px;
     margin: 0;

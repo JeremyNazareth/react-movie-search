@@ -15,6 +15,7 @@ const topMovieCard = ({topMovie}: Props) => {
             <img className={styles.ItemImg} src={`https://image.tmdb.org/t/p/w500${topMovie.poster_path}`} alt="" />
             <header className={styles.ItemText}>
                 <h3>{topMovie.title}</h3>
+                <h5>{topMovie.release_date}</h5>
                 <p className={styles.ItemOverview}>{topMovie.overview}</p>
                 <hr className={styles.ItemHr} />
                 <div className={styles.ItemDescription}>
@@ -24,7 +25,7 @@ const topMovieCard = ({topMovie}: Props) => {
                 </div>
                 <hr className={styles.ItemHr} />
                 <div className={styles.movieGenres}>
-                    <h3>Generos</h3>
+                    <h3>Genres</h3>
                     <ul className={styles.genresList}>
                         {topMovie.genre_ids.map((movieGenre, index) => {
                             const genreName = genresData.find((genre) => movieGenre === genre.id)?.name

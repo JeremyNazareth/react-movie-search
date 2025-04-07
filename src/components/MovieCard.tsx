@@ -19,7 +19,7 @@ function MovieCard ({movie}:Props)  {
         <article className={styles.movieCard} onClick={() => navigating(movie.id.toString())}>
             <div className={styles.cover}>
                 <div className={styles.favoriteTag}>
-                    <Heart size={20} strokeWidth={2.55} color={'#a23445'} />
+                    <Heart size={20} strokeWidth={2.55} color={'white'} />
                 </div>
                 <img className={styles.poster} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}/>
             </div>

@@ -5,9 +5,12 @@
     align-items: center;
     position: relative;
     margin-left: 25px;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 200px;
-    height: 500px;
+    height: 425px;
+    margin: 15px 10px;
+    
 }
 
 .poster{
@@ -17,12 +20,21 @@
     background-color: red;
 }
 
+.movieData{    
+    background-color: white;
+    color: white !important;   
+    width: 200px;
+    height: 125px;
+    padding: 10px 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
 .favoriteTag{
     width: 25px;
     height: 40px;
     margin-left: 165px;
     position: absolute;
-    background-color: #2B303A;
+    background-color: #2E8B57;
     border-radius: 0px 0px 5px 5px;
     border: 1px solid #2E8B57;
     border-top: none;
@@ -35,7 +47,7 @@
 }
 
 .Rating p{
-    color: #48da87;
+    color: #2E8B57;
     font-size: 20px;
 }
 .RatingLogo{    
@@ -45,20 +57,13 @@
 .RatingValue{
     margin-left: 5px;
 }
-.movieData{    
-    background-color: #2B303A;
-    color: white !important;
-    width: 200px;
-    height: 125px;
-    padding: 10px 10px;
-    border-radius: 0px 0px 10px 10px;
-}
 
 .movieData h3{
-    font-size: 16px !important;
-    color: #46db87;
+    font-size: 18px !important;
+    font-weight: 600;
+    color: #2E8B57
 }
 
 .movieData h4{
-    color: rgb(165, 165, 165);
+    color: #696969
 }
