@@ -8,7 +8,7 @@ const Favoritos = () =>{
     const favoriteList = JSON.parse(localStorage.getItem('FavoriteMovies') || '[]')
     return (
         <main className="app-content">
-            <h1 style={{marginBottom: 30}}>Your favorite movies:</h1>
+            <h1>Your favorite movies</h1>
             <div className={styles.favoriteList}>
                 {favoriteList.map((movie: Movie)=>(
                     <FavoriteMovieCard key={movie.id} movie={movie}></FavoriteMovieCard>

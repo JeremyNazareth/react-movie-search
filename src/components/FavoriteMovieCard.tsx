@@ -13,7 +13,15 @@ const FavoriteMovieCard = ({movie}:Props) =>{
     return(
         <article className={styles.movie} onClick={() => navigate(movie.id.toString())}>
             <img className={styles.poster} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" />
-            <h3>{movie.title}</h3>
+            <div className={styles.movieData}>
+                <h3>{movie.title}</h3>
+                <h6>{movie.release_date}</h6>
+                <h6>{movie.overview}</h6>
+                <h6>{movie.vote_average.toFixed(1)}</h6>
+            </div>
+
+            
+            
         </article>
     )
 }

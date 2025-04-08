@@ -1,11 +1,15 @@
 .favoriteList{
     display: grid;
     width: 1200px;
-    
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2,1fr);
-
-    column-gap: 0px;
+    column-gap: 25px;
     row-gap: 15px;
 }
 
+main h1{
+    font-size: 25px;
+    font-weight: 550;
+    color: #2E8B57;
+    margin: 50px 0px;
+}
