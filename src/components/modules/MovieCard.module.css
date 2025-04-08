@@ -10,14 +10,12 @@
     width: 200px;
     height: 425px;
     margin: 15px 10px;
-    
 }
 
 .poster{
     width: 200px;
     height: 300px;
     border-radius: 10px 10px 0px 0px;
-    background-color: red;
 }
 
 .movieData{    

@@ -2,7 +2,6 @@ import popularMovies from '../assets/data/movies.json';
 import topMovies from '../assets/data/topRated.json'
 import MovieCard from '../components/MovieCard';
 import TopMovieCard from '../components/TopMovieCard'
-import genresData from '../assets/data/genres.json'
 import styles from '../components/modules/Home.module.css'
 
 //import Slider from '../components/Slider'
@@ -23,6 +22,9 @@ function Home(){
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+
     };
     
     //<Slider movies={topMovies} genres={genresData}></Slider>        

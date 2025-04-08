@@ -3,7 +3,7 @@
 
 html{
     font-size: 12px;
-    overflow-y: scroll
+    overflow-y: scroll;
 }
 
 * {
@@ -16,7 +16,7 @@ html{
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 0;
+    height: auto;
     padding-top: 25px;
     background-color: white;
     color: black;
@@ -28,7 +28,7 @@ html{
     flex-direction: column;
     align-items: center;
     width: 80%;
-    height: 1000px;
+    height: auto;
 }
 
 h4 {

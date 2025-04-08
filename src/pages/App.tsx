@@ -8,6 +8,7 @@ import Favoritos from "./Favorites"
 import Contacto from "./Contact"
 import MovieDetails from './MovieDetails'
 import Search from './Search'
+import Footer from '../components/Footer'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 function App() {
@@ -26,7 +27,8 @@ function App() {
               <Route path='/movie/:id?' element={<MovieDetails />}/>
               <Route path='/search/:search?' element={<Search />}/>
             </Routes>  
-          </div>    
+          </div>
+          <Footer></Footer>
       </div>
     </>
   )

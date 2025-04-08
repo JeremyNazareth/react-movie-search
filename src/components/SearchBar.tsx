@@ -56,7 +56,7 @@ export function SearchBar({movies}:MovieProps){
                     <p style={{paddingLeft:10, fontSize:16, color:"black", fontWeight:600}}>No results</p>
                 ) : (
                     moviesSearch.slice(0,8).map((movie, index) =>
-                        <li key={index} onClick={() => navigating(movie.id.toString())}>{movie.title}</li>
+                        <li key={index} style={{fontWeight:500}} onClick={() => navigating(movie.id.toString())}>{movie.title}</li>
                     ))}
             </ul>
         </section>

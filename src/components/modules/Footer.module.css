@@ -1,0 +1,41 @@
+
+footer{
+    display: flex;
+    padding: 50px 250px;
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+    background-color: #2E8B57;
+    border-top:  2px solid gray;
+
+}
+
+.footerTitle{
+    font-size: 32px;
+    font-weight: 600;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    color: white;
+}
+
+.navBar{
+    display: flex;
+    font-size: 16px;
+    gap: 50px;
+}
+
+nav{
+    display: flex;
+    gap: 15px;
+    margin: auto;
+    margin-bottom: 21px;
+}
+nav li{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(172, 171, 171);
+}
