@@ -1,9 +1,14 @@
 
 .test{
-    width: auto;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     align-items: center;
     position: relative;
+}
+
+h2{
+    color: #2E8B57 !important;
 }
 
 .details{
@@ -67,12 +72,35 @@
     text-align: center;
     display: flex;
     overflow-x: auto;
+    margin-bottom: 50px;
     width: 1500px;
-    gap: 15px;
+    height: auto;
+    gap: 25px;
 }
 
 .recomendationList{
     display: flex;
     width: 1500px;
     overflow-x: auto;
+    gap: 25px;
+    
+}
+
+.recomendedMovie{
+    margin: 10px;
+    ;
+}
+
+.recomendedMoviePoster{
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+}
+
+.recomendedMovieTitle{
+    color: #2E8B57;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
 }

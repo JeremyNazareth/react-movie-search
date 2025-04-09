@@ -80,7 +80,7 @@ const MovieDetails = () => {
                         
                     </div>
                     <div className={style.subDetails}>
-                        <h1>{movie?.title}: {movie?.tagline}</h1>
+                        <h1>{movie?.title} {movie?.tagline}</h1>
                         <h3>{movie?.release_date}</h3>
                         <h2>{movie?.vote_average.toFixed(1)}</h2>
                         <button onClick={() => {HandleClick()}}>{text}</button>
@@ -100,7 +100,7 @@ const MovieDetails = () => {
                     </div>
                 </div>
                 <div className={style.distribution}>
-                    <h2>Distribution</h2>
+                    <h2>Casting</h2>
                     <div className={style.cast}>
                         {cast?.map((actor: Actor) => { 
                             return <ActorCard key={actor.id} actor={actor}></ActorCard>
@@ -111,7 +111,11 @@ const MovieDetails = () => {
                     <h2>Similar Movies</h2>
                     <div className={style.recomendationList}>
                         {recomendationList.map((recomendedMovie) =>(
-                            <h3 key={recomendedMovie.id}>{recomendedMovie.title}</h3>
+                            <div className={style.recomendedMovie}>
+                                <img className={style.recomendedMoviePoster} src={`https://image.tmdb.org/t/p/w500${recomendedMovie?.poster_path}`} alt="" />
+                                <p className={style.recomendedMovieTitle}>{recomendedMovie.title}</p>
+                            </div>
+                            
                         ))}
                     </div>
                 </div>
