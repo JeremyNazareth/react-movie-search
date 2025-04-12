@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
-
 html{
     font-size: 12px;
     overflow-y: scroll;
@@ -12,7 +11,9 @@ html{
     scrollbar-gutter: auto;
 }
 
-.app-body{
+
+
+.full-body{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -22,9 +23,11 @@ html{
     color: black;
 }
 
-
-.app-content{
+.main-body{
     display: flex;
+    margin: auto;
+    padding-top: 35px;
+    padding-bottom: 50px;
     flex-direction: column;
     align-items: center;
     width: 80%;

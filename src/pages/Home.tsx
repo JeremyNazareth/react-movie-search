@@ -3,7 +3,6 @@ import topMovies from '../assets/data/topRated.json'
 import MovieCard from '../components/MovieCard';
 import TopMovieCard from '../components/TopMovieCard'
 import styles from '../components/modules/Home.module.css'
-
 //import Slider from '../components/Slider'
 import Slider from 'react-slick'
 function Home(){
@@ -36,7 +35,7 @@ function Home(){
     </div>       
     */}
     return(
-        <main className={styles.Content}>
+        <main className='main-body'>
             {/*}Sección del inicio{*/}
             <section className={styles.Start}>
                 <p className={styles.title}>Welcome</p>
@@ -67,7 +66,6 @@ function Home(){
                 </div>
             </section>
         </main>
-        
     )
 }
 

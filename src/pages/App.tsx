@@ -15,21 +15,17 @@ function App() {
 
   return (
     <>
-      <div>        
-          <Header></Header>
-          <div className="app-body">
-            <Routes>
-            <Route path='/' element={<Inicio />}/>
-              <Route path='/home' element={<Inicio />}/>
-              <Route path='/discover' element={<Descubrir />}/>
-              <Route path='/favorites' element={<Favoritos />}/>
-              <Route path='/contact' element={<Contacto />}/>
-              <Route path='/movie/:id?' element={<MovieDetails />}/>
-              <Route path='/search/:search?' element={<Search />}/>
-            </Routes>  
-          </div>
-          <Footer></Footer>
-      </div>
+      <Header></Header>
+      <Routes>
+        <Route path='/' element={<Inicio />}/>
+        <Route path='/home' element={<Inicio />}/>
+        <Route path='/discover' element={<Descubrir />}/>
+        <Route path='/favorites' element={<Favoritos />}/>
+        <Route path='/contact' element={<Contacto />}/>
+        <Route path='/movie/:id?' element={<MovieDetails />}/>
+        <Route path='/search/:search?' element={<Search />}/>
+      </Routes>
+      <Footer></Footer>
     </>
   )
 }

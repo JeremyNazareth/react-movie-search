@@ -77,7 +77,7 @@ const MovieDetails = () => {
     console.log(movie?.genres.join(",").toString())
     
     return(
-        <main className='app-content'>
+        <main className='full-body'>
             <section className={style.test}>
                 <div id='details' className={style.details}>
                     <div className={style.mainDetails}>

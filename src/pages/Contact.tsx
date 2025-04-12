@@ -5,7 +5,7 @@ function Contacto(){
     
 
     return (        
-        <main className='app-content'>
+        <main className='main-body'>
             <h1>Contact</h1>
             <div className={styles.mainContainer}>
                 <div className={styles.container1}></div>

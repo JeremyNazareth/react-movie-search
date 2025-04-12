@@ -28,7 +28,7 @@ function Descubrir(){
         }, [selectedFilters])
 
     return (
-        <main className='app-content'>
+        <main className='main-body'>
             <div className={styles.content}>
                 <div className={`card  ${styles.genresFilter}`}>
                         <div className={`card-header ${styles.filterHeader}`}>
