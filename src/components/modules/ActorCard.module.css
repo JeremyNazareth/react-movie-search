@@ -1,23 +1,22 @@
-article{
+.actorCard{
     margin: 10px 10px;
+    max-width: 165px;
     box-shadow: 0px 0px 4px black;
     border-radius: 10px;
 }
 
 .profile{
-    width: 150px;
-    height: 200px;
+    width: 165px;
+    height: 225px;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
 }
 
 .actorName{
     color: #2E8B57;
-    padding-left: 10px;
+    padding: 0px 10px;
     margin-top: 5px;
     font-weight: 600;
     font-size: 16px;
-    width: 150px;
-    height: auto;
     border-radius: 0px 0px 10px 10px;
 }

@@ -7,29 +7,59 @@
     position: relative;
 }
 
-h2{
-    color: #2E8B57 !important;
-}
-
 .details{
     display: flex;
     height: 600px;
     width: 1500px;
     background-repeat: no-repeat;
-    
+    border-radius: 10px;
+    padding: 0px 30px;
 }
 
 .mainDetails{
     text-align: center;
-    padding: 16px;
-    width: 450px;
-    height: 100%;
+    margin: auto;
 }
 
 .subDetails{
-    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1050px;
     height: 100%;
-    margin-top: 56px;   
+}
+
+
+h2{
+    color:#FFFAE3 !important;
+}
+
+.title{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.tagline{
+    color: rgb(228, 228, 228);
+    font-size: 25px;
+    font-weight: 350;
+    margin: 0px;
+}
+
+.movieRank{
+    display: flex;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.rankLogo{
+    color: #45ca7f !important;    
+}
+
+.rankValue{
+    color: gold !important;
 }
 
 .subDetails h1{
@@ -41,7 +71,8 @@ h2{
 }
 
 .subDetails h3{
-    color: gray;
+    color: #cce2d5;
+    font-size: 16px;
 }
 
 .subDetails h4{
@@ -49,11 +80,11 @@ h2{
 }
 
 .subDetails h5{
-    color: rgb(150, 150, 150);
+    color: #cce2d5;
 }
 
 .overview{
-    width: 500px;
+    width: 500px;   
 }
 
 .mainDetails img{

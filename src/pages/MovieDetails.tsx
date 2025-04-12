@@ -4,7 +4,7 @@ import style from '../components/modules/MovieDetails.module.css'
 import movieDetails from '../assets/data/movieDetails.json'
 import distribution from '../assets/data/distribution.json'
 import ActorCard from '../components/ActorCard'
-import { Movie, Actor } from '../types/Movie'
+import { Movie, Actor, Genre } from '../types/Movie'
 
 
 const MovieDetails = () => {
@@ -20,8 +20,7 @@ const MovieDetails = () => {
     //se hace la lista de recomendados en base a que uno de los generos sean similares
     //se usa some para buscar al menos 1 genero que coincida, se usan 2 some para comparar los ids
     const recomendationList = movieDetails.filter((movieDetail) => movieDetail.genres.some((genre) => movie?.genres.some((movieGenre) => movieGenre.id === genre.id && movie.id != movieDetail.id)))
-    
-    
+
     const [isOnFavorites, setOnFavorites] = useState(initialFavoriteState);
     
     useEffect(() =>{
@@ -54,6 +53,8 @@ const MovieDetails = () => {
         setOnFavorites(!isOnFavorites);
     }
     
+    const date = new Date(movie? movie.release_date : "00/00/0000");
+    const movieDate = `${new Intl.DateTimeFormat("en-US", {month: "long"}).format(date)} ${date.getDay().toString()}, ${date.getFullYear().toString()}`
     const text = isOnFavorites ? 'Remove' : 'Add'
     
     useEffect (() =>{
@@ -69,25 +70,35 @@ const MovieDetails = () => {
         }
         
     },[movie]);
+
+    let genresMovie: string[] = movie?.genres.map((genre) => genre.name) || [];
+    //<button style={{width:50,height:60}} onClick={() => {HandleClick()}}>{text}</button>
     
+    console.log(movie?.genres.join(",").toString())
     
     return(
         <main className='app-content'>
             <section className={style.test}>
                 <div id='details' className={style.details}>
                     <div className={style.mainDetails}>
-                        <img src={`https://image.tmdb.org/t/p/w500${movie?.poster_path}`} alt="" />
+                        <img style={{margin:0}} src={`https://image.tmdb.org/t/p/w500${movie?.poster_path}`} alt="" />
                         
                     </div>
                     <div className={style.subDetails}>
-                        <h1>{movie?.title} {movie?.tagline}</h1>
-                        <h3>{movie?.release_date}</h3>
-                        <h2>{movie?.vote_average.toFixed(1)}</h2>
-                        <button onClick={() => {HandleClick()}}>{text}</button>
+                        <div style={{display:"flex"}}>
+                            <p className={style.title}>{movie?.title}&nbsp;</p>
+                            <p className={style.tagline}>{movie?.tagline}</p>
+                        </div>
+                        <h3>{genresMovie.join(", ")}</h3>
+                        <h3 style={{marginBottom:15}}>{movieDate}</h3>
                         <h4>Overview</h4>
                         <h5> {movie?.runtime}mins</h5>
                         <div className={style.overview}>
                             <h5>{movie?.overview}</h5>
+                        </div>
+                        <div className={style.movieRank}>
+                            <p className={style.rankLogo}>M&nbsp;</p>
+                            <p className={style.rankValue}>{movie?.vote_average.toFixed(1)}</p>
                         </div>
                         <h4>Original Language</h4>
                         <div>
@@ -121,7 +132,6 @@ const MovieDetails = () => {
                 </div>
             </section>
         </main>
-        
     )
 }
 

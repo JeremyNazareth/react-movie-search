@@ -8,10 +8,10 @@ interface Props {
 const ActorCard = ({actor}:Props) => {
     
     return(
-        <article>
+        <article className={styles.actorCard}>
             {actor.profile_path ? <img className={styles.profile} src={` https://image.tmdb.org/t/p/w500${actor.profile_path}`} alt="" /> : <img className={styles.profile} src={maleHead}/>}
             <p className={styles.actorName}>{actor.name}</p>
-            <p>{actor.character}</p>
+            <p style={{fontSize:14}}>{actor.character}</p>
         </article>
     )
 }
