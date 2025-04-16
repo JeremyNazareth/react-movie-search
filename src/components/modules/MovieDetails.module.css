@@ -1,27 +1,50 @@
 
-.test{
+.sectionTitle{
+    color: #2E8B57 !important;
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+.cover{
     display: flex;
-    flex-direction: column;
-    gap: 25px;
-    align-items: center;
-    position: relative;
+    height: 600px;
+    width: 1500px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    padding: 0px 30px;
 }
 
 .details{
     display: flex;
-    height: 600px;
-    width: 1500px;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    padding: 0px 30px;
 }
 
-.mainDetails{
+.poster{
     text-align: center;
     margin: auto;
+    width: 430px;
 }
 
-.subDetails{
+.poster img{
+    border-radius: 15px;
+    margin-top: 40px;
+    width: 300px;
+    height: 450px;
+}
+
+.favoriteBtn{
+    margin-top: 10px;
+    border-radius: 15px;
+    border: 1px solid #245c3c;
+    width: 301px;
+    height: 35px;
+}
+
+.favoriteBtn:hover{
+    background-color: rgb(207, 207, 207);
+}
+
+
+.mainDetails{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,8 +52,7 @@
     height: 100%;
 }
 
-
-h2{
+.mainDetails h2{
     color:#FFFAE3 !important;
 }
 
@@ -62,24 +84,24 @@ h2{
     color: gold !important;
 }
 
-.subDetails h1{
+.mainDetails h1{
     color: white;
 }
 
-.subDetails h2{
+.mainDetails h2{
     color: gold;
 }
 
-.subDetails h3{
+.mainDetails h3{
     color: #cce2d5;
     font-size: 16px;
 }
 
-.subDetails h4{
+.mainDetails h4{
     color: white;
 }
 
-.subDetails h5{
+.mainDetails h5{
     color: #cce2d5;
 }
 
@@ -87,23 +109,36 @@ h2{
     width: 500px;   
 }
 
-.mainDetails img{
-    border-radius: 5px;
-    margin-top: 40px;
-    width: 300px;
-    height: 450px;
-}
-
 .distribution{
-    margin-top: 30px;
     position: relative;
+    
 }
 
+.crew{
+    display: flex;
+    gap: 20px;
+    width: 1500px;
+}
+
+.subDetail{
+    margin-top: 5px;
+}
+
+.subDetail h4{
+    color: #2E8B57 !important;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.subDetail p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+}
 .cast{
     text-align: center;
     display: flex;
-    overflow-x: auto;
-    margin-bottom: 50px;
+    overflow-x: auto;   
     width: 1500px;
     height: auto;
     gap: 25px;
@@ -119,7 +154,6 @@ h2{
 
 .recomendedMovie{
     margin: 10px;
-    ;
 }
 
 .recomendedMoviePoster{

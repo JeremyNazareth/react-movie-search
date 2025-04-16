@@ -36,17 +36,6 @@
     font-weight: 700;
 }
 
-.Movies{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 1fr;
-    overflow-x: auto;
-    scrollbar-gutter: stable;
-    gap: 5px;
-    margin-top: 25px;
-    width: 1250px;   
-    max-height: 300px;
-}
 
 .RatingMovies h2{
     text-align: center;

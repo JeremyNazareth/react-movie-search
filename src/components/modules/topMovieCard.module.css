@@ -63,6 +63,8 @@
 
 .ItemText h3{
     color: #2E8B57;
+    font-size: 25px;
+    font-weight: 700;
     margin-top: 5px;
     margin-bottom: 15px;
 }
@@ -96,15 +98,32 @@
 }
 
 .ItemDescription{
+    list-style: none;
     text-align: start;
     color: black;
+    padding: 0;
     margin-bottom: 10px;
 }
 
-.ItemDescription p{
+.label{
+    font-size: 15px;
     font-weight: 600;
 }
 
+.value{
+    font-size: 15px;
+    
+}
+
+.ranking{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.rankLogo{
+    color: #45ca7f !important;    
+}
 .movieGenres{
     height: 100px;
     display: flex;

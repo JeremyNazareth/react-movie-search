@@ -10,19 +10,33 @@ const topMovieCard = ({topMovie}: Props) => {
 
     const navigate = useNavigateToMovie();
 
+    const date = new Date(topMovie.release_date)
+    const movieDate = `${Intl.DateTimeFormat("en-US", {month:"long"}).format(date)} ${date.getDay().toString()}, ${date.getFullYear().toString()}`
+
+    const languages: { [key:string] : string} ={
+        en: "English",
+        es: "Spanish",
+        it: "Italian",
+        ja: "Japanese",
+        hi: "Hindi",
+        ko: "Korean"
+    }
+
+    console.log(languages[topMovie.original_language])
+
     return(
         <article key={topMovie.id} className={styles.SliderItem} onClick={() => navigate(topMovie.id.toString())}>
             <img className={styles.ItemImg} src={`https://image.tmdb.org/t/p/w500${topMovie.poster_path}`} alt="" />
             <header className={styles.ItemText}>
                 <h3>{topMovie.title}</h3>
-                <h5>{topMovie.release_date}</h5>
+                <h5>{movieDate}</h5>
                 <p className={styles.ItemOverview}>{topMovie.overview}</p>
                 <hr className={styles.ItemHr} />
-                <div className={styles.ItemDescription}>
-                    <p>Ranking: {topMovie.vote_average.toFixed(1)}</p>
-                    <p>Original language: {topMovie.original_language}</p>
-                    <p>Release Date: {topMovie.release_date}</p>
-                </div>
+                <ul className={styles.ItemDescription}>
+                    <li className={styles.ranking}><span className={styles.rankLogo}>M</span>  <span>{topMovie.vote_average.toFixed(1)}</span></li>
+                    <li><span className={styles.label}>Original language: </span>              <span className={styles.value}> {languages[topMovie.original_language]}</span></li>
+                    <li><span className={styles.label}>Release Date: </span>                   <span className={styles.value}>{topMovie.release_date}</span></li>
+                </ul>
                 <hr className={styles.ItemHr} />
                 <div className={styles.movieGenres}>
                     <h3>Genres</h3>
