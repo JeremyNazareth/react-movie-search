@@ -1,4 +1,4 @@
-import  styles  from '../components/modules/ActorCard.module.css'
+import  styles  from '../components/modules/components/ActorCard.module.css'
 import { Actor } from '../types/Movie'
 import maleHead from '../assets/undifined/male-head.webp'
 

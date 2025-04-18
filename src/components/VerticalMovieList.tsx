@@ -1,5 +1,5 @@
 import  useNavigateToMovie  from "../components/NavigateToMovie"
-import styles from './modules/VerticalMovieList.module.css'
+import styles from './modules/components/VerticalMovieList.module.css'
 import { Movie, Genre } from '../types/Movie'
 
 interface MovieListProps{

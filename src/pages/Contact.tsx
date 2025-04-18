@@ -1,5 +1,5 @@
 import '../assets/styles/global.css'
-import styles from '../components/modules/Contact.module.css'
+import styles from '../components/modules/pages/Contact.module.css'
 function Contacto(){
 
     

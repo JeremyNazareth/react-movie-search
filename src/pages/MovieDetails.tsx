@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react';
-import style from '../components/modules/MovieDetails.module.css'
+import style from '../components/modules/pages/MovieDetails.module.css'
 import movieDetails from '../assets/data/movieDetails.json'
 import distribution from '../assets/data/distribution.json'
 import ActorCard from '../components/ActorCard'

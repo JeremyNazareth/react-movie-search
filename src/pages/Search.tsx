@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import styles from "../components/modules/Search.module.css"
+import styles from "../components/modules/pages/Search.module.css"
 import movies from "../assets/data/movies.json"
 import genres from "../assets/data/genres.json"
 import VerticalMovieList from "../components/VerticalMovieList"

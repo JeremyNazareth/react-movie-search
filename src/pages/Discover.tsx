@@ -1,7 +1,7 @@
 import VerticalMovieList from '../components/VerticalMovieList'
 import movies from '../assets/data/movies.json'
 import genres from '../assets/data/genres.json'
-import styles from '../components/modules/discover.module.css'
+import styles from '../components/modules/pages/Discover.module.css'
 import { useState, useEffect } from 'react'
 import { Movie } from '../types/Movie'
 

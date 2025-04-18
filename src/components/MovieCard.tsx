@@ -1,7 +1,8 @@
-import styles from './modules/MovieCard.module.css'
+import styles from './modules/components/MovieCard.module.css'
 import { useNavigate } from "react-router-dom";
 import { Movie } from '../types/Movie'
 import { Heart } from 'lucide-react'
+import Rating from "../components/Rating"
 interface Props {
     movie: Movie
 }
@@ -33,8 +34,9 @@ function MovieCard ({movie}:Props)  {
                 <h3>{movie.title}</h3>
                 <h4>{movieDate}</h4>
                 <div className={styles.Rating}>
-                    <p className={styles.RatingLogo}>M</p>
-                    <p className={styles.RatingValue}>{movie.vote_average.toFixed(1)}</p>
+                    {<Rating rating={movie.vote_average.toFixed(1)}/>}
+                    <p className={styles.RatingLogo}>{movie.vote_average.toFixed(1)}</p>
+                    
                 </div>
             </header>
         </article>      

@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import {MoveRight, MoveLeft} from 'lucide-react';
 import { Movie, Genre } from '../types/Movie'
-import styles from "./modules/Slider.module.css";
+import styles from "./modules/components/Slider.module.css";
 import useNavigateToMovie from "./NavigateToMovie";
 
 interface MoviesProps {
