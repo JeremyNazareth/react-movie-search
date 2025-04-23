@@ -19,7 +19,7 @@ function Header(){
                     <Link to="/favorites">Favorites</Link>
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/about">About</Link>
                 </li>
             </nav>
         </header>

@@ -4,12 +4,12 @@
     cursor: pointer;
     align-items: center;
     position: relative;
-    margin-left: 25px;
+    
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 200px;
     height: 425px;
-    margin: 15px 10px;
+    margin: 15px 25px;
 }
 
 .poster{

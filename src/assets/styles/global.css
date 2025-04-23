@@ -11,12 +11,9 @@ html{
     scrollbar-gutter: auto;
 }
 
-
-
 .full-body{
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
     height: auto;
     padding-top: 25px;
@@ -28,9 +25,9 @@ html{
     display: flex;
     margin: auto;
     padding-top: 35px;
-    padding-bottom: 50px;
     flex-direction: column;
     align-items: center;
+    min-height: 405px;
     width: 80%;
     height: auto;
 }

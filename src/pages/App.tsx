@@ -5,7 +5,7 @@ import {Routes, Route } from 'react-router-dom'
 import Inicio from "./Home"
 import Descubrir from './Discover'
 import Favoritos from "./Favorites"
-import Contacto from "./Contact"
+import About from "./About"
 import MovieDetails from './MovieDetails'
 import Search from './Search'
 import Footer from '../components/Footer'
@@ -21,7 +21,7 @@ function App() {
         <Route path='/home' element={<Inicio />}/>
         <Route path='/discover' element={<Descubrir />}/>
         <Route path='/favorites' element={<Favoritos />}/>
-        <Route path='/contact' element={<Contacto />}/>
+        <Route path='/about' element={<About />}/>
         <Route path='/movie/:id?' element={<MovieDetails />}/>
         <Route path='/search/:search?' element={<Search />}/>
       </Routes>

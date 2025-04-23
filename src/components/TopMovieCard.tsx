@@ -34,7 +34,7 @@ const topMovieCard = ({topMovie}: Props) => {
                 <p className={styles.ItemOverview}>{topMovie.overview}</p>
                 <hr className={styles.ItemHr} />
                 <ul className={styles.ItemDescription}>
-                    <li className={styles.ranking}><Rating rating={topMovie.vote_average.toFixed(1)}></Rating>  <span>{topMovie.vote_average.toFixed(1)}</span></li>
+                    <li className={styles.ranking}><Rating rating={topMovie.vote_average.toFixed(1)}></Rating></li>
                     <li><span className={styles.label}>Original language: </span>              <span className={styles.value}> {languages[topMovie.original_language]}</span></li>
                     <li><span className={styles.label}>Release Date: </span>                   <span className={styles.value}>{topMovie.release_date}</span></li>
                 </ul>
