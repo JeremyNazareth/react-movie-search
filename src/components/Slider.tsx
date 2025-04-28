@@ -17,8 +17,7 @@ const Slider = ({movies, genres}:MoviesProps & GenresProps) => {
     const sliderInterval = useRef<number | null>(null);
     const navigate = useNavigateToMovie();
     
-    console.log(mouseState)
-
+    
     const nextSlide = () =>{
         setCurrentIndex((prevIndex)=> (prevIndex + 1) % movies.length)
     };

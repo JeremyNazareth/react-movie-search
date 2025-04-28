@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import popularMovies from '../assets/data/movies.json';
 import topMovies from '../assets/data/topRated.json'
 import MovieCard from '../components/MovieCard';
@@ -7,13 +8,40 @@ import styles from '../components/modules/pages/Home.module.css'
 import Slider from 'react-slick'
 function Home(){
     
+    const [slides, setSlides] = useState(5);
+    const [width, setWidth] = useState(0);
+    const containerRef = useRef(null);
+
     const popularMoviesSettings = {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 5,
+        slidesToShow: slides,
         slidesToScroll: 1,
     };
+
+    
+
+    useEffect(() => {
+        if(containerRef.current){
+            const observer = new ResizeObserver((entries) =>{
+                const entry = entries[0];
+                setWidth(entry.contentRect.width)
+            })
+            observer.observe(containerRef.current)
+        }
+        console.log(width)
+    }, [])
+    
+
+    useEffect (() =>{
+        if (width < 1000){
+            setSlides(4);    
+        } else{
+            setSlides(5);
+        }
+        popularMoviesSettings.slidesToShow = slides;
+    }, [width])
 
     const topRatedMoviesSettings = {
         dots: false,
@@ -35,7 +63,7 @@ function Home(){
     </div>       
     */}
     return(
-        <main className='main-body'>
+        <main className='main-body' ref={containerRef}>
             {/*}Sección del inicio{*/}
             <section className={styles.Start}>
                 <p className={styles.title}>Welcome</p>

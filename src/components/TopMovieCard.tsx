@@ -23,8 +23,6 @@ const topMovieCard = ({topMovie}: Props) => {
         ko: "Korean"
     }
 
-    console.log(languages[topMovie.original_language])
-
     return(
         <article key={topMovie.id} className={styles.SliderItem} onClick={() => navigate(topMovie.id.toString())}>
             <img className={styles.ItemImg} src={`https://image.tmdb.org/t/p/w500${topMovie.poster_path}`} alt="" />

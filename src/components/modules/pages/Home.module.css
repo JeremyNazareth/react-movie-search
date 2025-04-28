@@ -48,9 +48,16 @@
 .popularMoviesSlider{
     width: 100%;
     height: 500px;
+    margin: auto;
 }
 
 .topMoviesSlider{
     width: 1100px;
     height: auto;
 }
+
+@media (max-width:1264px){
+    .popularMoviesSlider{
+        width: 80%;
+    }
+}  

@@ -20,7 +20,8 @@ const MovieDetails = () => {
         it: "Italian",
         ja: "Japanese",
         hi: "Hindi",
-        ko: "Korean"
+        ko: "Korean",
+        mn: "Mongolian",
     }
 
     
@@ -98,7 +99,7 @@ const MovieDetails = () => {
     //<button style={{width:50,height:60}} onClick={() => {HandleClick()}}>{text}</button>
     
     return(
-        <main className='full-body'>
+        <main className='full-body' style={{alignItems:"center"}}>
             <section id='cover' className={style.cover}>
                 <div className={style.details}>
                     <div className={style.poster}>
@@ -124,7 +125,7 @@ const MovieDetails = () => {
                             <p className={style.rankValue}>{movie?.vote_average.toFixed(1)}</p>
                         </div>
                         <h4>Director</h4>
-                        <h5>{director?.name}</h5>
+                        <h5>{director? director.name : "Unkown"}</h5>
                     </div>
                 </div>
                 

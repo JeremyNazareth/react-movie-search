@@ -55,14 +55,22 @@ function About(){
                         <p>
                             La página se programó basada en compontentes reutilizables, junto a otras técnicas para la ejecución del proyecto:
                             <ul>
-                                <li>Los datos de las peliculas son descargados mediante JS con el uso de fetch's, desarrollé 1 archivo js para cada categoría
+                                <li>Los datos de las peliculas son descargados mediante JS con el uso de fetch's, desarrollé 1 script js para cada categoría
                                     necesaria para los datos de las péliculas (popularMovies, topRatedMovies, movieDetails, distribution, genres... etc.), gracias
                                     a la API de TMDB solo necesité hacer el query mediante el fetch respectivo y luego los datos son almacenados en un .json para su uso posterior.
                                     <p>
                                     Hice un script general(updateData.js) en que ejectuta cada función de todos los fetch que estan en los scripts que descargan la data para actualizar toda la fuente de datos de manera escalable.
                                     </p>
                                 </li>
-                                <li>Para la sección de filtros de generos decidí crear una función especial que se encarga de devolver solo las peliculas que contienen generos que coincidan con los filtros seleccionados, si hay solo 1 filtro que no coincida con los filtros seleccionados, no entra en el array de salida. Realicé esta función especial debido a que los metodos .every .some no eran suficientes para mantener un sistema de generos viable.</li>
+                                <li>
+                                    Para la sección de filtros de generos decidí crear una función especial que se encarga de devolver solo las peliculas que contienen generos que coincidan con los filtros seleccionados, si hay solo 1 filtro que no coincida con los filtros seleccionados, no entra en el array de salida. Realicé esta función especial debido a que los metodos .every .some no eran suficientes para mantener un sistema de generos viable.
+                                </li>
+                                <li>
+                                    Los datos de las peliculas ya están de forma local en la página, mientras que todas las imagenes son solicitadas a la API de TMDB.
+                                </li>
+                                <li>
+                                    Se ocupa el localStorage solo para el sistema de favoritos, al guardar una pelicula a favoritos se almacena en la lista, que esta misma se usa para setear el estado inicial de la pelicula en los detalles de peliculas e indicar si ya está en favoritos.
+                                </li>
                             </ul>
                         </p>
                     </div>

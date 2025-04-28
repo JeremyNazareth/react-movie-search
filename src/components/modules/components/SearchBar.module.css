@@ -1,0 +1,10 @@
+.bar{
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    flex-wrap: nowrap !important;
+}
+
+.searchBar{
+   flex: 1 1 auto;
+}
