@@ -35,8 +35,12 @@ function Home(){
     
 
     useEffect (() =>{
-        if (width < 1000){
+        console.log(width + " " + slides)
+        if (width <= 1350 && width >= 1101){
             setSlides(4);    
+        }
+        else if ( width <= 1101){
+            setSlides(3);
         } else{
             setSlides(5);
         }
@@ -72,8 +76,9 @@ function Home(){
 
             {/*}Sección de peliculas populares{*/}
             <section className={styles.PopularMovies}>
-                <h2>Most popular movies</h2>
+                
                 <div className={styles.popularMoviesSlider}>
+                <h2>Most popular movies</h2>
                     <Slider {...popularMoviesSettings}>
                         {popularMovies.map((popularMovie) => (
                             <MovieCard key={popularMovie.id} movie={popularMovie} />
@@ -83,7 +88,7 @@ function Home(){
             </section>
 
             {/*}Sección de peliculas mejores puntuadas{*/}                    
-            <section className={styles.RatingMovies}>
+            <section className={styles.RatingMovies} id='Slider'>
                 <h2>Top rated movies</h2>
                 <div className={styles.topMoviesSlider}>
                     <Slider {...topRatedMoviesSettings}>
