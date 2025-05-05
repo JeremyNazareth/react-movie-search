@@ -1,10 +1,11 @@
 .favoriteList{
     display: grid;
-    width: 1200px;
+    width: 1000px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,1fr);
-    column-gap: 25px;
-    row-gap: 15px;
+    justify-items: center;
+    column-gap: 0px;
+    row-gap: 10px;
 }
 
 main h1{
@@ -12,4 +13,10 @@ main h1{
     font-weight: 550;
     color: #2E8B57;
     margin: 20px 0px;
+}
+
+@media (max-width: 1300px){
+    .favoriteList{
+        
+    }
 }
