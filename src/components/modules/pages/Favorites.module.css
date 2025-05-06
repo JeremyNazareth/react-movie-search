@@ -8,6 +8,20 @@
     row-gap: 10px;
 }
 
+.emptyState{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.emptyState h1{
+    text-align: center;
+    font-size: 23px;
+    color: rgb(185, 185, 185);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.082);
+}
 main h1{
     font-size: 25px;
     font-weight: 550;

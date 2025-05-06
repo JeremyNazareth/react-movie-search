@@ -5,10 +5,12 @@
     margin-top: 16px;
     margin-bottom: 5px;
 }
+
 .cover{
     display: flex;
     height: 600px;
-    width: 1500px;
+    width: 80%;
+    min-width: 50%;
     border-radius: 20px;
     background-repeat: no-repeat;
     padding: 0px 30px;
@@ -16,12 +18,21 @@
 
 .details{
     display: flex;
+    max-width: 100%;
 }
 
 .poster{
     text-align: center;
     margin: auto;
     width: 430px;
+    padding: 0px 30px;
+}
+
+.mainDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
 }
 
 .poster img{
@@ -41,15 +52,6 @@
 
 .favoriteBtn:hover{
     background-color: rgb(207, 207, 207);
-}
-
-
-.mainDetails{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 1050px;
-    height: 100%;
 }
 
 .mainDetails h2{
@@ -106,22 +108,21 @@
 }
 
 .overview{
-    width: 500px;   
+    width: 55%;
 }
 
-.distribution{
-    position: relative;
-    
+.distributionSection{
+    width: 80%;
 }
-
 .crew{
     display: flex;
     gap: 20px;
-    width: 1500px;
+    
 }
 
 .subDetail{
     margin-top: 5px;
+    text-align: center;
 }
 
 .subDetail h4{
@@ -139,14 +140,13 @@
     text-align: center;
     display: flex;
     overflow-x: auto;   
-    width: 1500px;
+    
     height: auto;
     gap: 25px;
 }
 
 .recomendationList{
     display: flex;
-    width: 1500px;
     overflow-x: auto;
     gap: 25px;
     

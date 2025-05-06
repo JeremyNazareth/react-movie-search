@@ -25,7 +25,6 @@ const MovieDetails = () => {
     }
 
     
-    
     //se rescata la lista de favoritos guardada en storage para declarar el estado de initialFavoriteState para su uso en el hook del estado inicial del boton de favoritos
     let moviesStorage = JSON.parse(localStorage.getItem('FavoriteMovies') || '[]');
     let initialFavoriteState = !!moviesStorage.find((movieStoraged: Movie) => movieStoraged.id === movie?.id)
@@ -89,7 +88,7 @@ const MovieDetails = () => {
             linear-gradient(to left,rgba(40, 94, 49),rgba(0,0,0,0)),
             url(https://image.tmdb.org/t/p/w1280${movie?.backdrop_path})`;
             cover.style.backgroundRepeat = 'no-repeat';
-            cover.style.backgroundPosition = '180% 0%';
+            cover.style.backgroundPosition = 'right'
             cover.style.backgroundColor = 'black';
         }
         
@@ -130,7 +129,7 @@ const MovieDetails = () => {
                 </div>
                 
             </section>
-            <section >
+            <section className={style.distributionSection}>
                 <h2 className={style.sectionTitle}>Crew</h2>
                 <div className={style.crew}>
                     <div className={style.subDetail}>
@@ -156,7 +155,7 @@ const MovieDetails = () => {
                     </div>
                 </div>
             </section>
-            <section className={style.distribution}>
+            <section className={style.distributionSection}>
                 <h2 className={style.sectionTitle}>Casting</h2>
                 <div className={style.cast}>
                     {cast?.map((actor: Actor) => { 
@@ -164,7 +163,7 @@ const MovieDetails = () => {
                     })}
                 </div>
             </section>
-            <section>
+            <section className={style.distributionSection}>
                 <h2 className={style.sectionTitle}>Similar Movies</h2>
                 <div className={style.recomendationList}>
                     {recomendationList.map((recomendedMovie) =>(

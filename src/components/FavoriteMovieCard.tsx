@@ -11,7 +11,6 @@ const FavoriteMovieCard = ({movie}:Props) =>{
     const date = new Date(movie? movie.release_date : "00/00/0000");
     const movieDate = `${new Intl.DateTimeFormat("en-US", {month: "long"}).format(date)} ${date.getDay().toString()}, ${date.getFullYear().toString()}`
     const navigate = useNavigateToMovie()
-    console.log(movie)
     return(
         <article className={styles.movie} onClick={() => navigate(movie.id.toString())}>
             <img className={styles.poster} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" />
@@ -22,8 +21,6 @@ const FavoriteMovieCard = ({movie}:Props) =>{
                 <h6>{movie.vote_average.toFixed(1)}</h6>
             </div>
 
-            
-            
         </article>
     )
 }
