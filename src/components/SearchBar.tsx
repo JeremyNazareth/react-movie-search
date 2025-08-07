@@ -45,14 +45,13 @@ export function SearchBar({movies}:MovieProps){
     } else{
         moviesSearch = movies
     }
-
     return(
-        <section className={`dropdown searcher ${styles.searchBar}`}>
-            <div className={`input-group mb3 dropdown-toggle ${styles.bar}`} data-bs-toggle="dropdown" style={{minHeight:35}}>
-                <input className="form-control search-input" style={{height:35}} onChange={searcher} onKeyDown={enter} type="text" value={search}/>
-                <button className="input-group-text search-btn" onClick={searchNavigate}> <Search></Search> </button>
+        <section className={`dropdown searcher ${styles.searcher}`}>
+            <div className={`input-group mb3 dropdown-toggle ${styles.bar}`} data-bs-toggle="dropdown">
+                <input className={`form-control search-input ${styles.searchBar}`} onChange={searcher} onKeyDown={enter} type="text" value={search}/>
+                <button className={`input-group-text search-btn ${styles.searchBtn}`} onClick={searchNavigate}> <Search></Search> </button>
             </div>
-            <ul className="dropdown-menu">
+            <ul className={`dropdown-menu ${styles.dropdownResults}`}>
                 { moviesSearch.length === 0 ?(
                     <li style={{paddingLeft:10, fontSize:16, color:"black", fontWeight:600}}>No results</li>
                 ) : (

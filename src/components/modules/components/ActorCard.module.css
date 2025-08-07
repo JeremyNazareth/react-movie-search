@@ -20,3 +20,16 @@
     font-size: 16px;
     border-radius: 0px 0px 10px 10px;
 }
+
+.actorCharacter{
+    font-size: 14px;
+}
+
+@media (max-width:1030px){
+    .actorName{
+        font-size: 1.3rem;
+    }
+    .actorCharacter{
+        font-size: 1.2rem;
+    }
+}

@@ -24,8 +24,11 @@ const topMovieCard = ({topMovie}: Props) => {
     }
 
     return(
-        <article key={topMovie.id} className={styles.SliderItem} onClick={() => navigate(topMovie.id.toString())}>
-            <img className={styles.ItemImg} src={`https://image.tmdb.org/t/p/w500${topMovie.poster_path}`} alt="" />
+        <article key={topMovie.id} className={styles.sliderItem} onClick={() => navigate(topMovie.id.toString())}>
+            <div className={styles.imageWrapper}>
+                <img className={styles.ItemImg} src={`https://image.tmdb.org/t/p/w500${topMovie.poster_path}`} alt="" />
+            </div>
+            
             <header className={styles.ItemText}>
                 <h3>{topMovie.title}</h3>
                 <h5>{movieDate}</h5>

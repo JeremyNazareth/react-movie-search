@@ -7,9 +7,6 @@ const Footer = () =>{
 
     return(
         <footer className={styles.footer}>
-
-            
-            
             <div className={styles.navBar}>
                 <p className={styles.footerTitle}>MovieSearch</p>
                 <nav>

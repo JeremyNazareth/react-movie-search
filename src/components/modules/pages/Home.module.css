@@ -1,9 +1,3 @@
-.Content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
 
 .Start{
     display: flex;
@@ -20,22 +14,26 @@
 
 .subTitle{
     font-size: 20px;
+    text-align: center;
+    width: 100%;
+    padding: 0px 25px;
 }
 
 .PopularMovies{
-    width: 1250px;
-    height: 600px;
+    max-width: 100% !important;
+    width: 100%;
+    justify-content: center;
+    overflow-y: hidden;
 }
 
-.PopularMovies h2{
-    margin-top: 40px;
-    margin-bottom: 15px;
-    margin-left: 10px;
+.seccionTitle{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 14px;
     font-size: 20px;
     color: #2E8B57;
     font-weight: 700;
 }
-
 
 .RatingMovies h2{
     text-align: center;
@@ -46,25 +44,118 @@
 }
 
 .popularMoviesSlider{
-    width: 1250px;
-    height: 500px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
     margin: auto;
 }
 
+.topMovies{
+    width: 100%;
+}
 .topMoviesSlider{
-    width: 1100px;
+    width: 100%;
     height: auto;
+    padding: 10px;
+    overflow: hidden;
 }
 
-@media (max-width:1100px){
-    .popularMoviesSlider{
-        width: 800px;
-    }
-}  
+.windowSlider{
+    width: auto;
+}
 
-@media (min-width:1101px) and (max-width:1360px){
-    .popularMoviesSlider{
-        width: 1000px;
-    }
-}  
+.nextSlider{
+    animation: toRight 1s ease;
+}
 
+.prevSlider{
+    animation: toRight 1s ease reverse;
+}
+
+.dotSlider{
+    animation: toUp 1s ease;
+}
+
+.nextSlideBtn{
+    all: unset;
+    stroke: #2E8B57;
+    transform: scale(1.5);
+    transition: ease 100ms;
+}
+
+.nextSlideBtn:hover{
+    transform: scale(2);
+}
+.nextSlideBtn svg{
+    stroke: #2E8B57;
+}
+
+.prevBtn{
+    transform: scaleX(-1);
+}
+
+@keyframes toRight{
+    0% {
+    transform: translateX(0);    
+    opacity: 1;
+    }
+    50% {
+    transform: translateX(-100%);
+    opacity: 0;
+    }
+    51% {
+    transform: translateX(100%);  
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+@keyframes toUp{
+    0% {
+        transform: translateY(0%);
+    }
+    25% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    50%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+}
+.dotsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.dots{
+    all: unset;
+    border-radius: 25px;
+    border: gray 2px solid;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    transition: transform 100ms ease;
+}
+
+.dots.active{
+    background-color: #2E8B57;
+    border: #2E8B57 2px solid;
+    transform: scale(1.3);  
+}
+
+.dots:hover{
+    transform: scale(1.3);  
+}

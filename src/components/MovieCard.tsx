@@ -33,7 +33,6 @@ function MovieCard ({movie}:Props)  {
                 <h4>{movieDate}</h4>
                 <div className={styles.Rating}>
                     {<Rating rating={movie.vote_average.toFixed(1)}/>}
-                    
                 </div>
             </header>
         </article>      

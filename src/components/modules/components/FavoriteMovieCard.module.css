@@ -1,21 +1,25 @@
 .movie{
     display: flex;
-    width: auto;
+    flex-direction: column;
+    height: auto;
+    width: 180px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
     border-radius: 10px;
-    width: 290px;
-    
 }
 
 .poster{
-    width: 145px;
-    height: 200px;
-    border-radius: 10px 0px 0px 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .movieData{
-    width: 145px;
-    margin: 5px 15px;
+    width: 100%;
+    padding: 10px;
+}
+
+.movieOverview{
+    display: none !important;
 }
 
 .movieData h3{
@@ -32,4 +36,23 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     line-clamp: 3;
+}
+
+@media (max-width: 630px){
+
+    .movieOverview{
+        display: block !important; 
+        height: 70px;
+        text-overflow: ellipsis;
+    }
+    .poster{
+        width: 140px;
+        height: 210px;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .movie{
+        width: 100%;
+        flex-direction: row;
+        height: 210px;
+    }
 }

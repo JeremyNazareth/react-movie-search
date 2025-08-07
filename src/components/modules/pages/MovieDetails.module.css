@@ -6,47 +6,58 @@
     margin-bottom: 5px;
 }
 
+
 .cover{
     display: flex;
-    height: 600px;
+    min-width: 230px;
+    height: auto;
     width: 80%;
-    min-width: 50%;
     border-radius: 20px;
-    background-repeat: no-repeat;
-    padding: 0px 30px;
+    background-color: #245c3c;
 }
 
-.details{
-    display: flex;
-    max-width: 100%;
-}
-
-.poster{
-    text-align: center;
-    margin: auto;
-    width: 430px;
-    padding: 0px 30px;
-}
-
-.mainDetails{
+.moviePoster{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding-right: 10px;
+    width: 40%;
+    height: auto;
+    margin: 30px;
+    min-width: 200px;
 }
 
-.poster img{
+.movieInfo{
+    display: flex;
+    margin: 0;
+    width: 70%;
+    padding: 25px 0px;
+    padding-right: 15px;
+    border-radius: 0px 20px 20px 0px;
+    flex-direction: column;
+    justify-content: center;
+    --bg-url:none;
+    background-image: linear-gradient(
+        to right, #245c3c, #245c3cea 20%, #245c3ccc 40%
+    ), var(--bg-url);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.moviePoster img{
     border-radius: 15px;
     margin-top: 40px;
-    width: 300px;
-    height: 450px;
+    width: 100%;
+    height: auto;
 }
 
 .favoriteBtn{
     margin-top: 10px;
     border-radius: 15px;
     border: 1px solid #245c3c;
-    width: 301px;
+    width: 100%;
     height: 35px;
 }
 
@@ -54,7 +65,7 @@
     background-color: rgb(207, 207, 207);
 }
 
-.mainDetails h2{
+.movieInfo h2{
     color:#FFFAE3 !important;
 }
 
@@ -67,7 +78,7 @@
 
 .tagline{
     color: rgb(228, 228, 228);
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 350;
     margin: 0px;
 }
@@ -86,39 +97,60 @@
     color: gold !important;
 }
 
-.mainDetails h1{
+.movieInfo h1{
     color: white;
 }
 
-.mainDetails h2{
+.movieInfo h2{
     color: gold;
 }
 
-.mainDetails h3{
+.movieInfo h3{
     color: #cce2d5;
     font-size: 16px;
 }
 
-.mainDetails h4{
+.movieInfo h4{
     color: white;
 }
 
-.mainDetails h5{
+.movieInfo h5{
     color: #cce2d5;
 }
 
 .overview{
-    width: 55%;
+    width: 75%;
 }
 
 .distributionSection{
-    width: 80%;
+    width: 80% !important;
+    min-width: 0px;
+    max-width: 1100px;
 }
 .crew{
     display: flex;
-    gap: 20px;
+    gap: 20px;   
+    width: 100%;
+    overflow-x: auto;
+}
+
+.recomendationList{
+    display: flex;
+    overflow-x: auto;
+    gap: 25px;
+    width: 100%;
     
 }
+
+.cast{
+    display: flex;
+    text-align: center;
+    overflow-x: auto;   
+    height: auto;
+    gap: 25px;
+    width: 100%;
+}
+
 
 .subDetail{
     margin-top: 5px;
@@ -136,21 +168,7 @@
     font-weight: 400;
     font-size: 15px;
 }
-.cast{
-    text-align: center;
-    display: flex;
-    overflow-x: auto;   
-    
-    height: auto;
-    gap: 25px;
-}
 
-.recomendationList{
-    display: flex;
-    overflow-x: auto;
-    gap: 25px;
-    
-}
 
 .recomendedMovie{
     margin: 10px;
@@ -168,4 +186,30 @@
     font-size: 16px;
     font-weight: 600;
     margin: 0;
+}
+
+
+@media (max-width:680px){
+    .cover{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movieInfo{
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+        padding-left: 20px;
+        background-image: linear-gradient(
+            to bottom, #245c3c, #245c3cf6 10%, #245c3ccc 20%
+        ), var(--bg-url)
+    }
+}
+@media (max-width:902px) {
+    .cover{
+        background-position: 180% 0;
+        padding: 5;
+    }
+    
+    
+
 }

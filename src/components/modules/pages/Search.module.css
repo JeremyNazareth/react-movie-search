@@ -1,13 +1,11 @@
-.temporaryContainer{
-    width: 70%;
-}
 
 .title{
     align-items: start;
+    width: 100%;
     color: black;
     font-size: 22px;
     font-weight: 400;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
 }
 
 .content{
@@ -18,7 +16,10 @@
 
 .genresFilter{
     height: fit-content !important;
-    width: 250px;
+    min-width: 250px !important;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    margin: 0;
+    padding: 0;
 }
 
 .filterTitle{
@@ -30,11 +31,6 @@
 }
 
 
-.genresFilter{
-    margin: 0;
-    padding: 0;
-}
-
 .checkboxLabel {
     color: rgb(69, 111, 129);
     margin-left: 15px;
@@ -44,9 +40,9 @@
 .searchedMovies{
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
     height: auto;
-    width: 700px;
+    margin: auto;
+    width: 100%;
     gap: 16px;
 }
 
@@ -58,13 +54,11 @@
     border-radius: 1px;
 }
 
-
 .poster{
     width: 150px;
     height: 225px;
     border-radius: 3px;
     margin-bottom: 17px;
-    
 }
 
 .movieText h3{
@@ -86,3 +80,78 @@
     font-weight: 500;
 }
 
+.genresFilter li label{
+    color: #2E8B57;
+}
+
+.responsiveFilter{
+    display: none;
+    margin: 0;
+    padding: 14px;
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.623);
+    width: 150px;
+    border-radius: 8px;
+    margin-top: 43px;
+    z-index: 100;
+}
+
+.responsiveFilter li label{
+    color: #2E8B57;
+}
+
+.filtersBtn{
+    display: none;
+    width: 150px;
+    border: rgba(0, 0, 0, 0.253) 1px solid;
+    background-color: white;
+    padding: 8px;
+    border-radius: 10px;;
+}
+
+.filtersBtn:hover{
+    cursor: pointer;
+}
+
+.responsiveFilterContainer{
+    display: none;
+    width: 70%;
+    justify-content: start;
+}
+
+.isVisible{
+    display: block;
+}
+
+.btnActive{
+    background-color: #2E8B57;
+    color: white !important;
+    
+}
+
+.btnActive svg{
+    stroke: white !important;
+}
+
+@media (max-width:1070px){
+    .content{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .title{
+        width: 90%;
+    }
+    .genresFilter{
+        display: none !important;
+    }
+
+    .filtersBtn{
+        display: block;
+    }
+
+    .responsiveFilterContainer{
+        display: flex;
+    }
+}

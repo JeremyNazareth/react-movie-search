@@ -17,7 +17,7 @@ const FavoriteMovieCard = ({movie}:Props) =>{
             <div className={styles.movieData}>
                 <h3>{movie.title}</h3>
                 <h6>{movieDate}</h6>
-                <h6>{movie.overview}</h6>
+                <h6 className={styles.movieOverview}>{movie.overview}</h6>
                 <h6>{movie.vote_average.toFixed(1)}</h6>
             </div>
 

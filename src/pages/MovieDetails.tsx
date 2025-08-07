@@ -81,15 +81,14 @@ const MovieDetails = () => {
     const text = isOnFavorites ? 'Remove' : 'Add'
     
     useEffect (() =>{
-        const cover = document.getElementById('cover');
-        if (cover){
-            cover.style.background =
-            `linear-gradient(to right,rgb(40, 94, 49) 30%,rgba(0,0,0,0.1) 70%),
-            linear-gradient(to left,rgba(40, 94, 49),rgba(0,0,0,0)),
-            url(https://image.tmdb.org/t/p/w1280${movie?.backdrop_path})`;
-            cover.style.backgroundRepeat = 'no-repeat';
-            cover.style.backgroundPosition = 'right'
-            cover.style.backgroundColor = 'black';
+        const movieInfo = document.getElementById('movie-info');
+        if (movieInfo){
+            //cover.style.background =
+            //`linear-gradient(to right,rgb(40, 94, 49) 30%,rgba(0,0,0,0.1) 70%),
+            //linear-gradient(to left,rgba(40, 94, 49),rgba(0,0,0,0)),
+            //url(https://image.tmdb.org/t/p/w1280${movie?.backdrop_path})`;
+            movieInfo.style.setProperty("--bg-url",`url(https://image.tmdb.org/t/p/w1280${movie?.backdrop_path})`)
+            console.log(`https:image.tmdb.org/t/p/w1280${movie?.backdrop_path}`)
         }
         
     },[movie]);
@@ -99,33 +98,31 @@ const MovieDetails = () => {
     
     return(
         <main className='full-body' style={{alignItems:"center"}}>
-            <section id='cover' className={style.cover}>
-                <div className={style.details}>
-                    <div className={style.poster}>
-                        <img style={{margin:0}} src={`https://image.tmdb.org/t/p/w500${movie?.poster_path}`} alt="" />
-                        <button className={style.favoriteBtn} onClick={() => {HandleClick()}}>
-                            {isOnFavorites? <HeartOff color="#2E8B57" /> : <Heart color="#2E8B57"/>}
-                        </button>
+            <section className={style.cover}>
+                <div className={style.moviePoster}>
+                    <img className={style.posterImg} style={{margin:0}} src={`https://image.tmdb.org/t/p/w500${movie?.poster_path}`} alt="" />
+                    <button className={style.favoriteBtn} onClick={() => {HandleClick()}}>
+                        {isOnFavorites? <HeartOff color="#2E8B57" /> : <Heart color="#2E8B57"/>}
+                    </button>
+                </div>
+                <div className={style.movieInfo} id='movie-info'>
+                    <div>
+                        <p className={style.title}>{movie?.title}&nbsp;</p>
+                        <p className={style.tagline}>{movie?.tagline} </p>
                     </div>
-                    <div className={style.mainDetails}>
-                        <div style={{display:"flex"}}>
-                            <p className={style.title}>{movie?.title}&nbsp;</p>
-                            <p className={style.tagline}>{movie?.tagline}</p>
-                        </div>
-                        <h3>{genresMovie.join(", ")}</h3>
-                        <h3 style={{marginBottom:15}}>{movieDate}</h3>
-                        <h4>Overview</h4>
-                        <h5> {movie?.runtime}mins</h5>
-                        <div className={style.overview}>
-                            <h5>{movie?.overview}</h5>
-                        </div>
-                        <div className={style.movieRank}>
-                            <p className={style.rankLogo}>M&nbsp;</p>
-                            <p className={style.rankValue}>{movie?.vote_average.toFixed(1)}</p>
-                        </div>
-                        <h4>Director</h4>
-                        <h5>{director? director.name : "Unkown"}</h5>
+                    <h3>{genresMovie.join(", ")}</h3>
+                    <h3 style={{marginBottom:15}}>{movieDate}</h3>
+                    <h4>Overview</h4>
+                    <h5> {movie?.runtime}mins</h5>
+                    <div className={style.overview}>
+                        <h5>{movie?.overview}</h5>
                     </div>
+                    <div className={style.movieRank}>
+                        <p className={style.rankLogo}>M&nbsp;</p>
+                        <p className={style.rankValue}>{movie?.vote_average.toFixed(1)}</p>
+                    </div>
+                    <h4>Director</h4>
+                    <h5>{director? director.name : "Unkown"}</h5>
                 </div>
                 
             </section>

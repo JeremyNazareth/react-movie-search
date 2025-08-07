@@ -1,10 +1,21 @@
+.searcher{
+    margin: 0px 25px;
+    width: 100% !important;
+}
+
 .bar{
-    width: 80%;
-    align-items: center;
-    margin: auto;
+    justify-content: center;
+    width: 100% !important;
+    height: 35%;
+    margin: 0;
     flex-wrap: nowrap !important;
 }
 
-.searchBar{
-   flex: 1 1 auto;
+@media (max-width:768px){
+    .searcher{
+        margin: 0;
+        width: 100% !important;
+    }
+    
 }
+

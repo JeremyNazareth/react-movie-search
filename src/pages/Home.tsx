@@ -2,72 +2,47 @@ import { useEffect, useRef, useState } from 'react';
 import popularMovies from '../assets/data/movies.json';
 import topMovies from '../assets/data/topRated.json'
 import MovieCard from '../components/MovieCard';
-import TopMovieCard from '../components/TopMovieCard'
-import styles from '../components/modules/pages/Home.module.css'
+import TopMovieCard from '../components/TopMovieCard';
+import styles from '../components/modules/pages/Home.module.css';
+import {ChevronRight} from 'lucide-react';
 //import Slider from '../components/Slider'
-import Slider from 'react-slick'
+
 function Home(){
+
+    const [currentSlide, setCurrentSlide] = useState(0);       
+    const [timeOutState, setTimeoutState] = useState(false);
+    const moviesSliderRef = useRef<HTMLDivElement>(null);
     
-    const [slides, setSlides] = useState(5);
-    const [width, setWidth] = useState(0);
-    const containerRef = useRef(null);
-
-    const popularMoviesSettings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: slides,
-        slidesToScroll: 1,
-    };
-
     
+    const changeSlide = (right: boolean) => {
 
-    useEffect(() => {
-        if(containerRef.current){
-            const observer = new ResizeObserver((entries) =>{
-                const entry = entries[0];
-                setWidth(entry.contentRect.width)
-            })
-            observer.observe(containerRef.current)
+        const rightSlide = (currentSlide + 1) % topMovies.length;
+        const leftSlide = (currentSlide - 1 + topMovies.length) % topMovies.length;
+        if(moviesSliderRef.current){
+            right ? Sliding(styles.nextSlider,rightSlide) : Sliding(styles.prevSlider, leftSlide);
         }
-        console.log(width)
-    }, [])
+    }
     
-
-    useEffect (() =>{
-        console.log(width + " " + slides)
-        if (width <= 1350 && width >= 1101){
-            setSlides(4);    
+    const Sliding = (classStyle: string,slide: number) =>{
+        setTimeoutState(true);
+        if(moviesSliderRef.current){
+            moviesSliderRef.current.classList.add(classStyle)
+            const setSlider = setTimeout(() => {setCurrentSlide(slide)}, 500)
+            const clearClass = setTimeout(() => {moviesSliderRef.current!.classList.remove(classStyle); setTimeoutState(false)},1000)
         }
-        else if ( width <= 1101){
-            setSlides(3);
-        } else{
-            setSlides(5);
-        }
-        popularMoviesSettings.slidesToShow = slides;
-    }, [width])
+        
+    }
 
-    const topRatedMoviesSettings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-
-    };
-    
     //<Slider movies={topMovies} genres={genresData}></Slider>        
-    {/*
+    /*
     <div className={styles.Movies}>                
                     {popularMovies.map((movieData) => (
-                        <MovieCard key={movieData.id} movie={movieData} />
+                        <MovieCard key={movieData.id} movie={movieData} /> 
                     ))}
     </div>       
-    */}
+    */
     return(
-        <main className='main-body' ref={containerRef}>
+        <main className='main-body' >
             {/*}Sección del inicio{*/}
             <section className={styles.Start}>
                 <p className={styles.title}>Welcome</p>
@@ -76,28 +51,36 @@ function Home(){
 
             {/*}Sección de peliculas populares{*/}
             <section className={styles.PopularMovies}>
-                
+
+                <h2 className={styles.seccionTitle}>Most popular movies</h2>
                 <div className={styles.popularMoviesSlider}>
-                <h2>Most popular movies</h2>
-                    <Slider {...popularMoviesSettings}>
-                        {popularMovies.map((popularMovie) => (
+                    {popularMovies.map((popularMovie) => (
                             <MovieCard key={popularMovie.id} movie={popularMovie} />
                         ))}
-                    </Slider>
                 </div>
             </section>
-
-            {/*}Sección de peliculas mejores puntuadas{*/}                    
-            <section className={styles.RatingMovies} id='Slider'>
-                <h2>Top rated movies</h2>
+      
+            {/* Sección de peliculas mejores puntuadas */}
+            <section className={styles.topMovies} id='Slider'>
+                <h2 className={styles.seccionTitle}>Top rated movies</h2>
                 <div className={styles.topMoviesSlider}>
-                    <Slider {...topRatedMoviesSettings}>
-                        {topMovies.map((topMovie) =>(
-                            <TopMovieCard topMovie={topMovie}></TopMovieCard>
-                        ))}
-                    </Slider>
+                    <div id='moviesSlider' ref={moviesSliderRef} className={styles.moviesSlider}>
+                        {<TopMovieCard topMovie={topMovies[currentSlide]}></TopMovieCard>}
+                    </div>
                 </div>
+                    <div className={styles.dotsContainer} >
+                        <div className={styles.prevBtn}>
+                            <button className={`${styles.nextSlideBtn}`} onClick={() => changeSlide(false)} disabled={timeOutState}><ChevronRight /></button>    
+                        </div>
+                        
+                        {topMovies.map((topMovie, i) => (
+                            <button className={`${styles.dots} ${currentSlide == i ? styles.active : ""}`} key={i} onClick={() => {Sliding(styles.dotSlider,i)}} disabled={timeOutState}></button>
+                        ))}
+                        
+                        <button className={styles.nextSlideBtn} onClick={() => changeSlide(true)} disabled={timeOutState}><ChevronRight /></button>
+                    </div>
             </section>
+            <p>{`${topMovies.length} currentSlide ${currentSlide}`}</p>
         </main>
     )
 }
