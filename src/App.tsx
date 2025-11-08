@@ -3,16 +3,16 @@ import '../assets/styles/global.css'
 
 import {Routes, Route } from 'react-router-dom'
 
-import Header from "../components/Header"
-import Inicio from "./Home"
-import Favoritos from "./Favorites"
-import About from "./About"
-import Search from './Search'
-import Footer from '../components/Footer'
-import MovieDetails from './MovieDetails'
+import Header from "./components/Header"
+import Inicio from "./pages/Home"
+import Favoritos from "./pages/Favorites"
+import About from "./pages/About"
+import Search from './pages/Search'
+import Footer from './components/Footer'
+import MovieDetails from './pages/MovieDetails'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Discover from './Discover'
+import Discover from './pages/Discover'
 
 function App() {
 
