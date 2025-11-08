@@ -1,51 +1,26 @@
-.tabText p{
-    font-size: 14px;
-    width: 500px;
-    margin: 15px 0px;
-}
-
-.test{
-    transition: ease-in-out 2s;
+.aboutContainer{
+    width: 85%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
     
 }
 
-.test1{
-    height: 200px;
-    width: 200px;
-    background-color: blue;
-    margin: auto;
-    transition: transform 0.5s ease;
-    animation: none;
-    display: flex;
+.aboutContainer h1{
+    color: #2E8B57;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: start;
+    margin-bottom: 5px;
+    margin-top: 15px;
 }
 
-.test1 p {
-    margin: auto;
-    color: white;
-}
-.test1:hover{
-    animation: fromRight 1s ease;
+.aboutContainer p{
+    font-size: 18px;
+    
 }
 
-.right{
-    animation: toRight 1s ease;
-    background-color: red;
-}
-@keyframes toRight{
-    0% {
-    transform: translateX(0);    /* Posición inicial */
-    opacity: 1;
-    }
-    50% {
-    transform: translateX(-100%); /* Sale completamente por izquierda */
-    opacity: 0;
-    }
-    51% {
-    transform: translateX(100%);  /* Aparece en derecha (invisible todavía) */
-    opacity: 0;
-    }
-    100% {
-    transform: translateX(0);     /* Vuelve al centro desde derecha */
-    opacity: 1;
-    }
+.aboutContainer ul li{
+    font-size: 18px;
+    font-weight: 350;
 }

@@ -8,21 +8,10 @@ import { useState, useEffect } from "react"
 
 const Search = () => {
 
+    //Searched string
     const {search} = useParams();
-    const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
     
-    const [searchedMovies, setSearchedMovies] = useState<Movie[]>([]);
-    const [isVisible, setIsVisible] = useState(false);
-
-    const filterMark =  (event: React.ChangeEvent<HTMLInputElement>) => {
-        
-        const { id , checked } = event.target;
-        setSelectedFilters((prev) => 
-            checked ? [...prev, id] : prev.filter((g) => g !== id) 
-        )        
-        
-    }
-
+    //Filter system with .includes()
     const filteredMovies = movies.filter((movie) =>
         movie.title.toLowerCase().includes(search ? search  : "Desconocido")
     )
@@ -30,29 +19,16 @@ const Search = () => {
     const [currentMovies, setCurrentMovies] = useState<Movie[]>(filteredMovies);
 
     useEffect(() =>{
-        setSearchedMovies(filteredMovies)
         setCurrentMovies(filteredMovies)  
     }, [search, movies]);
 
-    /*
-    useEffect(() =>{
-
-        if (selectedFilters.length > 0){
-            setCurrentMovies(searchedMovies.filter((movie) => selectedFilters.every((filter) => movie.genre_ids.includes(Number(filter)))))
-        } else{
-            setCurrentMovies(searchedMovies)
-        }
-    }, [selectedFilters, searchedMovies])
-    */
 
     return (
         <main className="main-body">
             <p className={styles.title}>
                 Showing results for "{search}"
             </p>
-            <div className={styles.content}>
-                <VerticalMovieList movieList={currentMovies} genres={genres}></VerticalMovieList>
-            </div>
+            <VerticalMovieList movieList={currentMovies} genres={genres}></VerticalMovieList>
         </main>
     )
     

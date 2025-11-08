@@ -10,10 +10,14 @@ import useNavigateToMovie from '../components/NavigateToMovie';
 
 const MovieDetails = () => {
 
-    //se rescata el id para seleccionar la pelicula objetivo.
+    //Movie id
     const {id} = useParams();
+
     let movie = movieDetails.find((movieData) => movieData.id.toString() === id);
+
+    //useNavigateToMovie is a component that I created to navigate through the page
     const navigate = useNavigateToMovie();
+
     const languages: { [key:string] : string} ={
         en: "English",
         es: "Spanish",
@@ -25,12 +29,11 @@ const MovieDetails = () => {
     }
 
     
-    //se rescata la lista de favoritos guardada en storage para declarar el estado de initialFavoriteState para su uso en el hook del estado inicial del boton de favoritos
-    let moviesStorage = JSON.parse(localStorage.getItem('FavoriteMovies') || '[]');
+    //We retrieve the list of favorite movie storaged in session storage
+    let moviesStorage = JSON.parse(sessionStorage.getItem('FavoriteMovies') || '[]');
+    //We search the details from the current movie
     let initialFavoriteState = !!moviesStorage.find((movieStoraged: Movie) => movieStoraged.id === movie?.id)
-
-    //se hace la lista de recomendados en base a que uno de los generos sean similares
-    //se usa some para buscar al menos 1 genero que coincida, se usan 2 some para comparar los ids
+    //If a movie have one of the genres we add it to the recomendationList
     const recomendationList = movieDetails.filter((movieDetail) => movieDetail.genres.some((genre) => movie?.genres.some((movieGenre) => movieGenre.id === genre.id && movie.id != movieDetail.id)))
 
     const [isOnFavorites, setOnFavorites] = useState(initialFavoriteState);
@@ -38,10 +41,9 @@ const MovieDetails = () => {
     
     useEffect(() =>{
         setOnFavorites(initialFavoriteState)
-        
-
     },[id])
 
+    //We create multiples variables to display later on JSX fragment the details of the movie
     const movieDistribution = distribution.find((distributionMovie) => distributionMovie.id.toString() === id);
     const cast = movieDistribution.cast
     const crew = movieDistribution.crew
@@ -52,20 +54,22 @@ const MovieDetails = () => {
     const photographyDirector = crew.find((member) => member.job === "Director of Photography")
     
     //localStorage.removeItem('FavoriteMovies')
-    //Seccion de favoritos    
     
+    //Simple system to add the current movie to favorite or remove it
     const addMovie = () =>{
         moviesStorage.push(movie)
-        localStorage.setItem('FavoriteMovies', JSON.stringify(moviesStorage))
-        console.log("Pelicula agregada a favoritos: " + localStorage)
+        sessionStorage.setItem('FavoriteMovies', JSON.stringify(moviesStorage))
+        console.log("Pelicula agregada a favoritos: " + sessionStorage)
     }
     
     const removeMovie = () =>{
         let index = moviesStorage.findIndex((storagedMovie: Movie) => storagedMovie.id === movie?.id)
         moviesStorage.splice(index, 1)
-        localStorage.setItem('FavoriteMovies', JSON.stringify(moviesStorage))
-        console.log("Pelicula eliminada de favoritos: " + localStorage)
+        sessionStorage.setItem('FavoriteMovies', JSON.stringify(moviesStorage))
+        console.log("Pelicula eliminada de favoritos: " + sessionStorage)
     }
+
+    //We create a toggle system
     const HandleClick = () => {
         
         if(isOnFavorites){
@@ -83,10 +87,7 @@ const MovieDetails = () => {
     useEffect (() =>{
         const movieInfo = document.getElementById('movie-info');
         if (movieInfo){
-            //cover.style.background =
-            //`linear-gradient(to right,rgb(40, 94, 49) 30%,rgba(0,0,0,0.1) 70%),
-            //linear-gradient(to left,rgba(40, 94, 49),rgba(0,0,0,0)),
-            //url(https://image.tmdb.org/t/p/w1280${movie?.backdrop_path})`;
+            //Background
             movieInfo.style.setProperty("--bg-url",`url(https://image.tmdb.org/t/p/w1280${movie?.backdrop_path})`)
             console.log(`https:image.tmdb.org/t/p/w1280${movie?.backdrop_path}`)
         }
@@ -94,7 +95,6 @@ const MovieDetails = () => {
     },[movie]);
 
     let genresMovie: string[] = movie?.genres.map((genre) => genre.name) || [];
-    //<button style={{width:50,height:60}} onClick={() => {HandleClick()}}>{text}</button>
     
     return(
         <main className='full-body' style={{alignItems:"center"}}>

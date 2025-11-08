@@ -2,6 +2,7 @@ import { useNavigate } from "react-router";
 
 const useNavigateToMovie = () =>{
 
+    //Context: Component used to automate the navigation 
     let navigate = useNavigate();
 
     const navigating = (id:string) => {

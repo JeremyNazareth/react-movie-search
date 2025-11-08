@@ -5,13 +5,13 @@
     color: black;
     font-size: 22px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .content{
     display: flex;
     gap: 20px;
-    height: auto;
+    width: 100%;
 }
 
 .genresFilter{
@@ -135,10 +135,7 @@
 }
 
 @media (max-width:1070px){
-    .content{
-        width: 90%;
-        flex-direction: column;
-    }
+
 
     .title{
         width: 90%;

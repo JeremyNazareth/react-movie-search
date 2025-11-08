@@ -12,6 +12,7 @@
     padding: 25px 0px;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .headerContainer{
@@ -174,9 +175,9 @@
     .mobileNavbar{
         display: flex;
         position: absolute;
-        width: 50%;
+        width: 300px;
         margin: 0;
-        padding: 0;   
+        
         top: 140px;
         background-color: #2a8a54;
         z-index: 1000;
@@ -196,8 +197,10 @@
     }
 
     .navUl li{
-        margin-bottom: 15px;
-
+        
+        padding: 5px;
+        padding-left: 15px;
+        border-bottom: rgb(110, 207, 110) 1px solid;
     }
     .navUl li a{
         font-size: 1.5rem;

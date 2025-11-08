@@ -8,7 +8,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 200px;
     height: 425px;
-    margin: 15px 15px;
 }
 
 .poster{
@@ -65,10 +64,15 @@
     font-size: 18px;
     font-weight: 600;
     color: #2E8B57;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 
 }
 
 .movieData h4{
+    font-size: 15px;
     color: #696969
 }
 

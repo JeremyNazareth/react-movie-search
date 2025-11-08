@@ -9,10 +9,11 @@ function Header(){
     let [ isOpen, setIsOpen] = useState(false);
     const location = useLocation();
 
+    //We use the hook isOpen to play the open animation or close animation of Mobile Navbar
     const navClass = `${isOpen ? styles.mobileNavbar : styles.navbar + " " + styles.mobileNavbarToggle}`
     useEffect(() => {
-
         setIsOpen(false);
+        
     }, [location.pathname]);
     return(
         <header className={styles.header} >

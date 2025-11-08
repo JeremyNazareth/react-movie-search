@@ -92,8 +92,5 @@ const Slider = ({movies, genres}:MoviesProps & GenresProps) => {
     
 }
 
-{/*
-    <img className={styles.SliderImg} src={`https://image.tmdb.org/t/p/w500${movies[currentIndex].poster_path}`} alt="" />
-    <p>{console.log(currentIndex)}{movies[currentIndex].title}</p>     
-*/}
+
 export default Slider;

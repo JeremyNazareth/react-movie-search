@@ -1,0 +1,391 @@
+[
+  {
+    "adult": false,
+    "backdrop_path": "/fq8gLtrz1ByW3KQ2IM3RMZEIjsQ.jpg",
+    "genre_ids": [
+      27
+    ],
+    "id": 1038392,
+    "original_language": "en",
+    "original_title": "The Conjuring: Last Rites",
+    "overview": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+    "popularity": 249.8959,
+    "poster_path": "/7JzOmJ1fIU43I3gLHYsY8UzNzjG.jpg",
+    "release_date": "2025-09-03",
+    "title": "The Conjuring: Last Rites",
+    "video": false,
+    "vote_average": 6.573,
+    "vote_count": 432
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/Q2OajDi2kcO6yErb1IAyVDTKMs.jpg",
+    "genre_ids": [
+      27,
+      9648
+    ],
+    "id": 1078605,
+    "original_language": "en",
+    "original_title": "Weapons",
+    "overview": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
+    "popularity": 207.7571,
+    "poster_path": "/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+    "release_date": "2025-08-04",
+    "title": "Weapons",
+    "video": false,
+    "vote_average": 7.4,
+    "vote_count": 1579
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/uBB1aMga5ngZxsUQL5k36zeW3pB.jpg",
+    "genre_ids": [
+      27
+    ],
+    "id": 1242011,
+    "original_language": "en",
+    "original_title": "Together",
+    "overview": "With a move to the countryside already testing the limits of a couple's relationship, a supernatural encounter begins an extreme transformation of their love, their lives, and their flesh.",
+    "popularity": 124.0638,
+    "poster_path": "/m52XidzKx94bKlToZfEXUnL3pdy.jpg",
+    "release_date": "2025-07-28",
+    "title": "Together",
+    "video": false,
+    "vote_average": 7.2,
+    "vote_count": 487
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/q42Ah6zccbiojJdrn1MmwbjERKF.jpg",
+    "genre_ids": [
+      28,
+      80,
+      53
+    ],
+    "id": 1054867,
+    "original_language": "en",
+    "original_title": "One Battle After Another",
+    "overview": "When their evil nemesis resurfaces after 16 years, a band of ex-revolutionaries reunite to rescue the daughter of one of their own.",
+    "popularity": 110.1617,
+    "poster_path": "/m1jFoahEbeQXtx4zArT2FKdbNIj.jpg",
+    "release_date": "2025-09-23",
+    "title": "One Battle After Another",
+    "video": false,
+    "vote_average": 7.644,
+    "vote_count": 108
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/zxi6WQPVc0uQAG5TtLsKvxYHApC.jpg",
+    "genre_ids": [
+      16,
+      14,
+      12,
+      28
+    ],
+    "id": 980477,
+    "original_language": "zh",
+    "original_title": "哪吒之魔童闹海",
+    "overview": "After a catastrophic event leaves their bodies destroyed, Ne Zha and Ao Bing are granted a fragile second chance at life. As tensions rise between the dragon clans and celestial forces, the two must undergo a series of perilous trials that will test their bond, challenge their identities, and decide the fate of both mortals and immortals.",
+    "popularity": 87.4893,
+    "poster_path": "/5lUmWTGkEcYnXujixXn31o9q2T0.jpg",
+    "release_date": "2025-01-29",
+    "title": "Ne Zha 2",
+    "video": false,
+    "vote_average": 8.043,
+    "vote_count": 373
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/pcJft6lFWsJxutwpLHVYfmZRPQp.jpg",
+    "genre_ids": [
+      27,
+      53
+    ],
+    "id": 604079,
+    "original_language": "en",
+    "original_title": "The Long Walk",
+    "overview": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
+    "popularity": 78.5864,
+    "poster_path": "/wobVTa99eW0ht6c1rNNzLkazPtR.jpg",
+    "release_date": "2025-09-10",
+    "title": "The Long Walk",
+    "video": false,
+    "vote_average": 7.239,
+    "vote_count": 140
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/dh0dLVLDLqUKhtytCFjkf3EHeJI.jpg",
+    "genre_ids": [
+      16,
+      28,
+      14
+    ],
+    "id": 1218925,
+    "original_language": "ja",
+    "original_title": "チェンソーマン レゼ篇",
+    "overview": "In a brutal war between devils, hunters, and secret enemies, a mysterious girl named Reze has stepped into Denji's world, and he faces his deadliest battle yet, fueled by love in a world where survival knows no rules.",
+    "popularity": 66.0064,
+    "poster_path": "/xdzLBZjCVSEsic7m7nJc4jNJZVW.jpg",
+    "release_date": "2025-09-19",
+    "title": "Chainsaw Man - The Movie: Reze Arc",
+    "video": false,
+    "vote_average": 9.2,
+    "vote_count": 5
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/eQV9rSQ6S1ja4lGTwHTnQuVhoG.jpg",
+    "genre_ids": [
+      27,
+      35,
+      14,
+      18
+    ],
+    "id": 1284120,
+    "original_language": "no",
+    "original_title": "Den stygge stesøsteren",
+    "overview": "In a fairy-tale kingdom where beauty is a brutal business, Elvira battles to compete with her incredibly beautiful stepsister, and she will go to any length to catch the prince’s eye.",
+    "popularity": 63.7922,
+    "poster_path": "/crX9rSg9EohybhkEe8iTQUCe55y.jpg",
+    "release_date": "2025-03-07",
+    "title": "The Ugly Stepsister",
+    "video": false,
+    "vote_average": 7.2,
+    "vote_count": 404
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/cT9ZfwoPDk8JbgkessmQgxAWiaM.jpg",
+    "genre_ids": [
+      28,
+      878,
+      53
+    ],
+    "id": 1071585,
+    "original_language": "en",
+    "original_title": "M3GAN 2.0",
+    "overview": "After the underlying tech for M3GAN is stolen and misused by a powerful defense contractor to create a military-grade weapon known as Amelia, M3GAN's creator Gemma realizes that the only option is to resurrect M3GAN and give her a few upgrades, making her faster, stronger, and more lethal.",
+    "popularity": 46.4337,
+    "poster_path": "/4a63rQqIDTrYNdcnTXdPsQyxVLo.jpg",
+    "release_date": "2025-06-25",
+    "title": "M3GAN 2.0",
+    "video": false,
+    "vote_average": 7.5,
+    "vote_count": 833
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/1ZnEOaOUj2e2Fq6Y7wo9KeH5rS6.jpg",
+    "genre_ids": [
+      53,
+      18
+    ],
+    "id": 1088166,
+    "original_language": "en",
+    "original_title": "Relay",
+    "overview": "Tom, a world class \"fixer\", specializes in brokering lucrative payoffs between corrupt corporations and the individuals who threaten their ruin. He keeps his identity a secret through meticulous planning and always follows an exacting set of rules. But when a message arrives one day from potential client Sarah, needing Tom's protection just to stay alive, the rules quickly start to change.",
+    "popularity": 40.2739,
+    "poster_path": "/mpwccO2L8LUVtVTJTdgUVgoQqAo.jpg",
+    "release_date": "2025-08-21",
+    "title": "Relay",
+    "video": false,
+    "vote_average": 7.1,
+    "vote_count": 82
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/2ha0wAOqrUcLScStWQcgeOOXapQ.jpg",
+    "genre_ids": [
+      10749,
+      14,
+      18
+    ],
+    "id": 1241921,
+    "original_language": "en",
+    "original_title": "A Big Bold Beautiful Journey",
+    "overview": "Sarah and David are single strangers who meet at a mutual friend’s wedding and soon, through a surprising twist of fate, find themselves on a funny, fantastical, sweeping adventure together where they get to re-live important moments from their respective pasts, illuminating how they got to where they are in the present... and possibly getting a chance to alter their futures.",
+    "popularity": 40.1337,
+    "poster_path": "/dYm4Ah0UAgBHkYEPZIhuhkzl6ue.jpg",
+    "release_date": "2025-09-17",
+    "title": "A Big Bold Beautiful Journey",
+    "video": false,
+    "vote_average": 6.129,
+    "vote_count": 31
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/1s2qd3Og2vPiqYgWxt8BpTyH3n4.jpg",
+    "genre_ids": [
+      35
+    ],
+    "id": 1337562,
+    "original_language": "en",
+    "original_title": "Splitsville",
+    "overview": "After Ashley asks for a divorce, good-natured Carey runs to his friends, Julie and Paul, for support. He’s shocked to discover that the secret to their happiness is an open marriage, that is until Carey crosses the line and throws all of their relationships into chaos.",
+    "popularity": 38.8699,
+    "poster_path": "/gxCv6kUdywxYzIXX6xYcmX5APUV.jpg",
+    "release_date": "2025-08-21",
+    "title": "Splitsville",
+    "video": false,
+    "vote_average": 6.7,
+    "vote_count": 41
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/4BtL2vvEufDXDP4u6xQjjQ1Y2aT.jpg",
+    "genre_ids": [
+      28,
+      80,
+      53
+    ],
+    "id": 1419406,
+    "original_language": "zh",
+    "original_title": "捕风追影",
+    "overview": "Macau Police brings the tracking expert police officer out of retirement to help catch a dangerous group of professional thieves.",
+    "popularity": 36.3912,
+    "poster_path": "/e0RU6KpdnrqFxDKlI3NOqN8nHL6.jpg",
+    "release_date": "2025-08-16",
+    "title": "The Shadow's Edge",
+    "video": false,
+    "vote_average": 7.4,
+    "vote_count": 30
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/jzzpCJWkVZZwAxzzLmtYN0MBWFd.jpg",
+    "genre_ids": [
+      27,
+      9648
+    ],
+    "id": 986097,
+    "original_language": "en",
+    "original_title": "HIM",
+    "overview": "After suffering a potentially career-ending brain trauma, Cameron Cade receives a lifeline when his hero, legendary eight-time Championship quarterback and cultural megastar Isaiah White, offers to train Cam at Isaiah's isolated compound that he shares with his celebrity influencer wife. But as Cam's training accelerates, Isaiah's charisma begins to curdle into something darker.",
+    "popularity": 34.5044,
+    "poster_path": "/qPJzcYR2f1O1uynYBCVPPJuOiAH.jpg",
+    "release_date": "2025-09-18",
+    "title": "HIM",
+    "video": false,
+    "vote_average": 5.7,
+    "vote_count": 24
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/eNSUknQqzTXWE5EeT8ZnVccEPR0.jpg",
+    "genre_ids": [
+      27,
+      53
+    ],
+    "id": 1285965,
+    "original_language": "en",
+    "original_title": "Dangerous Animals",
+    "overview": "A savvy and free-spirited surfer is abducted by a shark-obsessed serial killer. Held captive on his boat, she must figure out how to escape before he carries out a ritualistic feeding to the sharks below.",
+    "popularity": 32.7084,
+    "poster_path": "/oQJ1PKLIE2gF5cr3xwjLCvv4jcU.jpg",
+    "release_date": "2025-06-05",
+    "title": "Dangerous Animals",
+    "video": false,
+    "vote_average": 6.471,
+    "vote_count": 275
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/fTrQsdMS2MUw00RnzH0r3JWHhts.jpg",
+    "genre_ids": [
+      28,
+      80,
+      53
+    ],
+    "id": 1197306,
+    "original_language": "en",
+    "original_title": "A Working Man",
+    "overview": "Levon Cade left behind a decorated military career in the black ops to live a simple life working construction. But when his boss's daughter, who is like family to him, is taken by human traffickers, his search to bring her home uncovers a world of corruption far greater than he ever could have imagined.",
+    "popularity": 32.1838,
+    "poster_path": "/6FRFIogh3zFnVWn7Z6zcYnIbRcX.jpg",
+    "release_date": "2025-03-26",
+    "title": "A Working Man",
+    "video": false,
+    "vote_average": 6.7,
+    "vote_count": 1565
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/8rpDcsfLJypbO6vREc0547VKqEv.jpg",
+    "genre_ids": [
+      878,
+      12,
+      28
+    ],
+    "id": 76600,
+    "original_language": "en",
+    "original_title": "Avatar: The Way of Water",
+    "overview": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
+    "popularity": 28.7156,
+    "poster_path": "/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+    "release_date": "2022-12-14",
+    "title": "Avatar: The Way of Water",
+    "video": false,
+    "vote_average": 7.6,
+    "vote_count": 12879
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/jvzPTf0nhsqAXodYT6ILKb99IA2.jpg",
+    "genre_ids": [
+      18,
+      10749
+    ],
+    "id": 1289936,
+    "original_language": "en",
+    "original_title": "Downton Abbey: The Grand Finale",
+    "overview": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "popularity": 20.5571,
+    "poster_path": "/jqIoQwfFaBZDJUIvjFwJTWlmRfO.jpg",
+    "release_date": "2025-09-10",
+    "title": "Downton Abbey: The Grand Finale",
+    "video": false,
+    "vote_average": 7.863,
+    "vote_count": 40
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/hofnlIyF6bePkgQOpcuRWLvzf15.jpg",
+    "genre_ids": [
+      16,
+      10751,
+      14
+    ],
+    "id": 14836,
+    "original_language": "en",
+    "original_title": "Coraline",
+    "overview": "Wandering her rambling old house in her boring new town, 11-year-old Coraline discovers a hidden door to a strangely idealized version of her life. In order to stay in the fantasy, she must make a frighteningly real sacrifice.",
+    "popularity": 20.243,
+    "poster_path": "/4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
+    "release_date": "2009-02-05",
+    "title": "Coraline",
+    "video": false,
+    "vote_average": 7.898,
+    "vote_count": 8548
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/8Rseq6hAhAItnTrbECEFt35VoSJ.jpg",
+    "genre_ids": [
+      10749,
+      18
+    ],
+    "id": 1252309,
+    "original_language": "es",
+    "original_title": "Pídeme lo que quieras",
+    "overview": "After his father's death, Eric Zimmerman travels to Spain to oversee his company's branches. In Madrid, he falls for Judith and engage in an intense, erotic relationship full of exploration. However, Eric fears his secret may end their affair.",
+    "popularity": 19.778,
+    "poster_path": "/6MsRwOG96qs5KtPjxVuvMcUPjdU.jpg",
+    "release_date": "2024-11-29",
+    "title": "Tell Me What You Want",
+    "video": false,
+    "vote_average": 6.2,
+    "vote_count": 239
+  }
+]

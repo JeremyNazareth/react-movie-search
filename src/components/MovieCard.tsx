@@ -9,6 +9,7 @@ interface Props {
 
 function MovieCard ({movie}:Props)  {
 
+    //Context: This component is a layout to display movies with horizontal overflow (used for popular movies and upcoming movies)
     let navigate = useNavigate()
 
     const navigating = (id: string) => {

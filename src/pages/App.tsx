@@ -16,6 +16,9 @@ import Discover from './Discover'
 
 function App() {
 
+  //App.tsx is responsible for the routing system of the page.
+  //We use Route for show the respective content 
+
   return (
     <>
       <div className='app-container'>

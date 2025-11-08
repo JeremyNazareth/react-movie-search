@@ -1,5 +1,5 @@
 import styles from './modules/components/FavoriteMovieCard.module.css'
-import useNavigateToMovie from "../components/NavigateToMovie"
+import useNavigateToMovie from '../components/NavigateToMovie';
 import { Movie } from '../types/Movie'
 
 interface Props{

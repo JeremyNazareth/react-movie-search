@@ -7,6 +7,12 @@ import { useState, useEffect } from "react"
 import { use } from "i18next"
 import { useLocation } from "react-router-dom"
 
+/*
+    Context: VerticalMovieList.tsx is a component created for the purpose of applying a layout to a list of movie with a 
+    filter system included
+*/
+
+
 interface MovieListProps{
     movieList: Movie[]
 }
@@ -14,48 +20,65 @@ interface MovieListProps{
 interface GenresProps{
     genres: Genre[]
 }
+
 const VerticalMovieList = ({movieList, genres}:MovieListProps & GenresProps) => {
 
+    //We create 2 main hooks to make the filter with .filter
+    //Hook to store selected filters
     const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
+    //This hook is what we are going to use to show the movies
     const [currentMovies, setCurrentMovies] = useState<Movie[]>([]);
+    //Hook to control pages from the movie list
     const [currentPage, setCurrentPage] = useState(1);
+    //This Hook is used for set the classes from the button that is used for the small design of the page
     const [isVisible, setIsVisible] = useState(false);
 
+    //We use useLocation to known when the user navegates to other pages to reset the paginate system when they return to VerticalMovieList
     const location = useLocation();
     const moviesPerPage = 4
 
+    //useNavigateToMovie is a customHook that I created to easily navigate through the pages
     let navigation = useNavigateToMovie();
 
-    /*
+    //This fuction is what we use to set the selectedFilters hook if they are checked from the boostrap checkboxes
+    //This function is called when there is a change on the checkbox input and we store the element that trigger the event
     const filterMark =  (event: React.ChangeEvent<HTMLInputElement>) => {
+        //We store id and the state of the checkbox from the element
         const { id , checked } = event.target;
+        //We create a list, if the target check is True then We add the id to the list and if not then we remove it
         setSelectedFilters((prev) => 
             checked ? [...prev, id] : prev.filter((g) => g !== id) 
         )        
     }
-    */
+ 
 
     const handleFilter = (id: string) => { 
         if(!selectedFilters.includes(id)){
             setSelectedFilters([...selectedFilters,id])
-            console.log(`Genero ${id} agregado.`)
         } else{
             setSelectedFilters(selectedFilters.filter(filterId => filterId != id))
         }
     }
 
+    
     const lastPage = movieList.length / moviesPerPage
 
-
+    //Button deactivations
+    //Variables that we will use for disable option if there are no pages in left side or right of the current page
     let previousBtnDisabled = currentPage < 2;
     let nextBtnDisabled = currentPage * moviesPerPage >= movieList.length;
 
+
     useEffect(() =>{
+        //We set a variable to store the original list to filter it and use it later to display in the page
         let filteredMovies = movieList
         if (selectedFilters.length > 0){
+            //Each movie has a list of genre ids so  we need to access each genre of the movie to use the filter, so we use .filter and an .every
+            //because we need the movie to match each genre of the selectedFilters
             filteredMovies = movieList.filter((movie) => selectedFilters.every((filter) => movie.genre_ids.includes(Number(filter))))
         } 
 
+        //We slice the movie list to have the pagination of the movies
         filteredMovies = filteredMovies.slice(
             (currentPage - 1) * moviesPerPage, currentPage * moviesPerPage
         )
@@ -64,6 +87,7 @@ const VerticalMovieList = ({movieList, genres}:MovieListProps & GenresProps) => 
     },[selectedFilters, movieList, currentPage])
     
     useEffect(() =>{
+        //If we go through other link pages we reset the pagination
         setCurrentPage(1);
     }, [location.pathname])
 
@@ -84,22 +108,24 @@ const VerticalMovieList = ({movieList, genres}:MovieListProps & GenresProps) => 
             </div>
             
             <div className={styles.moviesContainer}>
+                {/*topFilter is a container that have all filters like the pagination buttons and genre filter   */}
                 <div className={styles.topFilter}>
-                    
                     <div className={styles.pagesContainer}>
+                        {/*This is the responsive button is only visible on <= 850px width  */}
                         <div className={styles.responsiveFilterContainer}>
                             <button
-                            className={`${styles.filtersBtn} ${isVisible ? styles.btnActive : ''}`}
-                            onClick={() => setIsVisible(!isVisible)}>
-                                <FilterIcon color="#136e3a" strokeWidth={1.3}></FilterIcon>&nbsp;&nbsp;Genres 
+                                className={`${styles.filtersBtn} ${isVisible ? styles.btnActive : ''}`}
+                                onClick={() => setIsVisible(!isVisible)}>
+                                    <FilterIcon color="#136e3a" strokeWidth={1.3}></FilterIcon>
+                                    <p>Genres</p>
                             </button>
                             { isVisible ?
-                            (<ul className={styles.responsiveFilter}>
-                                {genres.map((genre)=> (
-                                    <li><input key={genre.id} id={`${genre.id}`} type="checkbox" className="form-check-input" onChange={filterMark} /><label className={styles.checkboxLabel}>{genre.name}</label></li>
-                                ))}
-                            </ul>) : ''
-                            }   
+                                (<ul className={styles.responsiveFilter}>
+                                    {genres.map((genre)=> (
+                                        <li><input key={genre.id} id={`${genre.id}`} type="checkbox" className="form-check-input" onChange={filterMark} /><label className={styles.checkboxLabel}>{genre.name}</label></li>
+                                    ))}
+                                </ul>) : ''
+                                }   
                         </div>
                         <p className={styles.totalPages}>{movieList.length} movies found, {Math.round(movieList.length / 4)} pages</p>    
                         <div className={styles.btnsContainer}>
@@ -155,7 +181,7 @@ const VerticalMovieList = ({movieList, genres}:MovieListProps & GenresProps) => 
                             <button className={styles.pageBtn} disabled={nextBtnDisabled} onClick={() => setCurrentPage(currentPage + 1)}><ChevronRight color="#2E8B57"/></button>
                             <button className={`${styles.pageBtn}`} disabled={nextBtnDisabled}  onClick={() => setCurrentPage(lastPage)} > <ArrowRightFromLine /> </button>
                         </div>
-                        <p className={styles.totalPages}>{movieList.length} movies found, {Math.round(movieList.length / 4)} pages</p>    
+                        
                     </div>
                 
             </div>

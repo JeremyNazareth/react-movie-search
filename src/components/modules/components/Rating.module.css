@@ -1,8 +1,9 @@
 
 .ratingValue{
     font-style: normal;
+    font-size: 20px;
     font-weight: 725;
-    margin-right: 7px;
+    margin: 0px;
 }
 
 .lowRating{

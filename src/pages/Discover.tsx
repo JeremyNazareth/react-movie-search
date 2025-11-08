@@ -7,33 +7,33 @@ import { Movie } from '../types/Movie'
 
 function Discover(){
 
+    //Discover is the section that the user can explore the entire list of movies from the page
+    //We are going to use VerticalMovieList component to 
+    
     const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
     const [selectedMovies, setSelectedMovies] = useState<Movie[]>([]);
-    const filterMark =  (event: React.ChangeEvent<HTMLInputElement>) => {
-        
-        const { id , checked } = event.target;
-        setSelectedFilters((prev) => 
-            checked ? [...prev, id] : prev.filter((g) => g !== id) 
-        )        
-        
-    }
-    
-    useEffect(() =>{
+
+    //Fuction that handle the filter method
+    const HandleFilter = ()=>{
+        //We only filter when is a filter checked
         if (selectedFilters.length > 0){
-            setSelectedMovies(movies.filter((movie) => selectedFilters.every((filter) => movie.genre_ids.includes(Number(filter)))))
+            //We use .filter to enter in a loop for each movie and then use every to compare each genre Id in selectedFilters list
+            //with genres id in each movie
+            //setSelectedMovies(movies.filter((movie) => selectedFilters.every((filter) => movie.genre_ids.includes(Number(filter)))))
             console.log(selectedFilters)
         } else{
-            setSelectedMovies(movies)
+            //if no filter selected then display the original list
+            
         }
+    }
+    useEffect(() =>{
+        
     }, [selectedFilters])
     
     console.log(selectedMovies)
     return (
         <main className='main-body'>
-            <div className={styles.content}>
-                <VerticalMovieList movieList={selectedMovies} genres={genres} ></VerticalMovieList>
-            </div>
-            
+            <VerticalMovieList movieList={movies} genres={genres} ></VerticalMovieList>
         </main>  
     );
 }
