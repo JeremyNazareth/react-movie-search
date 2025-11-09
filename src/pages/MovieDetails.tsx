@@ -49,11 +49,11 @@ const MovieDetails = () => {
     const movieDistribution = distribution.find((distributionMovie: MovieDistribution) => distributionMovie.id.toString() === id);
     const cast = movieDistribution?.cast
     const crew = movieDistribution?.crew
-    const director = crew.find((member) => member.job === "Director")
-    const musicComposer = crew.find((member) => member.job === "Original Music Composer")
-    const producer = crew.find((member) => member.job === "Producer")
-    const soundDisigner = crew.find((member) => member.job === "Sound Designer")
-    const photographyDirector = crew.find((member) => member.job === "Director of Photography")
+    const director = crew?.find((member) => member.job === "Director")
+    const musicComposer = crew?.find((member) => member.job === "Original Music Composer")
+    const producer = crew?.find((member) => member.job === "Producer")
+    const soundDisigner = crew?.find((member) => member.job === "Sound Designer")
+    const photographyDirector = crew?.find((member) => member.job === "Director of Photography")
     
     
     //localStorage.removeItem('FavoriteMovies')
