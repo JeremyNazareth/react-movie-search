@@ -1,7 +1,6 @@
-import { useEffect } from "react";
 import styles from "./modules/components/Rating.module.css"
 
-const Rating = ({rating}) =>{
+const Rating = (rating: number) =>{
 
     //Context: Component that change the color of the text based on the rating value
     const getColor = () =>{
@@ -12,7 +11,7 @@ const Rating = ({rating}) =>{
     
 
     return(
-        <p id="Rating-value" className={`${styles.ratingValue} ${getColor()}`}>M {rating}</p>
+        <p id="Rating-value" className={`${styles.ratingValue} ${getColor()}`}>M {rating.toFixed(1)}</p>
     )
 }
 

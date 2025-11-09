@@ -1,8 +1,7 @@
 import styles from './modules/components/MovieCard.module.css'
 import { useNavigate } from "react-router-dom";
 import { Movie } from '../types/Movie'
-import { Heart } from 'lucide-react'
-import Rating from "../components/Rating"
+import Rating from './Rating'
 interface Props {
     movie: Movie
 }
@@ -18,7 +17,7 @@ function MovieCard ({movie}:Props)  {
     }
 
     const date = new Date(movie.release_date);
-    const dateOptions = { month: "long"};
+    const dateOptions = { month: "long" as const};
     
     const movieDate = `${ new Intl.DateTimeFormat("en-US", dateOptions).format(date)} ${date.getDay().toString()}, ${date.getFullYear().toString()}`
 
@@ -33,7 +32,7 @@ function MovieCard ({movie}:Props)  {
                 <h3>{movie.title}</h3>
                 <h4>{movieDate}</h4>
                 <div className={styles.Rating}>
-                    {<Rating rating={movie.vote_average.toFixed(1)}/>}
+                    {Rating(movie.vote_average)}
                 </div>
             </header>
         </article>      

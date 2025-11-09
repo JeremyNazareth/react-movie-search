@@ -28,3 +28,10 @@ export interface Actor {
     credit_id: string;
     order: number 
 }
+
+export interface MovieDistribution {
+    id: number;
+    cast: object[];
+    crew: object[];
+
+}

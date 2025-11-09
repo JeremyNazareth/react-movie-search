@@ -1,5 +1,5 @@
-import '../App.css'
-import '../assets/styles/global.css'
+import './App.css'
+import './assets/styles/global.css'
 
 import {Routes, Route } from 'react-router-dom'
 

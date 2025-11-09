@@ -1,10 +1,8 @@
 import  useNavigateToMovie  from "../components/NavigateToMovie"
 import styles from './modules/components/VerticalMovieList.module.css'
-import genres from "../assets/data/genres.json"
 import { FilterIcon, ChevronRight, ArrowRightFromLine } from 'lucide-react'
 import { Movie, Genre } from '../types/Movie'
 import { useState, useEffect } from "react"
-import { use } from "i18next"
 import { useLocation } from "react-router-dom"
 
 /*

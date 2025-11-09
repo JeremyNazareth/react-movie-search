@@ -4,7 +4,7 @@ import style from '../components/modules/pages/MovieDetails.module.css'
 import movieDetails from '../assets/data/movieDetails.json'
 import distribution from '../assets/data/distribution.json'
 import ActorCard from '../components/ActorCard'
-import { Movie, Actor, Genre } from '../types/Movie'
+import { Movie, Actor, MovieDistribution} from '../types/Movie'
 import { Heart, HeartOff } from 'lucide-react'
 import useNavigateToMovie from '../components/NavigateToMovie';
 
@@ -12,6 +12,7 @@ const MovieDetails = () => {
 
     //Movie id
     const {id} = useParams();
+    console.log(typeof(distribution) + " " + typeof(movieDetails))
 
     let movie = movieDetails.find((movieData) => movieData.id.toString() === id);
 
@@ -44,14 +45,16 @@ const MovieDetails = () => {
     },[id])
 
     //We create multiples variables to display later on JSX fragment the details of the movie
-    const movieDistribution = distribution.find((distributionMovie) => distributionMovie.id.toString() === id);
-    const cast = movieDistribution.cast
-    const crew = movieDistribution.crew
+    
+    const movieDistribution = distribution.find((distributionMovie: MovieDistribution) => distributionMovie.id.toString() === id);
+    const cast = movieDistribution?.cast
+    const crew = movieDistribution?.crew
     const director = crew.find((member) => member.job === "Director")
     const musicComposer = crew.find((member) => member.job === "Original Music Composer")
     const producer = crew.find((member) => member.job === "Producer")
     const soundDisigner = crew.find((member) => member.job === "Sound Designer")
     const photographyDirector = crew.find((member) => member.job === "Director of Photography")
+    
     
     //localStorage.removeItem('FavoriteMovies')
     
@@ -82,7 +85,7 @@ const MovieDetails = () => {
     
     const date = new Date(movie? movie.release_date : "00/00/0000");
     const movieDate = `${new Intl.DateTimeFormat("en-US", {month: "long"}).format(date)} ${date.getDay().toString()}, ${date.getFullYear().toString()}`
-    const text = isOnFavorites ? 'Remove' : 'Add'
+    
     
     useEffect (() =>{
         const movieInfo = document.getElementById('movie-info');

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import popularMovies from '../assets/data/movies.json';
 import topMovies from '../assets/data/topRated.json'
 import upcomingMovies from '../assets/data/upcoming.json'
@@ -44,11 +44,10 @@ function Home(){
             //We add the class to the container to play the animation of the class
             moviesSliderRef.current.classList.add(classStyle)
             //We change the data at an interval where the animation has an opacity of 0 to hide the data change
-            const setSlider = setTimeout(() => {setCurrentSlide(slide)}, 500)
+            setTimeout(() => {setCurrentSlide(slide)}, 500)
             //And we clear the timeouts and the class to do the future animations
-            const clearClass = setTimeout(() => {moviesSliderRef.current!.classList.remove(classStyle); setTimeoutState(false)},1000)
+            setTimeout(() => {moviesSliderRef.current!.classList.remove(classStyle); setTimeoutState(false)},1000)
         }
-        
     }
 
     //<Slider movies={topMovies} genres={genresData}></Slider>        
@@ -72,8 +71,8 @@ function Home(){
                 <h2 className={styles.seccionTitle}>Most popular movies</h2>
                 <div className={styles.popularMoviesContainer} >
                     <div className={styles.popularMoviesSlider}>
-                        {popularMovies.map((popularMovie) => (
-                            <MovieCard key={popularMovie.id} movie={popularMovie} />
+                        {popularMovies.map((popularMovie,i) => (
+                            <MovieCard key={`${popularMovie.id}-${i}`} movie={popularMovie} />
                         ))}
                     </div>
                     
@@ -84,8 +83,8 @@ function Home(){
                 <h2 className={styles.seccionTitle}>Upcoming Movies</h2>
                 <div className={styles.popularMoviesContainer} >
                     <div className={styles.popularMoviesSlider}>
-                        {upcomingMovies.map((popularMovie) => (
-                            <MovieCard key={popularMovie.id} movie={popularMovie} />
+                        {upcomingMovies.map((upcomingMovies, i) => (
+                            <MovieCard key={upcomingMovies.id + '-' + i} movie={upcomingMovies} />
                         ))}
                     </div>
                     
@@ -105,7 +104,7 @@ function Home(){
                             <button className={`${styles.nextSlideBtnLine}`} onClick={() => Sliding(styles.dotSlider,0)} disabled={timeOutState}><ArrowRightFromLine /></button>
                         </div>
                         
-                        {topMovies.map((topMovie, i) => (
+                        {topMovies.map((_, i) => (
                             <button className={`${styles.dots} ${currentSlide == i ? styles.active : ""}`} key={i} onClick={() => {Sliding(styles.dotSlider,i)}} disabled={timeOutState}></button>
                         ))}
                         <div>
