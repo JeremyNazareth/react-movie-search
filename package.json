@@ -1,6 +1,6 @@
 {
   "name": "react-movie-search",
-  "homepage": ".",
+  "homepage": "https://jeremynazareth.github.io/react-movie-search/",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -8,11 +8,14 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.5",
     "dotenv": "^16.4.7",
+    "gh-pages": "^6.3.0",
     "i18next": "^24.2.3",
     "lucide-react": "^0.475.0",
     "node-fetch": "^3.3.2",
