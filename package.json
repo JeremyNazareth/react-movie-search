@@ -1,6 +1,5 @@
 {
   "name": "react-movie-search",
-  "homepage": "https://jeremynazareth.github.io/react-movie-search/",
   "private": true,
   "version": "0.1.0",
   "type": "module",
