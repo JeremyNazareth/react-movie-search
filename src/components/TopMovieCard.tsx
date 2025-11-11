@@ -1,5 +1,5 @@
 import { Movie } from '../types/Movie'
-import styles from './modules/components/topMovieCard.module.css'
+import styles from './modules/components/TopMovieCard.module.css'
 import useNavigateToMovie from './NavigateToMovie';
 import genresData from '../assets/data/genres.json';
 import Rating from "../components/Rating";
