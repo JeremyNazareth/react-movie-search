@@ -4,10 +4,10 @@
 
 # Tecnologías utilizadas
 
-  React
-  JavaScript
-  CSS
-  API de películas (TMDb)
+ - React
+ - JavaScript
+ - CSS
+ - API de películas (TMDb)
 
 # Licencia
 
