@@ -39,6 +39,7 @@ function Home(){
     Also the function requires de position number of the next movie that we need to be our slide
      */
     const Sliding = (classStyle: string,slide: number) =>{
+        
         setTimeoutState(true);
         if(moviesSliderRef.current){
             //We add the class to the container to play the animation of the class

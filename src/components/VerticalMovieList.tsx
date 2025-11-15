@@ -59,7 +59,7 @@ const VerticalMovieList = ({movieList, genres}:MovieListProps & GenresProps) => 
     }
 
     
-    const lastPage = movieList.length / moviesPerPage
+    const lastPage = Math.ceil(movieList.length / moviesPerPage)
 
     //Button deactivations
     //Variables that we will use for disable option if there are no pages in left side or right of the current page
@@ -125,15 +125,15 @@ const VerticalMovieList = ({movieList, genres}:MovieListProps & GenresProps) => 
                                 </ul>) : ''
                                 }   
                         </div>
-                        <p className={styles.totalPages}>{movieList.length} movies found, {Math.round(movieList.length / 4)} pages</p>    
+                        <p className={styles.totalPages}>{movieList.length} movies found, {Math.ceil(movieList.length / 4)} pages</p>    
                         <div className={styles.btnsContainer}>
-                            <button className={`${styles.pageBtn} ${styles.left}`} disabled={previousBtnDisabled}  onClick={() => setCurrentPage(1)} > <ArrowRightFromLine /> </button>
-                            <button className={`${styles.pageBtn} ${styles.left}`} disabled={previousBtnDisabled} onClick={() => setCurrentPage(currentPage - 1)}><ChevronRight color="#2E8B57" /></button>
-                            <button className={`${styles.pageBtn} ${styles.numberPageBtn}`} disabled={currentPage === 1} onClick={() => setCurrentPage(currentPage - 1)}> <p>{currentPage - 1}</p> </button>
-                            <button className={styles.pageBtn} disabled> <p>{currentPage}</p></button>
-                            <button className={`${styles.pageBtn} ${styles.numberPageBtn}`} disabled={currentPage === lastPage} onClick={() => setCurrentPage(currentPage + 1)}> <p>{currentPage + 1}</p> </button>
-                            <button className={styles.pageBtn} disabled={nextBtnDisabled} onClick={() => setCurrentPage(currentPage + 1)}><ChevronRight color="#2E8B57"/></button>
-                            <button className={`${styles.pageBtn}`} disabled={nextBtnDisabled}  onClick={() => setCurrentPage(lastPage)} > <ArrowRightFromLine /> </button>
+                            <button className={`${styles.pageBtn} ${styles.pageBtnNoBorder} ${styles.left}`} disabled={previousBtnDisabled}  onClick={() => setCurrentPage(1)} > <ArrowRightFromLine /> </button>
+                            <button className={`${styles.pageBtn} ${styles.pageBtnNoBorder} ${styles.left}`} disabled={previousBtnDisabled} onClick={() => setCurrentPage(currentPage - 1)}><ChevronRight color="#2E8B57" /></button>
+                            <button className={`${styles.pageBtn} ${styles.pageBtnNoBorder}`} disabled={currentPage === 1} onClick={() => setCurrentPage(currentPage - 1)}> <p>{currentPage - 1}</p> </button>
+                            <button className={`${styles.pageBtn} ${styles.pageBtnBorder}`}> <p>{currentPage}</p></button>
+                            <button className={`${styles.pageBtn} ${styles.pageBtnNoBorder}`} disabled={currentPage === lastPage} onClick={() => setCurrentPage(currentPage + 1)}> <p>{currentPage + 1}</p> </button>
+                            <button className={`${styles.pageBtn} ${styles.pageBtnNoBorder}`} disabled={nextBtnDisabled} onClick={() => setCurrentPage(currentPage + 1)}><ChevronRight color="#2E8B57"/></button>
+                            <button className={`${styles.pageBtn} ${styles.pageBtnNoBorder}`} disabled={nextBtnDisabled}  onClick={() => setCurrentPage(lastPage)} > <ArrowRightFromLine /> </button>
                             
                         </div>                  
                     </div>
@@ -171,14 +171,15 @@ const VerticalMovieList = ({movieList, genres}:MovieListProps & GenresProps) => 
 
                 <div className={styles.pagesContainer}>
                         <div className={styles.btnsContainer}>
-                            <button className={`${styles.pageBtn} ${styles.left}`} disabled={previousBtnDisabled}  onClick={() => setCurrentPage(1)} > <ArrowRightFromLine /> </button>
-                            <button className={`${styles.pageBtn} ${styles.left}`} disabled={previousBtnDisabled} onClick={() => setCurrentPage(currentPage - 1)}><ChevronRight color="#2E8B57" /></button>
-                            <button className={`${styles.pageBtn} ${styles.numberPageBtn}`} disabled={currentPage === 1} onClick={() => setCurrentPage(currentPage - 1)}> <p>{currentPage - 1}</p> </button>
-                            <button className={styles.pageBtn} disabled> <p>{currentPage}</p></button>
-                            <button className={`${styles.pageBtn} ${styles.numberPageBtn}`} disabled={currentPage === lastPage} onClick={() => setCurrentPage(currentPage + 1)}> <p>{currentPage + 1}</p> </button>
-                            <button className={styles.pageBtn} disabled={nextBtnDisabled} onClick={() => setCurrentPage(currentPage + 1)}><ChevronRight color="#2E8B57"/></button>
-                            <button className={`${styles.pageBtn}`} disabled={nextBtnDisabled}  onClick={() => setCurrentPage(lastPage)} > <ArrowRightFromLine /> </button>
-                        </div>
+                            <button className={`${styles.pageBtn} ${styles.pageBtnNoBorder} ${styles.left}`} disabled={previousBtnDisabled}  onClick={() => setCurrentPage(1)} > <ArrowRightFromLine /> </button>
+                            <button className={`${styles.pageBtn} ${styles.pageBtnNoBorder} ${styles.left}`} disabled={previousBtnDisabled} onClick={() => setCurrentPage(currentPage - 1)}><ChevronRight color="#2E8B57" /></button>
+                            <button className={`${styles.pageBtn} ${styles.pageBtnNoBorder}`} disabled={currentPage === 1} onClick={() => setCurrentPage(currentPage - 1)}> <p>{currentPage - 1}</p> </button>
+                            <button className={`${styles.pageBtn} ${styles.pageBtnBorder}`}> <p>{currentPage}</p></button>
+                            <button className={`${styles.pageBtn} ${styles.pageBtnNoBorder}`} disabled={currentPage === lastPage} onClick={() => setCurrentPage(currentPage + 1)}> <p>{currentPage + 1}</p> </button>
+                            <button className={`${styles.pageBtn} ${styles.pageBtnNoBorder}`} disabled={nextBtnDisabled} onClick={() => setCurrentPage(currentPage + 1)}><ChevronRight color="#2E8B57"/></button>
+                            <button className={`${styles.pageBtn} ${styles.pageBtnNoBorder}`} disabled={nextBtnDisabled}  onClick={() => setCurrentPage(lastPage)} > <ArrowRightFromLine /> </button>
+                            
+                        </div> 
                         
                     </div>
                 

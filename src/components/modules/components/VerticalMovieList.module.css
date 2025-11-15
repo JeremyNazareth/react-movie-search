@@ -257,9 +257,14 @@
     height: 30px;
     background-color: transparent;
     border-radius: 10px;
-    border: none;
 }
 
+.pageBtnBorder{
+    border: #136e3a solid 2px;
+}
+.pageBtnNoBorder{
+    border: none;
+}
 .pageBtn p{
     margin: auto;
     line-height: 2px;
@@ -276,10 +281,6 @@
     stroke: #2E8B57;
 }
 
-.pageBtn:disabled{
-    
-}
-
 .pageBtn:disabled svg{
     stroke: rgba(128, 128, 128, 0.432);
 }
@@ -288,6 +289,9 @@
     transform: scaleX(-1);
 }
 
+.currentPageBtn{
+    
+}
 .totalPages{
     margin: 0px;
     font-size: 17px;
