@@ -1,13 +1,13 @@
 # Movie-Search (En desarrollo)
 
-  Movie-Search es una aplicación web creada con React que permite buscar información sobre películas de manera rápida y sencilla. Utiliza una API de películas para obtener detalles como el título, la sinopsis, el año de estreno y el póster.
+  Movie-Search es una aplicación web creada con React + vite que permite buscar información sobre películas de manera rápida y sencilla. Utiliza una API de películas para obtener detalles como el título, la sinopsis, el año de estreno y el póster.
 
 # Tecnologías utilizadas
 
-  React
-  JavaScript
-  CSS
-  API de películas (TMDb)
+ - React + vite
+ - JavaScript
+ - CSS
+ - API de películas (TMDb)
 
 # Licencia
 
