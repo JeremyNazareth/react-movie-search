@@ -100,7 +100,7 @@ function Home(){
                 </div>
 
                     <div className={styles.dotsContainer} >
-                        <div className={styles.prevBtn}>
+                        <div className={styles.prevBtn} style={{display:"flex",gap:"0.5rem", marginRight:"5px"}}>
                             <button className={`${styles.nextSlideBtn}`} onClick={() => changeSlide(false)} disabled={timeOutState}><ChevronRight /></button>    
                             <button className={`${styles.nextSlideBtnLine}`} onClick={() => Sliding(styles.dotSlider,0)} disabled={timeOutState}><ArrowRightFromLine /></button>
                         </div>
@@ -108,7 +108,7 @@ function Home(){
                         {topMovies.map((_, i) => (
                             <button className={`${styles.dots} ${currentSlide == i ? styles.active : ""}`} key={i} onClick={() => {Sliding(styles.dotSlider,i)}} disabled={timeOutState}></button>
                         ))}
-                        <div>
+                        <div style={{display:"flex",gap:"0.5rem", marginLeft:"5px"}}>
                             <button className={styles.nextSlideBtn} onClick={() => changeSlide(true)} disabled={timeOutState}><ChevronRight /></button>
                             <button className={`${styles.nextSlideBtnLine} ${styles.nextSlideBtn}`}  onClick={() => Sliding(styles.dotSlider,topMovies.length - 1)} disabled={timeOutState}><ArrowRightFromLine /></button>
                         </div>
