@@ -69,8 +69,9 @@ function Home(){
 
             {/*}Sección de peliculas populares{*/}
             <section className={`${styles.popularMovies} ${styles.movieSection}`}>
-                <h2 className={styles.seccionTitle}>Most popular movies</h2>
+                
                 <div className={styles.popularMoviesContainer} >
+                    <h2 className={styles.sectionTitle}>Most popular movies</h2>
                     <div className={styles.popularMoviesSlider}>
                         {popularMovies.map((popularMovie,i) => (
                             <MovieCard key={`${popularMovie.id}-${i}`} movie={popularMovie} />
@@ -81,8 +82,8 @@ function Home(){
             </section>
             
             <section className={`${styles.popularMovies} ${styles.movieSection}`}>
-                <h2 className={styles.seccionTitle}>Upcoming Movies</h2>
                 <div className={styles.popularMoviesContainer} >
+                    <h2 className={styles.sectionTitle}>Upcoming Movies</h2>
                     <div className={styles.popularMoviesSlider}>
                         {upcomingMovies.map((upcomingMovies, i) => (
                             <MovieCard key={upcomingMovies.id + '-' + i} movie={upcomingMovies} />
@@ -94,7 +95,7 @@ function Home(){
             {/* Sección de peliculas mejores puntuadas */}
             <section className={`${styles.topMovies} ${styles.movieSection}`} id='Slider'>
                 {/*<h2 className={styles.seccionTitle}>Top rated movies</h2>*/}
-                <h2 className={styles.seccionTitle}>Most rated movies</h2>
+                <h2 className={styles.topMoviesTitle}>Most rated movies</h2>
                 <div className={styles.topMoviesSlider} id='moviesSlider' ref={moviesSliderRef}>
                     {<TopMovieCard topMovie={topMovies[currentSlide]}></TopMovieCard>}
                 </div>

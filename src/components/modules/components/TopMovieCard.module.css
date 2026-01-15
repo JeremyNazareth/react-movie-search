@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    padding: 5rem;
+    padding: 3rem;
     gap: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
